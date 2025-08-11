@@ -1,6 +1,6 @@
 site_name: Pirate MIDI Docs
 site_description: Official documentation for Pirate MIDI products and tools
-site_url: https://pirate-midi.github.io/pirate-midi-docs
+site_url: https://docs.piratemidi.com
 
 theme:
   name: material
