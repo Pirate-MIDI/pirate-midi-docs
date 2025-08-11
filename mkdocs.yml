@@ -23,3 +23,16 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Manuals:
+      - Bridge6: products/bridge6/index.md
+      - Bridge4: products/bridge4/index.md
+      - Aero: products/aero/index.md
+      - Polar: products/polar/index.md
+      - CLiCK v2: products/click-v2/index.md
+      - Exp-Doubler: products/exp-doubler/index.md
+      - CLiCK v1: products/click-v1/index.md
+      - µLOOP v1: products/µloop/index.md
+      - Thru Gizmo: products/thru-gizmo/index.md
+  - Device API:
+      - Getting Started: device-api/index.md
+  - Support: support/index.md
