@@ -11,9 +11,8 @@ theme:
     - content.code.copy
     - search.suggest
     - search.highlight
-  logo: assets/logo-light.svg
+  logo: assets/logo-light.svg   # default; JS swaps to dark when needed
   palette:
-    # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
@@ -21,7 +20,6 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
-    # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: teal
@@ -58,3 +56,6 @@ nav:
 
 extra_css:
   - assets/extra.css
+
+extra_javascript:
+  - assets/logo-switch.js
