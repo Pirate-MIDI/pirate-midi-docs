@@ -1,1 +1,25 @@
-site_name: My Docs
+site_name: Pirate MIDI Docs
+site_description: Official documentation for Pirate MIDI products and tools
+site_url: https://pirate-midi.github.io/pirate-midi-docs
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - attr_list
+
+nav:
+  - Home: index.md
