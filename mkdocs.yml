@@ -10,6 +10,23 @@ theme:
     - content.code.copy
     - search.suggest
     - search.highlight
+  palette:
+    # Light mode (auto-applies if user prefers light)
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode (auto-applies if user prefers dark)
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
 
 plugins:
   - search
