@@ -1,0 +1,15 @@
+/* Default (light) */
+:root > body {
+  --pm-logo: url("logo-light.svg");
+}
+
+/* Dark (Material's slate scheme) */
+[data-md-color-scheme="slate"] {
+  --pm-logo: url("logo-dark.svg");
+}
+
+/* Apply to the header logo image */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  content: var(--pm-logo);
+}

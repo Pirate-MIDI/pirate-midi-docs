@@ -3,6 +3,7 @@ site_description: Official documentation for Pirate MIDI products and tools
 site_url: https://docs.piratemidi.com
 
 theme:
+  favicon: assets/favicon.png
   name: material
   features:
     - navigation.tabs
@@ -10,20 +11,21 @@ theme:
     - content.code.copy
     - search.suggest
     - search.highlight
+  logo: assets/logo-light.svg
   palette:
-    # Light mode (auto-applies if user prefers light)
+    # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
-      accent: indigo
+      accent: deep orange
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
-    # Dark mode (auto-applies if user prefers dark)
+    # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: teal
+      accent: lime
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
@@ -53,3 +55,6 @@ nav:
   - Device API:
       - Getting Started: device-api/index.md
   - Support: support/index.md
+
+extra_css:
+  - assets/extra.css
