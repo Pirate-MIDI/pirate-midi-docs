@@ -3,15 +3,23 @@ site_description: Official documentation for Pirate MIDI products and tools
 site_url: https://docs.piratemidi.com
 
 theme:
+  language: en
   favicon: assets/favicon.png
   logo: assets/logo-white.svg
   name: material
   features:
+    - header.autohide
     - navigation.tabs
-    - navigation.sections
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.path
+    - navigation.footer
+    - toc.integrate
     - content.code.copy
     - search.suggest
     - search.highlight
+    - search.share
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -30,6 +38,13 @@ theme:
 
 plugins:
   - search
+  - social:
+      cards_color: "#5B8DCA"  # background color for social preview cards
+      cards_font: Montserrat
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+      enable_creation_date: true
 
 markdown_extensions:
   - admonition
@@ -57,5 +72,13 @@ nav:
 extra_css:
   - assets/branding.css
 
-extra_javascript:
-  - assets/logo-switch.js
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/x722K7ksA6
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/c/piratemidi
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/groups/pirate.midi.users
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/piratemidi
