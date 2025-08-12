@@ -17,6 +17,7 @@ theme:
     - navigation.footer
     - toc.integrate
     - content.code.copy
+    - content.tooltips
     - search.suggest
     - search.highlight
     - search.share
@@ -35,6 +36,9 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+  font:
+    text: Inter
+    code: Google Sans Code
 
 plugins:
   - search
@@ -82,3 +86,11 @@ extra:
       link: https://facebook.com/groups/pirate.midi.users
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/piratemidi
+
+markdown_extensions: 
+ - attr_list
+ - md_in_html
+ - pymdownx.blocks.caption
+ - def_list
+ - abbr
+ - pymdownx.snippets
