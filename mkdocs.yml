@@ -4,6 +4,7 @@ site_url: https://docs.piratemidi.com
 
 theme:
   favicon: assets/favicon.png
+  logo: assets/logo-white.svg
   name: material
   features:
     - navigation.tabs
@@ -11,7 +12,6 @@ theme:
     - content.code.copy
     - search.suggest
     - search.highlight
-  logo: assets/logo-light.svg   # default; JS swaps to dark when needed
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
