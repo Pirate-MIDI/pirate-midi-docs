@@ -15,15 +15,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: deep orange
+      primary: cyan
+      accent: blue
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: teal
-      accent: lime
+      primary: blue
+      accent: light blue
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
@@ -55,7 +55,7 @@ nav:
   - Support: support/index.md
 
 extra_css:
-  - assets/extra.css
+  - assets/branding.css
 
 extra_javascript:
   - assets/logo-switch.js
