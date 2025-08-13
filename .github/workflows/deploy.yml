@@ -20,7 +20,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs mkdocs-material \
                       mkdocs-material[imaging] \
-                      mkdocs-social-tags-plugin \
+                      mkdocs-material[extras] \
                       mkdocs-git-revision-date-localized-plugin \
       - name: Deploy
         run: |
