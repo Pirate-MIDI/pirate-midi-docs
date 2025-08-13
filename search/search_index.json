@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Pirate MIDI Documentation","text":"<p>Use the search box to find settings, commands, mappings, and API details.</p> <p>Tip</p> <p>Press <code>/</code> to focus search, then type. Try \u201cBLE MIDI\u201d or \u201cUSB host\u201d.</p>"}]}
