@@ -43,7 +43,9 @@ theme:
 plugins:
   - search
   - social:
-      cards_color: "#5b8dca"  # background color for social preview cards
+      cards_color:
+        fill: "#5b8dca"     # background fill color
+        text: "#ffffff"     # text color
       cards_font: Inter
   - git-revision-date-localized:
       enable_creation_date: true
