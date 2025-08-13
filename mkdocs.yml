@@ -91,6 +91,7 @@ extra:
       link: https://instagram.com/piratemidi
 
 markdown_extensions: 
+ - admonition
  - attr_list
  - md_in_html
  - pymdownx.blocks.caption
