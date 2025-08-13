@@ -5,7 +5,7 @@ site_url: https://docs.piratemidi.com
 theme:
   language: en
   favicon: assets/favicon.png
-  logo: assets/logo-white.svg
+  logo: assets/logo-white.png
   name: material
   features:
     - header.autohide
@@ -43,10 +43,10 @@ theme:
 plugins:
   - search
   - social:
-      cards_color:
-        fill: "#5b8dca"     # background fill color
-        text: "#ffffff"     # text color
-      cards_font: Inter
+      cards_layout_options:
+        background_color: "#5b8dca"   # your brand blue
+        color: "#ffffff"              # text on the card
+        font_family: "Inter"
   - git-revision-date-localized:
       enable_creation_date: true
       type: timeago
@@ -65,6 +65,7 @@ nav:
       - Bridge6: manuals/bridge6/index.md
       - Bridge4: manuals/bridge4/index.md
       - Aero: manuals/aero/index.md
+      - FlexiHub: manuals/flexihub/index.md
       - Polar: manuals/polar/index.md
       - CLiCK v2: manuals/click-v2/index.md
       - Exp-Doubler: manuals/exp-doubler/index.md
