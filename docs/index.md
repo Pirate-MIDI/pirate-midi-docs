@@ -29,8 +29,8 @@ Welcome to the Pirate MIDI Docs site. Here you can find documentation for all ou
     Discover the power of Pirate MIDI's _Device API_ and create third party integrations with DAWs, apps, web pages, plugins, and more
 
     [:octicons-arrow-right-24: Reference](/device-api)
-
-    -   :octicons-tools-24:{ .lg .middle } __Technical Support & Troubleshooting__
+    
+-   :octicons-tools-24:{ .lg .middle } __Technical Support & Troubleshooting__
 
     ---
 
