@@ -81,7 +81,6 @@ nav:
 
 extra_css:
   - assets/branding.css
-  - https://cdnjs.cloudflare.com/ajax/libs/octicons/19.8.0/build/octicons.min.css
 
 extra:
   social:
