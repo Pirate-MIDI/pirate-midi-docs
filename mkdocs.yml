@@ -52,16 +52,6 @@ plugins:
       type: timeago
       enable_creation_date: true
 
-markdown_extensions:
-  - admonition
-  - toc:
-      permalink: true
-  - tables
-  - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
 nav:
   - Home: index.md
   - Manuals:
@@ -93,11 +83,17 @@ extra:
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/piratemidi
 
-markdown_extensions: 
+markdown_extensions:
+ - toc:
+    permalink: true
  - admonition
+ - tables
  - attr_list
  - md_in_html
  - pymdownx.blocks.caption
  - def_list
  - abbr
  - pymdownx.snippets
+ - pymdownx.emoji:
+    emoji_index: !!python/name:material.extensions.emoji.twemoji
+    emoji_generator: !!python/name:material.extensions.emoji.to_svg
