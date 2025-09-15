@@ -1,6 +1,9 @@
 site_name: Pirate MIDI Documentation
 site_description: Official documentation for Pirate MIDI products and tools
 site_url: https://docs.piratemidi.com
+repo_url: https://github.com/Pirate-MIDI/pirate-midi-docs
+edit_uri: edit/main/docs/
+repo_name: Pirate MIDI Docs (GitHub)
 
 theme:
   language: en
@@ -8,6 +11,7 @@ theme:
   logo: assets/logo-white.png
   name: material
   features:
+    - content.action.edit
     - header.autohide
     - navigation.tabs
     - navigation.instant
