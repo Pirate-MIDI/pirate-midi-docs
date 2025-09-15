@@ -6,7 +6,7 @@
 
 /* First page: avoid accidental blank/huge margin */
 @page :first {
-  margin-top: 15mm;
+  margin-top: 0;
 }
 
 @media print {
