@@ -74,6 +74,7 @@ nav:
 
 extra_css:
   - assets/branding.css
+  - assets/print.css
 
 extra:
   social:
