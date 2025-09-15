@@ -7,48 +7,46 @@ Click on any of our devices below to view our user manual. You can also navigate
 
 ---
 
-## Device Manuals
-
 <div class="grid cards" markdown>
 
 -   :material-guitar-pick: **[Bridge6](bridge6/index.md)**  
-    ![Bridge6](../assets/logo-white.png)
+    ![Bridge6](../assets/ProductThumbnails/Bridge6%20Thumbnail%20976px.jpg)
     Compact powerhouse MIDI controller with six footswitches.
 
 -   :material-guitar-pick: **[Bridge4](bridge4/index.md)**  
-    ![Bridge4](../assets/logo-white.png)  
+    ![Bridge4](../assets/ProductThumbnails/Bridge4%20Thumbnail%20976px.jpg)  
     Streamlined four-switch controller for versatile pedalboard setups.
 
 -   :material-guitar-pick: **[Aero](aero/index.md)**  
-    ![Aero](../assets/logo-white.png)  
+    ![Aero](../assets/ProductThumbnails/Aero%20Thumbnail%20976px.jpg)  
     Ultra-compact three-switch controller that punches above its size.
 
 -   :material-guitar-pick: **[FlexiHub](flexihub/index.md)**  
-    ![FlexiHub](../assets/logo-white.png)   
+    ![FlexiHub](../assets/ProductThumbnails/)   
     MIDI hub with FlexiPorts, Bluetooth, USB host, and expression input.
 
 -   :material-guitar-pick: **[Polar](polar/index.md)**  
-    ![Polar](../assets/logo-white.png) 
+    ![Polar](../assets/ProductThumbnails/Polar%20Max%20Thumbnail%20976px.jpg) 
     Mini-sized controller in multiple variants, designed ToneX pedals.
 
 -   :material-guitar-pick: **[CLiCK v2](click-v2/index.md)**  
-    ![CLiCK v2](../assets/logo-white.png)   
+    ![CLiCK v2](../assets/ProductThumbnails/CLiCK%20v2%20Thumbnail%20976px.jpg)   
     Relay switcher and expression output with wireless and wired MIDI interface.
 
 -   :material-guitar-pick: **[Exp-Doubler](exp-doubler/index.md)**  
-    ![Exp-Doubler](../assets/logo-white.png)  
+    ![Exp-Doubler](../assets/ProductThumbnails/Exp-Doubler%20Thumbnail%20976px.jpg)  
     Dual expression pedal input splitter/adapter (discontinued).
 
 -   :material-guitar-pick: **[CLiCK v1](click-v1/index.md)**  
-    ![CLiCK v1](../assets/logo-white.png)   
+    ![CLiCK v1](../assets/ProductThumbnails/CLiCK%20v1%20Thumbnail%20976px.jpg)   
     Original CLiCK relay switcher (discontinued).
 
 -   :material-guitar-pick: **[µLOOP v1](µloop/index.md)**  
-    ![µLOOP v1](../assets/logo-white.png)   
+    ![µLOOP v1](../assets/ProductThumbnails/uLOOP%20v1%20Thumbnail%20976px.jpg)   
     Micro looper utility for audio bypass loop control (discontinued).
 
 -   :material-guitar-pick: **[Thru Gizmo](thru-gizmo/index.md)**  
-    ![Thru Gizmo](../assets/logo-white.png)  
+    ![Thru Gizmo](../assets/ProductThumbnails/MIDI%20Thru%20Gizmo%20Thumbnail%20976px.jpg)  
     MIDI thru box for splitting and routing TRS MIDI (discontinued).
 
 </div>
