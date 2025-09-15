@@ -20,7 +20,7 @@ Welcome to the Pirate MIDI Docs site. Here you can find documentation for all ou
 
     ---
 
-    Discover the power of Pirate MIDI's _Device API_ and create third party integrations with DAWs, apps, web pages, plugins, and more
+    Use our _Device API_ and create custom third party integrations with any app or device.
 
     [:octicons-arrow-right-24: Go To Documentation](/device-api)
     
