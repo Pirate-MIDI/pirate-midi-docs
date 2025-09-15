@@ -5,6 +5,8 @@ Welcome to the Pirate MIDI Docs site. Here you can find documentation for all ou
 !!! tip
     Press `/` to automatically activate the search box at any time, on any page. Just start typing and press `enter`
 
+## Choose A Documentation Category
+
 <div class="grid cards" markdown>
 
 -   :octicons-book-24: __User Manuals__
