@@ -10,7 +10,7 @@ theme:
   features:
     - header.autohide
     - navigation.tabs
-    - navigation.instant
+    # - navigation.instant
     - navigation.instant.progress
     - navigation.tracking
     - navigation.path
@@ -56,21 +56,21 @@ plugins:
 
 nav:
   - Home: index.md
-  - Manuals: 
-      - Overview: manuals/index.md
-      - Bridge6: manuals/bridge6/index.md
-      - Bridge4: manuals/bridge4/index.md
-      - Aero: manuals/aero/index.md
-      - FlexiHub: manuals/flexihub/index.md
-      - Polar: manuals/polar/index.md
-      - CLiCK v2: manuals/click-v2/index.md
-      - Exp-Doubler: manuals/exp-doubler/index.md
-      - CLiCK v1: manuals/click-v1/index.md
-      - µLOOP v1: manuals/µloop/index.md
-      - Thru Gizmo: manuals/thru-gizmo/index.md
+  - Manuals:
+      - Overview: manuals/
+      - Bridge6: manuals/bridge6/
+      - Bridge4: manuals/bridge4/
+      - Aero: manuals/aero/
+      - FlexiHub: manuals/flexihub/
+      - Polar: manuals/polar/
+      - CLiCK v2: manuals/click-v2/
+      - Exp-Doubler: manuals/exp-doubler/
+      - CLiCK v1: manuals/click-v1/
+      - µLOOP v1: manuals/µloop/
+      - Thru Gizmo: manuals/thru-gizmo/
   - Device API:
-      - Getting Started: device-api/index.md
-  - Support: support/index.md
+      - Getting Started: device-api/
+  - Support: support/
 
 extra_css:
   - assets/branding.css
