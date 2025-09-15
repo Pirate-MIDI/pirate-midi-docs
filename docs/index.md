@@ -37,7 +37,8 @@ Welcome to the Pirate MIDI Docs site. Here you can find documentation for all ou
 ## Downloading PDFs
 In the top right corner of each page, you'll see a document icon. Click or tap that icon to download a PDF version of the page you're on. There is no feature to download the whole manual in one batch because it changes frequently and we want to make sure you're always up to date with the latest changes.
 
-Some PDFs will generate with a blank page at the start of the document. If you're going to print a hardcopy, you can print a custom range of pages and start from page two to avoid printing the blank page. 
+!!! info
+    Some PDFs will generate with a blank page at the start of the document. If you're going to print a hardcopy, you can print a custom range of pages and start from page two to avoid printing the blank page. 
 
 
 ## Still Stuck?
