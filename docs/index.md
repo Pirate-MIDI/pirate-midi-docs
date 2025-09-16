@@ -5,11 +5,11 @@ Welcome to the Pirate MIDI Docs site. Here you can find documentation for all ou
 !!! tip
     Press `/` to automatically activate the search box at any time, on any page. Just start typing and press `enter`
 
-## Choose A Documentation Category
+## Documentation Categories
 
 <div class="grid cards onecol" markdown>
 
--   :octicons-book-24: __User Manuals__
+-   :octicons-book-24: __### User Manuals__
 
     ---
 
@@ -18,7 +18,7 @@ Welcome to the Pirate MIDI Docs site. Here you can find documentation for all ou
 
     [:octicons-arrow-right-24: Go To Manuals](/manuals)
 
--   :octicons-code-square-24: __Device API__
+-   :octicons-code-square-24: __### Device API__
 
     ---
 
@@ -26,7 +26,7 @@ Welcome to the Pirate MIDI Docs site. Here you can find documentation for all ou
 
     [:octicons-arrow-right-24: Go To Documentation](/device-api)
     
--   :octicons-tools-24: __Technical Support & Troubleshooting__
+-   :octicons-tools-24: __### Technical Support & Troubleshooting__
 
     ---
 
