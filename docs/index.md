@@ -9,7 +9,7 @@ Welcome to the Pirate MIDI Docs site. Here you can find documentation for all ou
 
 <div class="grid cards onecol" markdown>
 
--   :octicons-book-24: __### User Manuals__
+-   :octicons-book-24: __User Manuals__
 
     ---
 
@@ -18,7 +18,7 @@ Welcome to the Pirate MIDI Docs site. Here you can find documentation for all ou
 
     [:octicons-arrow-right-24: Go To Manuals](/manuals)
 
--   :octicons-code-square-24: __### Device API__
+-   :octicons-code-square-24: __Device API__
 
     ---
 
@@ -26,7 +26,7 @@ Welcome to the Pirate MIDI Docs site. Here you can find documentation for all ou
 
     [:octicons-arrow-right-24: Go To Documentation](/device-api)
     
--   :octicons-tools-24: __### Technical Support & Troubleshooting__
+-   :octicons-tools-24: __Technical Support & Troubleshooting__
 
     ---
 
