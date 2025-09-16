@@ -7,7 +7,7 @@ Welcome to the Pirate MIDI Docs site. Here you can find documentation for all ou
 
 ## Choose A Documentation Category
 
-<div class="grid cards" markdown>
+<div class="grid cards onecol" markdown>
 
 -   :octicons-book-24: __User Manuals__
 

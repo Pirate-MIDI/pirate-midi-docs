@@ -68,3 +68,7 @@
 .md-tabs {
   border-top: 0 !important;   /* some versions use a border instead */
 }
+
+.grid.cards.onecol {
+  grid-template-columns: 1fr !important;
+}
