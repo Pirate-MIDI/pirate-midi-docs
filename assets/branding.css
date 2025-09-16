@@ -54,4 +54,17 @@
 /* Optional: slightly increase padding so it stays centered */
 .md-header__button.md-logo {
   padding: 0.25rem 0.5rem;
+
+  
+}
+
+/* Kill the divider/shadow between header rows */
+.md-header,
+.md-header__inner,
+.md-tabs {
+  box-shadow: none !important;
+}
+
+.md-tabs {
+  border-top: 0 !important;   /* some versions use a border instead */
 }
