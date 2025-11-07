@@ -62,6 +62,7 @@ nav:
   - Home: index.md
   - Manuals:
       - Overview: manuals/index.md
+      - Scribble: manuals/scribble/index.md
       - Bridge6: manuals/bridge6/index.md
       - Bridge4: manuals/bridge4/index.md
       - Aero: manuals/aero/index.md
