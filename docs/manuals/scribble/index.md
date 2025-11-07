@@ -7,8 +7,11 @@ _A compact, configurable LCD display for showing custom preset names and other t
 ---
 
 ## What Scribble Is
-**Scribble** is a standalone, USB-powered display module.  
-It shows **text labels**, **preset numbers**, **MIDI clock data**, and **connection status** received over MIDI or inherent in the device itself. Onboard buttons can be used to send preset change commands, or any other set of custom MIDI messages you wish to send. 
+**Scribble** is a standalone, USB-powered display module. 
+
+It shows **text labels**, **preset numbers**, **MIDI clock data**, and **connection status** received over MIDI or inherent in the device itself. 
+
+Onboard buttons can be used to send preset change commands, or any other set of custom MIDI messages you wish to send. 
 
 MIDI clock can be received and passed on thru the Scribble, or Scribble can generate its own MIDI clock to send to your MIDI devices. 
 
