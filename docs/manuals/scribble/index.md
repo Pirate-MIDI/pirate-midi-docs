@@ -98,7 +98,7 @@ Each preset contains **these elements**:
 | **Text Colour** | Configured Globally or Per Preset |
 | **Status Bar Colour** | Light or Dark Mode Selected Globally |
 
-![Scribble Editor Main Page Elements](../assets/ScribbleImages/scribble-editor-main.png)
+![Scribble Editor Main Page Elements](../../assets/ScribbleImages/scribble-editor-main.png)
 
 ### MIDI Mapping
 Under **Mappings**, define what Scribble listens to:
