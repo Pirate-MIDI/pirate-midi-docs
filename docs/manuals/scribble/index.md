@@ -4,6 +4,8 @@ _A compact, configurable LCD display for showing custom preset names and other t
 !!! tip
     This quickstart is for early reviewers and sample units. A full, detailed documentation site will launch soon.
 
+![Scribble on a Chase Bliss Audio Lossy](../../assets/ScribbleImages/scribble-on-lossy.jpeg)
+
 ---
 
 ## What Scribble Is
@@ -116,7 +118,7 @@ External CCs can scroll or select presets. They can also be used to trigger spec
 ![Scribble Editor Global MIDI Settings](../../assets/ScribbleImages/scribble-editor-midi-settings.png)
 
 ### Global Device Settings
-
+Under "Global Settings > Device Settings
 ---
 
 ## Connecting Scribble to Your Rig
