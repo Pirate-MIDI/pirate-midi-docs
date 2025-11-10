@@ -1,7 +1,7 @@
 # Scribble Quickstart Guide
 _A compact, configurable LCD display for showing custom preset names and other text, sending custom MIDI messages, and scrolling presets in your MIDI rig._
 
-!!! tip
+!!! info
     This quickstart is for early reviewers and sample units. A full, detailed documentation site will launch soon.
 
 ![Scribble on a Chase Bliss Audio Lossy](../../assets/ScribbleImages/scribble-on-lossy.jpeg){ height="300px" }
@@ -35,7 +35,7 @@ All configuration happens in the [**Pirate MIDI Web Editor**](https://edit.pirat
 ## What’s Included
 - Scribble unit  
 - Protective screen overlay
-- DC adapter cable for regular 2.1mm centre negative power supplies
+- 3.5*1.1mm to 5.5*2.1mm DC centre negative right angle adapter cable
 
 ---
 
