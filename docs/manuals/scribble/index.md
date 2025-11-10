@@ -30,7 +30,7 @@ It shows **text labels**, **preset numbers**, **MIDI clock data**, and **connect
 - Preset switching via CC or PC 
 - USB-powered or 9V DC powered
 - Web-based configuration *(Chromium browser required)*
-- Firmware updates via browser at **update.piratemidi.com**
+- Firmware updates via browser at [**update.piratemidi.com**](https://update.piratemidi.com)
 
 ---
 
@@ -79,37 +79,6 @@ The Scribble updates instantly — no reboot needed.
 
 ---
 
-## Using the Web Editor (In-Depth)
-
-### Import Screen Overview
-- **Import from Device** — connect your device by USB and import all its configuration
-- **Import from File** — use a Pirate MIDI .json config file to load a configuration (backups, alternate configs etc.)  
-- **Create from Template** — use pre-made configs including blank, factory default, and brand or device starting templates from Pirate MIDI 
-
-![Web Editor Import Page](../../assets/ScribbleImages/editor-import-page.png)
-
----
-
-### Main Screen Overview
-
-Each preset on the device and the editor primarily contains **these elements**:
-
-| Element | Purpose |
-|--------|---------|
-| **Primary Text Label** | 12-Character Text Field |
-| **Secondary Text Label** | 16-Character Text Field |
-| **Preset Number** | Shows Scribble's Current Preset |
-| **MIDI Clock** | Shows Incoming or Generated MIDI Clock in BPM, ms, or with Flasher |
-| **Status Indicators** | Shows Incoming MIDI and BLE Status |
-| **Background Colour** | Configured Globally or Per Preset |
-| **Text Colour** | Configured Globally or Per Preset |
-| **Status Bar Colour** | Light or Dark Mode Selected Globally |
-
-You can see these elements all displayed on the editor screenshot below
-
-![Scribble Editor Main Page Elements](../../assets/ScribbleImages/scribble-editor-main.png)
-
-On top of these obvious parameters, there are also MIDI messages, MIDI clock, and other settings that can change how you use your Scribble.
 
 ### Global MIDI Settings
 Under **Global Settings > MIDI Settings**, define how your Scribble behaves as a MIDI device:
