@@ -1,0 +1,107 @@
+site_name: Pirate MIDI Documentation
+site_description: Official documentation for Pirate MIDI products and tools
+site_url: https://docs.piratemidi.com
+repo_url: https://github.com/Pirate-MIDI/pirate-midi-docs
+edit_uri: edit/main/docs/
+repo_name: Pirate MIDI Docs (GitHub)
+
+theme:
+  language: en
+  favicon: assets/favicon.png
+  logo: assets/logo-white.png
+  name: material
+  features:
+    - content.action.edit
+    - header.autohide
+    - navigation.tabs
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.path
+    - navigation.footer
+    - content.code.copy
+    - content.tooltips
+    - search.suggest
+    - search.highlight
+    - search.share
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: cyan
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: Google Sans Code
+
+plugins:
+  - search
+  - social:
+      cards_layout_options:
+        background_color: "#5b8dca"   # your brand blue
+        color: "#ffffff"              # text on the card
+        font_family: "Inter"
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  - pdf-export:
+      verbose: true
+      media_type: print
+
+nav:
+  - Home: index.md
+  - Manuals:
+      - Overview: manuals/index.md
+      - Scribble: manuals/scribble/index.md
+      - Bridge6: manuals/bridge6/index.md
+      - Bridge4: manuals/bridge4/index.md
+      - Aero: manuals/aero/index.md
+      - FlexiHub: manuals/flexihub/index.md
+      - Polar: manuals/polar/index.md
+      - CLiCK v2: manuals/click-v2/index.md
+      - Exp-Doubler: manuals/exp-doubler/index.md
+      - CLiCK v1: manuals/click-v1/index.md
+      - µLOOP v1: manuals/µloop/index.md
+      - Thru Gizmo: manuals/thru-gizmo/index.md
+  - Device API:
+      - Getting Started: device-api/index.md
+  - Support: support/index.md
+
+extra_css:
+  - assets/branding.css
+  - assets/print.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/x722K7ksA6
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/c/piratemidi
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/groups/pirate.midi.users
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/piratemidi
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - def_list
+  - abbr
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
