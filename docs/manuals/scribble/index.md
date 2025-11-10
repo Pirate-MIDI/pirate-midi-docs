@@ -13,11 +13,11 @@ _A compact, configurable LCD display for showing custom preset names and other t
 
 It shows **text labels**, **preset numbers**, **MIDI clock data**, and **connection status** received over MIDI or inherent in the device itself. 
 
-Onboard buttons can be used to send preset change commands, or any other set of custom MIDI messages you wish to send. 
+- Onboard buttons can be used to send preset change commands, or any other set of custom MIDI messages you wish to send. 
 
-MIDI clock can be received and passed on thru the Scribble, or Scribble can generate its own MIDI clock to send to your MIDI devices. 
+- MIDI clock can be received and passed on thru the Scribble, or Scribble can generate its own MIDI clock to send to your MIDI devices. 
 
-All configuration happens in the [**Pirate MIDI Web Editor**](https://edit.piratemidi.com) — nothing is configured directly on the hardware.
+- All configuration happens in the [**Pirate MIDI Web Editor**](https://edit.piratemidi.com) — nothing is configured directly on the hardware.
 
 !!! example "PRE-LAUNCH USERS"
     During beta testing, please use the [**development web editor**](https://pm-edit-dev.web.app).
@@ -37,7 +37,7 @@ All configuration happens in the [**Pirate MIDI Web Editor**](https://edit.pirat
 ## What’s In The Box
 - Scribble unit  
 - Protective screen overlay
-- 3.5*1.1mm to 5.5*2.1mm DC centre negative right angle adapter cable
+- 3.5x1.1mm to 5.5x2.1mm DC centre negative right angle adapter cable
 
 ---
 
@@ -49,10 +49,10 @@ On first power-up, a welcome process will start and prompt for any new firmware 
 
 ### 2. Open the Web Editor
 Go to:  
-**https://edit.piratemidi.com**
+[**https://edit.piratemidi.com**](https://edit.piratemidi.com)
 
 !!! warning "Browser Support"
-    Use Chrome or another Chromium browser. Non-Chromium browsers do not support webMIDI and will not recognise your device.
+    Use Chrome or another Chromium browser. Non-Chromium browsers do not support webMIDI or webSerial and will not recognise your device.
 
 Select **Import from Device**, then choose the device with  
 `SCRIBBLE` in the name, and click **connect**
@@ -64,6 +64,7 @@ On the main screen, you can start editing your presets by clicking on the text e
 To change what function the buttons perform, click on one of the buttons' representations on the screen.
 
 On the main screen you can:
+
 - View and edit text labels  
 - View global or per-preset colour settings visually   
 - Scroll through presets
@@ -84,6 +85,8 @@ The Scribble updates instantly — no reboot needed.
 - **Import from Device** — connect your device by USB and import all its configuration
 - **Import from File** — use a Pirate MIDI .json config file to load a configuration (backups, alternate configs etc.)  
 - **Create from Template** — use pre-made configs including blank, factory default, and brand or device starting templates from Pirate MIDI 
+
+![Web Editor Import Page](../../assets/ScribbleImages/editor-import-page.png)
 
 ---
 
