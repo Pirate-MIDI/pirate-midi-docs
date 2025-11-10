@@ -4,12 +4,12 @@ _A compact, configurable LCD display for showing custom preset names and other t
 !!! tip
     This quickstart is for early reviewers and sample units. A full, detailed documentation site will launch soon.
 
-![Scribble on a Chase Bliss Audio Lossy](../../assets/ScribbleImages/scribble-on-lossy.jpeg)
+![Scribble on a Chase Bliss Audio Lossy](../../assets/ScribbleImages/scribble-on-lossy.jpeg){ height="300px" }
 
 ---
 
-## What Scribble Is
-**Scribble** is a standalone, USB-powered display module. 
+## What is Scribble?
+**Scribble** is a standalone, USB-powered display module which can send and be controlled by MIDI messages. 
 
 It shows **text labels**, **preset numbers**, **MIDI clock data**, and **connection status** received over MIDI or inherent in the device itself. 
 
