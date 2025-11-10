@@ -149,43 +149,35 @@ Add the names of your devices to their respective MIDI channel section, and the 
 
 ![Scribble App Settings Page](../../assets/ScribbleImages/scribble-editor-app-settings.png)
 
-
-#### Global MIDI Settings
-Under **Global Settings > MIDI Settings**, define how your Scribble behaves as a MIDI device:
-- MIDI Channel number  
-- Which MIDI outputs (TRS, USB, BLE) are used for different messages
-- MIDI Clock settings
-- Customise external MIDI CC controls if needed 
-
-External CCs can scroll or select presets. They can also be used to trigger specific stacks of custom MIDI messages at any time. 
-
-![Scribble Editor Global MIDI Settings](../../assets/ScribbleImages/scribble-editor-midi-settings.png)
-
-#### Global Device Settings
-Under "Global Settings > Device Settings
 ---
 
-## Connecting Scribble to Your Rig
+## Connecting Scribble to Your Gear
 
 ### USB MIDI
-Connect directly to:
-- Bridge6 / Bridge4  
-- ToneX One  
-- HX Stomp / Helix  
-- Computers / DAWs  
-- USB host devices  
+Scribble is a USB device (not a host) and when using USB for MIDI communication you can connect directly to:
 
-### TRS MIDI (Type A)
+- Computers
+- Tablets
+- Phones
+- Other USB Host Devices
+- MIDI Controllers With Host Ports
+- Kemper Profiler Player's USB Host Port 
+
+### TRS MIDI (Type A/B Switchable)
 Compatible with:
-- Strymon  
-- Chase Bliss  
-- Boss  
-- Meris  
-- Jackson Audio  
+
+- Strymon (Type A) 
+- Chase Bliss Audio (Type B)
+- Boss (Type A)
+- Meris (Type A)
+- Jackson Audio (Type A)
 - And standard TRS MIDI pedals
 
-!!! warning
-    Scribble is not a MIDI merger. Avoid feeding two controllers into Scribble at the same time unless deliberately testing.
+!!! failure "Older Chase Bliss Audio Pedals"
+    Some original Chase Bliss Audio pedals with MIDI require the Tip of the TRS cable to be completely disconnected, and the Scribble cannot do that. You will need to phyiscally modify any TRS cable you're using to disconnect the Tip if you want to use them. You will also need to set the MIDI out to Type B, of course. 
+
+### BLE MIDI
+Bluetooth Low Energy (BLE) MIDI can be used with WIDI by CME, M-Vave Chocolate, and other BLE MIDI devices to wirelessly send MIDI to your Scribble to control it. Tablets, phones, and computers can also connect and send MIDI. Apps like TouchOSC, DAWs, OnSong, and other sheet music apps can often send MIDI over BLE. 
 
 ---
 
@@ -195,17 +187,12 @@ Compatible with:
 -   **Bridge6 + Scribble**  
     Show preset name, scene name, and active toggle states.
 
--   **ToneX One**  
-    Display current preset, gain A/B state, and input level meter.
-
 -   **CLiCK v2**  
-    Visualise relay states or amp channel status.
+    Visualise relay states or amp channel status when the CLiCK v2 is underneath your pedalboard.
 
 -   **Simple USB Setup**  
     Connect straight to a laptop to display DAW parameters.
 </div>
-
-_This section will expand with diagrams and screenshots later._
 
 ---
 
@@ -214,10 +201,11 @@ _This section will expand with diagrams and screenshots later._
 Scribble uses the same updater as BridgeOS devices.
 
 ### How to Update
-1. Visit **https://update.piratemidi.com**  
-2. Connect Scribble via USB-C  
-3. Click **Connect Device**  
-4. Select **Scribble** in the list  
-5. Press **Update Firmware**  
-6. Wait for the progress bar to finish  
-7. The device auto-reboots
+1. Backup your config to your computer using the [**Web Editor**](https://edit.piratemidi.com) 
+2. Visit [**https://update.piratemidi.com**](https://update.piratemidi.com)  
+3. Connect Scribble via USB-C  
+4. Click **Connect Device**  
+5. Select **Scribble** in the list  
+6. Press **Update Firmware**  
+7. Wait for the progress bar to finish  
+8. The device auto-reboots
