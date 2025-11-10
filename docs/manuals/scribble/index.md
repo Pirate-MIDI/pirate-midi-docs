@@ -78,9 +78,9 @@ Click **Send to Device**. Select the Scribble from the pop-up and press `Connect
 The Scribble updates instantly — no reboot needed.
 
 
-# Using the Web Editor
+## Using the Web Editor
 
-## Import Screen Overview
+### Import Screen Overview
 - **Import from Device** — connect your device by USB and import all its configuration
 - **Import from File** — use a Pirate MIDI .json config file to load a configuration (backups, alternate configs etc.)  
 - **Create from Template** — use pre-made configs including blank, factory default, and brand or device starting templates from Pirate MIDI 
@@ -89,7 +89,7 @@ The Scribble updates instantly — no reboot needed.
 
 ---
 
-## Main Screen Overview
+### Main Screen Overview
 Each preset on the device and the editor primarily contains **these elements**:
 
 | Element | Purpose |
@@ -119,7 +119,7 @@ Backing up your configuration is an important part of working with technology. Y
 
 A `.JSON` file will be saved to your computer. These files can be edited without the web editor as well (if you have the inclination!).
 
-## Preset Settings Page
+### Preset Settings Page
 Here you will find a set of submenus which let you set colours, modes, and MIDI messages that will apply **only to the current preset**
 
 | Submenu | What's Inside |
@@ -130,7 +130,7 @@ Here you will find a set of submenus which let you set colours, modes, and MIDI 
 
 ![Scribble Preset Settings Page](../../assets/ScribbleImages/scribble-editor-preset-settings.png)
 
-## Global Settings Page
+### Global Settings Page
 Here you will find a set of submenus which let you configure MIDI channel, MIDI outputs, MIDI Thru routing, custom global messages, and more. MIDI Messages added to a *global* message stack will not be restricted to a single preset, but available at all times in all presets.
 
 | Submenu | What's Inside |
@@ -143,14 +143,14 @@ Here you will find a set of submenus which let you configure MIDI channel, MIDI 
 
 ![Scribble Global Settings Page](../../assets/ScribbleImages/scribble-editor-global-settings.png)
 
-## App Settings Page
+### App Settings Page
 Here you will find web-editor specific tools. Currently this includes MIDI Channel Aliases. 
 Add the names of your devices to their respective MIDI channel section, and the name of that device will show across the entire web editor anywhere you need to choose a MIDI channel. Then, instead of a list of MIDI channel numbers, you'll see a list of your devices. This makes it a lot easier to quickly choose which device you're sending a MIDI messages to! 
 
 ![Scribble App Settings Page](../../assets/ScribbleImages/scribble-editor-app-settings.png)
 
 
-### Global MIDI Settings
+#### Global MIDI Settings
 Under **Global Settings > MIDI Settings**, define how your Scribble behaves as a MIDI device:
 - MIDI Channel number  
 - Which MIDI outputs (TRS, USB, BLE) are used for different messages
@@ -161,7 +161,7 @@ External CCs can scroll or select presets. They can also be used to trigger spec
 
 ![Scribble Editor Global MIDI Settings](../../assets/ScribbleImages/scribble-editor-midi-settings.png)
 
-### Global Device Settings
+#### Global Device Settings
 Under "Global Settings > Device Settings
 ---
 
