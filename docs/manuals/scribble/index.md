@@ -53,7 +53,7 @@ Go to:
 Select **Import from Device → Connect to Scribble**, then choose the device named:  
 `PIRATE_SCRIBBLE_XXXX`
 
-> _Screenshot placeholder: Device selection window_
+![Scribble Web Editor Import Page](../../assets/ScribbleImages/editor-import-page.png)
 
 ### 3. Edit a Preset
 On the main screen, you can start editing your presets by clicking on the text entries and simply replacing it with your own. 
@@ -66,7 +66,7 @@ On the main screen you can:
 - Copy and Paste whole presets for efficient workflows 
 - Use keyboard shortcuts `J` and `K` to change presets
 
-> _Screenshot placeholder: Layout editor with Scribble layout open_
+![Scribble Editor Main Page Elements](../../assets/ScribbleImages/scribble-editor-main.png)
 
 ### 4. Upload to Device
 Click **Send to Device**. Select the Scribble from the pop-up and press `Connect`
@@ -74,7 +74,7 @@ The Scribble updates instantly — no reboot needed.
 
 ---
 
-## Using the Web Editor
+## Using the Web Editor (In-Depth)
 
 ### Import Screen Overview
 - **Import from Device** — connect your device by USB and import all its configuration
@@ -85,7 +85,7 @@ The Scribble updates instantly — no reboot needed.
 
 ### Main Screen Overview
 
-Each preset contains **these elements**:
+Each preset on the device and the editor primarily contains **these elements**:
 
 | Element | Purpose |
 |--------|---------|
@@ -98,22 +98,24 @@ Each preset contains **these elements**:
 | **Text Colour** | Configured Globally or Per Preset |
 | **Status Bar Colour** | Light or Dark Mode Selected Globally |
 
+You can see these elements all displayed on the editor screenshot below
+
 ![Scribble Editor Main Page Elements](../../assets/ScribbleImages/scribble-editor-main.png)
 
-### MIDI Mapping
-Under **Mappings**, define what Scribble listens to:
-- CC (value or range)  
-- Program Changes  
-- Notes  
-- SysEx (advanced)  
+On top of these obvious parameters, there are also MIDI messages, MIDI clock, and other settings that can change how you use your Scribble.
 
-Mappings can:
-- Switch pages  
-- Update values  
-- Toggle visibility  
-- Trigger animation/transition states (future)
+### Global MIDI Settings
+Under **Global Settings > MIDI Settings**, define how your Scribble behaves as a MIDI device:
+- MIDI Channel number  
+- Which MIDI outputs (TRS, USB, BLE) are used for different messages
+- MIDI Clock settings
+- Customise external MIDI CC controls if needed 
 
-> _Screenshot placeholder: Mapping UI_
+External CCs can scroll or select presets. They can also be used to trigger specific stacks of custom MIDI messages at any time. 
+
+![Scribble Editor Global MIDI Settings](../../assets/ScribbleImages/scribble-editor-midi-settings.png)
+
+### Global Device Settings
 
 ---
 
