@@ -572,7 +572,7 @@
           <li class="md-nav__item">
   <a href="#1-power-the-scribble" class="md-nav__link">
     <span class="md-ellipsis">
-      1 — Power the Scribble
+      1. Power the Scribble
     </span>
   </a>
   
@@ -581,7 +581,7 @@
           <li class="md-nav__item">
   <a href="#2-open-the-web-editor" class="md-nav__link">
     <span class="md-ellipsis">
-      2 — Open the Web Editor
+      2. Open the Web Editor
     </span>
   </a>
   
@@ -590,7 +590,7 @@
           <li class="md-nav__item">
   <a href="#3-edit-a-preset" class="md-nav__link">
     <span class="md-ellipsis">
-      3 — Edit a Preset
+      3. Edit a Preset
     </span>
   </a>
   
@@ -599,7 +599,7 @@
           <li class="md-nav__item">
   <a href="#4-upload-to-device" class="md-nav__link">
     <span class="md-ellipsis">
-      4 — Upload to Device
+      4. Upload to Device
     </span>
   </a>
   
@@ -621,18 +621,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sidebar-overview" class="md-nav__link">
+  <a href="#import-screen-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Sidebar Overview
+      Import Screen Overview
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#page-editor-overview" class="md-nav__link">
+  <a href="#main-screen-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Page Editor Overview
+      Main Screen Overview
     </span>
   </a>
   
@@ -1142,10 +1142,10 @@
 </ul>
 <hr />
 <h2 id="quick-setup-60-second-version">Quick Setup (60-Second Version)<a class="headerlink" href="#quick-setup-60-second-version" title="Permanent link">&para;</a></h2>
-<h3 id="1-power-the-scribble">1 — Power the Scribble<a class="headerlink" href="#1-power-the-scribble" title="Permanent link">&para;</a></h3>
+<h3 id="1-power-the-scribble">1. Power the Scribble<a class="headerlink" href="#1-power-the-scribble" title="Permanent link">&para;</a></h3>
 <p>Connect to any 5V USB-C or 9V DC power source.<br />
 On first power-up, a welcome process will start and prompt for any new firmware updates. After first power-up, this screen will not show again.</p>
-<h3 id="2-open-the-web-editor">2 — Open the Web Editor<a class="headerlink" href="#2-open-the-web-editor" title="Permanent link">&para;</a></h3>
+<h3 id="2-open-the-web-editor">2. Open the Web Editor<a class="headerlink" href="#2-open-the-web-editor" title="Permanent link">&para;</a></h3>
 <p>Go to:<br />
 <strong>https://edit.piratemidi.com</strong></p>
 <div class="admonition tip">
@@ -1157,7 +1157,7 @@ On first power-up, a welcome process will start and prompt for any new firmware 
 <blockquote>
 <p><em>Screenshot placeholder: Device selection window</em></p>
 </blockquote>
-<h3 id="3-edit-a-preset">3 — Edit a Preset<a class="headerlink" href="#3-edit-a-preset" title="Permanent link">&para;</a></h3>
+<h3 id="3-edit-a-preset">3. Edit a Preset<a class="headerlink" href="#3-edit-a-preset" title="Permanent link">&para;</a></h3>
 <p>On the main screen, you can start editing your presets by clicking on the text entries and simply replacing it with your own. 
 To change what function the buttons perform, click on one of the buttons' representations on the screen.</p>
 <p>On the main screen you can:
@@ -1169,21 +1169,20 @@ To change what function the buttons perform, click on one of the buttons' repres
 <blockquote>
 <p><em>Screenshot placeholder: Layout editor with Scribble layout open</em></p>
 </blockquote>
-<h3 id="4-upload-to-device">4 — Upload to Device<a class="headerlink" href="#4-upload-to-device" title="Permanent link">&para;</a></h3>
+<h3 id="4-upload-to-device">4. Upload to Device<a class="headerlink" href="#4-upload-to-device" title="Permanent link">&para;</a></h3>
 <p>Click <strong>Send to Device</strong>. Select the Scribble from the pop-up and press <code>Connect</code>
 The Scribble updates instantly — no reboot needed.</p>
 <hr />
 <h2 id="using-the-web-editor">Using the Web Editor<a class="headerlink" href="#using-the-web-editor" title="Permanent link">&para;</a></h2>
-<h3 id="sidebar-overview">Sidebar Overview<a class="headerlink" href="#sidebar-overview" title="Permanent link">&para;</a></h3>
+<h3 id="import-screen-overview">Import Screen Overview<a class="headerlink" href="#import-screen-overview" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Devices</strong> — connect/disconnect hardware  </li>
-<li><strong>Layouts</strong> — create and edit display pages  </li>
-<li><strong>Messages</strong> — advanced MIDI message creation  </li>
-<li><strong>Pages</strong> — reorder, duplicate, toggle visibility  </li>
+<li><strong>Import from Device</strong> — connect your device by USB and import all its configuration</li>
+<li><strong>Import from File</strong> — use a Pirate MIDI .json config file to load a configuration (backups, alternate configs etc.)  </li>
+<li><strong>Create from Template</strong> — use pre-made configs including blank, factory default, and brand or device starting templates from Pirate MIDI </li>
 </ul>
 <hr />
-<h3 id="page-editor-overview">Page Editor Overview<a class="headerlink" href="#page-editor-overview" title="Permanent link">&para;</a></h3>
-<p>Each page contains <strong>elements</strong>:</p>
+<h3 id="main-screen-overview">Main Screen Overview<a class="headerlink" href="#main-screen-overview" title="Permanent link">&para;</a></h3>
+<p>Each preset contains <strong>these elements</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -1193,30 +1192,40 @@ The Scribble updates instantly — no reboot needed.</p>
 </thead>
 <tbody>
 <tr>
-<td><strong>Text Label</strong></td>
-<td>Static names like “GAIN”, “DRIVE”, “SCENE 2”</td>
+<td><strong>Primary Text Label</strong></td>
+<td>12-Character Text Field</td>
 </tr>
 <tr>
-<td><strong>Dynamic Value</strong></td>
-<td>Shows CC/PC/SysEx values in real-time</td>
+<td><strong>Secondary Text Label</strong></td>
+<td>16-Character Text Field</td>
 </tr>
 <tr>
-<td><strong>Bar / Meter</strong></td>
-<td>Ideal for expression pedals, LFOs, filters</td>
+<td><strong>Preset Number</strong></td>
+<td>Shows Scribble's Current Preset</td>
 </tr>
 <tr>
-<td><strong>Icon</strong></td>
-<td>Arrows, circles, play/pause indicators</td>
+<td><strong>MIDI Clock</strong></td>
+<td>Shows Incoming or Generated MIDI Clock in BPM, ms, or with Flasher</td>
 </tr>
 <tr>
-<td><strong>Conditional Visibility</strong></td>
-<td>Show/hide elements based on MIDI state</td>
+<td><strong>Status Indicators</strong></td>
+<td>Shows Incoming MIDI and BLE Status</td>
+</tr>
+<tr>
+<td><strong>Background Colour</strong></td>
+<td>Configured Globally or Per Preset</td>
+</tr>
+<tr>
+<td><strong>Text Colour</strong></td>
+<td>Configured Globally or Per Preset</td>
+</tr>
+<tr>
+<td><strong>Status Bar Colour</strong></td>
+<td>Light or Dark Mode Selected Globally</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p><em>Screenshot placeholder: Elements panel</em></p>
-</blockquote>
+<p><img alt="Scribble Editor Main Page Elements" src="../../assets/ScribbleImages/scribble-editor-main.png" /></p>
 <h3 id="midi-mapping">MIDI Mapping<a class="headerlink" href="#midi-mapping" title="Permanent link">&para;</a></h3>
 <p>Under <strong>Mappings</strong>, define what Scribble listens to:
 - CC (value or range)<br />
@@ -1367,7 +1376,7 @@ The Scribble updates instantly — no reboot needed.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="November 7, 2025 10:49:48 UTC"><span class="timeago" datetime="2025-11-07T10:49:48+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="November 7, 2025 10:49:48 UTC">2025-11-07</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="November 10, 2025 08:18:13 UTC"><span class="timeago" datetime="2025-11-10T08:18:13+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="November 10, 2025 08:18:13 UTC">2025-11-10</span>
   </span>
 
     
