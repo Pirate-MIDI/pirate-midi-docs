@@ -19,7 +19,6 @@ theme:
     - navigation.tracking
     - navigation.path
     - navigation.footer
-    - toc.integrate
     - content.code.copy
     - content.tooltips
     - search.suggest
