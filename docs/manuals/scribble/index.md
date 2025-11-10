@@ -4,7 +4,7 @@ _A compact, configurable LCD display for showing custom preset names and other t
 !!! info
     This quickstart is for early reviewers and sample units. A full, detailed documentation site will launch soon.
 
-![Scribble on a Chase Bliss Audio Lossy](../../assets/ScribbleImages/scribble-on-lossy.jpeg){.imageheight-300}
+![Scribble on a Chase Bliss Audio Lossy](../../assets/ScribbleImages/scribble-header-image.jpg){.imageheight-300}
 
 ---
 
@@ -34,7 +34,7 @@ All configuration happens in the [**Pirate MIDI Web Editor**](https://edit.pirat
 
 ---
 
-## What’s Included
+## What’s In The Box
 - Scribble unit  
 - Protective screen overlay
 - 3.5*1.1mm to 5.5*2.1mm DC centre negative right angle adapter cable
@@ -51,7 +51,7 @@ On first power-up, a welcome process will start and prompt for any new firmware 
 Go to:  
 **https://edit.piratemidi.com**
 
-!!! tip "Browser Support"
+!!! warning "Browser Support"
     Use Chrome or another Chromium browser. Non-Chromium browsers do not support webMIDI and will not recognise your device.
 
 Select **Import from Device**, then choose the device with  
