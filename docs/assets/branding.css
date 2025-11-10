@@ -72,3 +72,7 @@
 .grid.cards.onecol {
   grid-template-columns: 1fr !important;
 }
+
+.imageheight-300 {
+  max-height: 300px;
+}

@@ -4,7 +4,7 @@ _A compact, configurable LCD display for showing custom preset names and other t
 !!! info
     This quickstart is for early reviewers and sample units. A full, detailed documentation site will launch soon.
 
-![Scribble on a Chase Bliss Audio Lossy](../../assets/ScribbleImages/scribble-on-lossy.jpeg){ max-height="200px" }
+![Scribble on a Chase Bliss Audio Lossy](../../assets/ScribbleImages/scribble-on-lossy.jpeg){.imageheight-300}
 
 ---
 
