@@ -39,11 +39,11 @@ All configuration happens in the [**Pirate MIDI Web Editor**](https://edit.pirat
 
 ## Quick Setup (60-Second Version)
 
-### 1 — Power the Scribble
+### 1. Power the Scribble
 Connect to any 5V USB-C or 9V DC power source.  
 On first power-up, a welcome process will start and prompt for any new firmware updates. After first power-up, this screen will not show again.
 
-### 2 — Open the Web Editor
+### 2. Open the Web Editor
 Go to:  
 **https://edit.piratemidi.com**
 
@@ -55,7 +55,7 @@ Select **Import from Device → Connect to Scribble**, then choose the device na
 
 > _Screenshot placeholder: Device selection window_
 
-### 3 — Edit a Preset
+### 3. Edit a Preset
 On the main screen, you can start editing your presets by clicking on the text entries and simply replacing it with your own. 
 To change what function the buttons perform, click on one of the buttons' representations on the screen.
 
@@ -68,7 +68,7 @@ On the main screen you can:
 
 > _Screenshot placeholder: Layout editor with Scribble layout open_
 
-### 4 — Upload to Device
+### 4. Upload to Device
 Click **Send to Device**. Select the Scribble from the pop-up and press `Connect`
 The Scribble updates instantly — no reboot needed.
 
@@ -76,27 +76,29 @@ The Scribble updates instantly — no reboot needed.
 
 ## Using the Web Editor
 
-### Sidebar Overview
-- **Devices** — connect/disconnect hardware  
-- **Layouts** — create and edit display pages  
-- **Messages** — advanced MIDI message creation  
-- **Pages** — reorder, duplicate, toggle visibility  
+### Import Screen Overview
+- **Import from Device** — connect your device by USB and import all its configuration
+- **Import from File** — use a Pirate MIDI .json config file to load a configuration (backups, alternate configs etc.)  
+- **Create from Template** — use pre-made configs including blank, factory default, and brand or device starting templates from Pirate MIDI 
 
 ---
 
-### Page Editor Overview
+### Main Screen Overview
 
-Each page contains **elements**:
+Each preset contains **these elements**:
 
 | Element | Purpose |
 |--------|---------|
-| **Text Label** | Static names like “GAIN”, “DRIVE”, “SCENE 2” |
-| **Dynamic Value** | Shows CC/PC/SysEx values in real-time |
-| **Bar / Meter** | Ideal for expression pedals, LFOs, filters |
-| **Icon** | Arrows, circles, play/pause indicators |
-| **Conditional Visibility** | Show/hide elements based on MIDI state |
+| **Primary Text Label** | 12-Character Text Field |
+| **Secondary Text Label** | 16-Character Text Field |
+| **Preset Number** | Shows Scribble's Current Preset |
+| **MIDI Clock** | Shows Incoming or Generated MIDI Clock in BPM, ms, or with Flasher |
+| **Status Indicators** | Shows Incoming MIDI and BLE Status |
+| **Background Colour** | Configured Globally or Per Preset |
+| **Text Colour** | Configured Globally or Per Preset |
+| **Status Bar Colour** | Light or Dark Mode Selected Globally |
 
-> _Screenshot placeholder: Elements panel_
+![Scribble Editor Main Page Elements](../assets/ScribbleImages/scribble-editor-main.png)
 
 ### MIDI Mapping
 Under **Mappings**, define what Scribble listens to:
