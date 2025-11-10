@@ -4,7 +4,7 @@ _A compact, configurable LCD display for showing custom preset names and other t
 !!! info
     This quickstart is for early reviewers and sample units. A full, detailed documentation site will launch soon.
 
-![Scribble on a Chase Bliss Audio Lossy](../../assets/ScribbleImages/scribble-on-lossy.jpeg){ height="300px" }
+![Scribble on a Chase Bliss Audio Lossy](../../assets/ScribbleImages/scribble-on-lossy.jpeg){ max-height="200px" }
 
 ---
 
@@ -18,7 +18,9 @@ Onboard buttons can be used to send preset change commands, or any other set of 
 MIDI clock can be received and passed on thru the Scribble, or Scribble can generate its own MIDI clock to send to your MIDI devices. 
 
 All configuration happens in the [**Pirate MIDI Web Editor**](https://edit.piratemidi.com) — nothing is configured directly on the hardware.
-**During beta testing, please use the [**development web editor**](https://pm-edit-dev.web.app).**
+
+!!! example "PRE-LAUNCH USERS"
+    During beta testing, please use the [**development web editor**](https://pm-edit-dev.web.app).
 
 ### Key Features
 - USB MIDI + 3.5mm TRS MIDI Type A/B *(Switchable in editor)*
@@ -52,8 +54,8 @@ Go to:
 !!! tip "Browser Support"
     Use Chrome or another Chromium browser. Non-Chromium browsers do not support webMIDI and will not recognise your device.
 
-Select **Import from Device → Connect to Scribble**, then choose the device named:  
-`PIRATE_SCRIBBLE_XXXX`
+Select **Import from Device**, then choose the device with  
+`SCRIBBLE` in the name, and click **connect**
 
 ![Scribble Web Editor Import Page](../../assets/ScribbleImages/editor-import-page.png)
 
@@ -191,15 +193,6 @@ Scribble uses the same updater as BridgeOS devices.
 | Can’t connect in browser | Browser blocks WebUSB | Use Chrome or Edge |
 | Values not updating | Wrong MIDI channel | Match pedal/controller channel |
 | Page won’t change | Incorrect mapping | Check CC/PC mapping rules |
-
----
-
-## Technical Notes (Short Form)
-- **Power:** 5V USB-C  
-- **Display:** 128×64 or 160×128 OLED  
-- **MIDI:** USB MIDI class compliant + TRS Type A  
-- **Config:** WebUSB (editor.piratemidi.com)  
-- **Firmware:** Browser-based DFU  
 
 ---
 
