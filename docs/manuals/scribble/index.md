@@ -77,8 +77,6 @@ On the main screen you can:
 Click **Send to Device**. Select the Scribble from the pop-up and press `Connect`
 The Scribble updates instantly — no reboot needed.
 
----
-
 
 ### Global MIDI Settings
 Under **Global Settings > MIDI Settings**, define how your Scribble behaves as a MIDI device:
@@ -151,29 +149,3 @@ Scribble uses the same updater as BridgeOS devices.
 5. Press **Update Firmware**  
 6. Wait for the progress bar to finish  
 7. The device auto-reboots
-
-!!! tip
-    If the updater cannot detect your device, unplug/replug the USB-C cable or try another USB port.
-
----
-
-## Troubleshooting Basics
-
-| Issue | Likely Cause | Fix |
-|-------|--------------|------|
-| Screen is blank | Power or cable issue | Try another USB-C cable or port |
-| Can’t connect in browser | Browser blocks WebUSB | Use Chrome or Edge |
-| Values not updating | Wrong MIDI channel | Match pedal/controller channel |
-| Page won’t change | Incorrect mapping | Check CC/PC mapping rules |
-
----
-
-## Coming Soon
-- Full user manual  
-- Example preset library  
-- Advanced conditional logic guides  
-- Integration with BridgeOS devices  
-- JSON import/export  
-- Icon packs and layout templates  
-
----
