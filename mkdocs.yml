@@ -62,8 +62,6 @@ nav:
   - Manuals:
       - Overview: manuals/index.md
       - Scribble: manuals/scribble/index.md
-        - Quickstart: manuals/scribble/index.md
-        - Web Editor: manuals/scribble/web-editor-overview.md
       - Bridge6: manuals/bridge6/index.md
       - Bridge4: manuals/bridge4/index.md
       - Aero: manuals/aero/index.md
