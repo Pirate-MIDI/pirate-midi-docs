@@ -184,20 +184,24 @@ Bluetooth Low Energy (BLE) MIDI can be used with WIDI by CME, M-Vave Chocolate, 
 ## Example Use Cases
 
 <div class="grid cards" markdown>
--   **Bridge6 + Scribble**  
-    Show preset name, scene name, and active toggle states.
+-   **MIDI Foot Controller + Scribble**  
+    Send PC messages from your controller to your Scribble, and have Scribble send the MIDI thru to your pedals - now both are in sync for each preset change - Audio and text.
 
 -   **CLiCK v2**  
     Visualise relay states or amp channel status when the CLiCK v2 is underneath your pedalboard.
 
 -   **Simple USB Setup**  
-    Connect straight to a laptop to display DAW parameters.
+    Connect straight to a laptop to display section names as your Ableton Live set progresses.
 </div>
 
 ---
 
-## Firmware Updates
+## Factory Reset
+If you need to do a factory reset, press and hold switch 1 (left switch) on the Scribble as you plug power into the device. Continue holding for about 8 seconds until you see the reset process start. 
 
+---
+
+## Firmware Updates
 Scribble uses the same updater as BridgeOS devices.
 
 ### How to Update
@@ -209,3 +213,6 @@ Scribble uses the same updater as BridgeOS devices.
 6. Press **Update Firmware**  
 7. Wait for the progress bar to finish  
 8. The device auto-reboots
+
+### Manual Bootloader (DFU) Mode
+To enter DFU Mode, press and hold switch 2 (right switch) as you plug USB into the device (no 9V DC). Your Scribble should now show as a different USB name on your computer. This is only required in certain manual update procedures - not the normal update process using update.piratemidi.com
