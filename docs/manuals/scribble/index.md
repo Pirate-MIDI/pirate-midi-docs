@@ -215,4 +215,7 @@ Scribble uses the same updater as BridgeOS devices.
 8. The device auto-reboots
 
 ### Manual Bootloader (DFU) Mode
-To enter DFU Mode, press and hold switch 2 (right switch) as you plug USB into the device (no 9V DC). Your Scribble should now show as a different USB name on your computer. This is only required in certain manual update procedures - not the normal update process using update.piratemidi.com
+To enter DFU Mode, press and hold switch 2 (right switch) as you plug USB into the device (no 9V DC). Your Scribble should now show as a different USB name on your computer. 
+
+!!! note
+This is only required in certain manual update procedures - not the normal update process using update.piratemidi.com
