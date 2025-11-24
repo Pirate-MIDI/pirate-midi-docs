@@ -700,29 +700,35 @@ Smart Messages allow you to control internal functions of the BRIDGE6 or perform
 Smart Message types include:
 
 === "Navigation"
+
 - **Bank Up**
 - **Bank Down**
 - **Bank Select**
 - **Last Bank**
 
 === "Expression"
+
 - **Increment Expression Message**
 - **Decrement Expression Message**
 - **Go to Expression Message**
 
 === "TRS / Relay"
+
 - **TRS Switch** (Off / Tip / Ring / Tip+Ring)
 - **Relay Interface** (Off / Tip / Ring / Tip+Ring)
 
 === "UI Control"
+
 - **Set UI Mode** (Simple or Extended)
 
 === "Switch States"
+
 - **Switch On**
 - **Switch Off**
 - **Switch Toggle**
 
 === "Sequential"
+
 - **Reset Sequential**
 - **Increment Sequential Step**
 - **Decrement Sequential Step**
@@ -731,6 +737,7 @@ Smart Message types include:
 - **Queue Sequential Step**
 
 === "Scrolling"
+
 - **Reset Scrolling**
 - **Increment Scrolling Value**
 - **Decrement Scrolling Value**
