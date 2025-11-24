@@ -59,7 +59,8 @@ plugins:
 
 nav:
   - Home: index.md
-  - Manuals:
+  - Manuals: 
+      - Overview: manuals/index.md
       - Scribble: manuals/scribble/index.md
   - Support: support/index.md
 
