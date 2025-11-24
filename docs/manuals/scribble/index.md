@@ -221,7 +221,7 @@ To enter DFU Mode, press and hold switch 2 (right switch) as you plug USB into t
     This is only required in certain manual update procedures - not the normal update process using update.piratemidi.com
 
 
-# Scribble User Manual
+## Scribble User Manual
 
 ## 1. Introduction
 ### What is Scribble?
@@ -282,7 +282,7 @@ Scribble is a mini LCD screen
 
 ---
 
-# 5. Global Settings
+## 5. Global Settings
 
 ## 5.1 Global Settings Summary
 High-level explanation of Global vs Preset controls and when to use each.
@@ -318,7 +318,7 @@ High-level explanation of Global vs Preset controls and when to use each.
 
 ---
 
-# 6. Preset Settings
+## 6. Preset Settings
 
 ## 6.1 Preset Settings Overview
 ### What Presets Are  
@@ -357,7 +357,7 @@ High-level explanation of Global vs Preset controls and when to use each.
 
 ---
 
-# 7. MIDI Clock System
+## 7. MIDI Clock System
 
 ## 7.1 Overview of MIDI Clock
 ### Receive  
@@ -377,7 +377,7 @@ High-level explanation of Global vs Preset controls and when to use each.
 
 ---
 
-# 8. Wireless & Bluetooth
+## 8. Wireless & Bluetooth
 
 ## 8.1 BLE Control
 ### BLE MIDI Basics  
@@ -391,7 +391,7 @@ High-level explanation of Global vs Preset controls and when to use each.
 
 ---
 
-# 9. Advanced Features
+## 9. Advanced Features
 
 ## 9.1 Channel Aliases
 ### Naming Devices  
@@ -410,7 +410,7 @@ High-level explanation of Global vs Preset controls and when to use each.
 
 ---
 
-# 10. Pedal Examples
+## 10. Pedal Examples
 
 ## 10.1 Strymon Example
 ### Layout  
@@ -427,7 +427,7 @@ High-level explanation of Global vs Preset controls and when to use each.
 
 ---
 
-# 11. Troubleshooting & FAQ
+## 11. Troubleshooting & FAQ
 ### Connection Issues  
 ### Display Not Updating  
 ### Web Editor Not Detecting the Device  
@@ -438,14 +438,14 @@ High-level explanation of Global vs Preset controls and when to use each.
 
 ---
 
-# 12. Firmware Updates
+## 12. Firmware Updates
 ### Using the Pirate MIDI Web Updater  
 ### Preserved Data  
 ### Factory Reset  
 
 ---
 
-# 13. Technical Specifications
+## 13. Technical Specifications
 ### Power Requirements  
 ### MIDI Implementation Summary  
 ### Display Specs  
@@ -454,7 +454,7 @@ High-level explanation of Global vs Preset controls and when to use each.
 
 ---
 
-# 14. Support
+## 14. Support
 ### Contact Information  
 ### Warranty  
 ### Replacement Parts  

@@ -53,9 +53,13 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       type: timeago
-  - pdf-export:
-#      verbose: true
-#      media_type: print
+  - to-pdf:
+      copyright: Copyright © PIRATE MIDI 2026
+      cover: false
+      toc_title: "Table of Contents"
+      toc_leve: 2
+      output_path: PM-Docs.pdf
+      download_link: header
 
 nav:
   - Home: index.md
