@@ -16,7 +16,7 @@ Welcome to the Pirate MIDI Docs site. Here you can find documentation for all ou
     Read through the quickstart guides and detailed documentation
     for any Pirate MIDI device - new or old
 
-    [:octicons-arrow-right-24: Go To Manuals](/manuals/index.md)
+    [:octicons-arrow-right-24: Go To Manuals](../manuals/index.md)
 
 -   :octicons-code-square-24: __Device API__
 
@@ -24,7 +24,7 @@ Welcome to the Pirate MIDI Docs site. Here you can find documentation for all ou
 
     Use our _Device API_ and create custom third party integrations with any app or device.
 
-    [:octicons-arrow-right-24: Go To Documentation](/device-api/index/md)
+    [:octicons-arrow-right-24: Go To Documentation](../device-api/index.md)
     
 -   :octicons-tools-24: __Technical Support & Troubleshooting__
 
@@ -32,7 +32,7 @@ Welcome to the Pirate MIDI Docs site. Here you can find documentation for all ou
 
     Here you'll find our technical documentation for troubleshooting, manual firmware updates, and more
 
-    [:octicons-arrow-right-24: Find Solutions](/support/index.md)
+    [:octicons-arrow-right-24: Find Solutions](../support/index.md)
 
 </div>
 
