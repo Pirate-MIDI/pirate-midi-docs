@@ -13,9 +13,9 @@ Whether you’re setting up your first Pirate MIDI device or troubleshooting a c
 
 ---
 
-# 1. Product Support
+## 1. Product Support
 
-## 1.1 Troubleshooting Your Device
+### Troubleshooting Your Device
 Before contacting support, quickly check:
     - You’re using a **known-good USB cable** (data-capable, not charge-only).  
     - The device has **consistent power** (5V USB or 9V DC, centre-negative).
@@ -33,9 +33,9 @@ Email: **support@piratemidi.com**
 
 ---
 
-# 2. Firmware & Software Support
+## 2. Firmware & Software Support
 
-## 2.1 Updating Firmware
+### Updating Firmware
 All firmware updates are handled through the **Pirate MIDI Web Updater**:
 
 [https://update.piratemidi.com](https://update.piratemidi.com)
@@ -50,16 +50,16 @@ If the updater doesn’t detect your device:
 !!! warning 
     Other browsers and mobile browsers will not work. Always use Chrome or Chromium browser on a desktop or laptop computer running MacOS or Windows. We do not support Linux devices.
 
-## 2.2 Web Editor Issues
+### Web Editor Issues
 If the Web Editor doesn’t load or can’t connect:
     - Use Chrome or another Chromium browser on desktop or laptop only 
     - Make sure your firmware is up to date. Older versions may be deprecated 
 
 ---
 
-# 3. Order & Shipping Support
+## 3. Order & Shipping Support
 
-## 3.1 Order Problems
+### Order Problems
 Contact: **support@piratemidi.com**
 
 Include:
@@ -67,7 +67,7 @@ Include:
     - Your name  
     - Description of the issue
 
-## 3.2 Shipping Delays
+### Shipping Delays
 Pirate MIDI ships globally, but delays are common during:
     - Black Friday / Cyber Monday  
     - Holiday seasons  
@@ -75,7 +75,7 @@ Pirate MIDI ships globally, but delays are common during:
 
 If your tracking hasn’t moved for several days, email support@piratemidi.com and we’ll investigate.
 
-## 3.3 Returns & Warranty
+### Returns & Warranty
 Pirate MIDI hardware includes a **12-month warranty** against manufacturing defects.
 
 For warranty claims:
@@ -86,14 +86,14 @@ For warranty claims:
 
 ---
 
-# 4. Community & Peer Support
+## 4. Community & Peer Support
 
-## 4.1 Discord
+### Discord
 Join the community for quick tips, presets, and help from other users.
 
 Join by clicking [this link](https://discord.gg/x722K7ksA6)
 
-## 4.2 Email Support
+### Email Support
 For one-on-one help:  
 [**support@piratemidi.com**](mailto:support@piratemidi.com)
 
@@ -101,9 +101,9 @@ Response times vary depending on timezone (Australia-based), but we aim to reply
 
 ---
 
-# 5. Developer & Technical Integrations
+## 5. Developer & Technical Integrations
 
-## 5.1 Open-Source Resources
+### Open-Source Resources
 Some of Pirate MIDI products' firmware and software (e.g. ToneX One control firmware) is open-source.
 
 GitHub organisation:  
@@ -114,20 +114,20 @@ Issues should be reported in the relevant Discord support forum:
     - Feature requests
     - Web Editor issues
 
-## 5.2 Custom Implementations
+### Custom Implementations
 If you’re building advanced integrations using our Device API, you can join the [Device API chat thread](https://discord.com/channels/1026256363174764647/1027400607788703844) in our Discord server.
 
 ---
 
-# 6. When to Contact Support vs. Search the Manuals
+## 6. When to Contact Support vs. Search the Manuals
 
-## Contact Support If:
+### Contact Support If:
     - Your device won’t power on **AND** Firmware fails to update  
     - The display is unresponsive after a Factory Reset
     - You believe the hardware is physically faulty  
     - You need help with missing or incorrect orders  
 
-## Check the Manuals First If:
+### Check the Manuals First If:
     - You need help configuring presets or global settings  
     - You’re setting up MIDI clock  
     - You need TRS Type A/B info 
