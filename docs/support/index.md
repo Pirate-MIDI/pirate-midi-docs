@@ -5,6 +5,7 @@ Whether you’re setting up your first Pirate MIDI device or troubleshooting a c
 ---
 
 ## Quick Links
+
 - [**Contact Form**](https://www.piratemidi.com/pages/contact) 
 - [**Firmware updates**](https://update.piratemidi.com)
 - [**User Manual PDFs**](https://learn.piratemidi.com/downloads/user-manuals)
@@ -17,17 +18,19 @@ Whether you’re setting up your first Pirate MIDI device or troubleshooting a c
 
 ### Troubleshooting Your Device
 Before contacting support, quickly check:
-    - You’re using a **known-good USB cable** (data-capable, not charge-only).  
-    - The device has **consistent power** (5V USB or 9V DC, centre-negative).
-    - TRS MIDI cables match the device’s **Type A/B** setting.  
-    - You’re using the [**latest firmware**](https://update.piratemidi.com) (see Firmware Updates below).  
-    - The device appears correctly in the [**Pirate MIDI Web Editor**](https://edit.piratemidi.com).
+
+- You’re using a **known-good USB cable** (data-capable, not charge-only).  
+- The device has **consistent power** (5V USB or 9V DC, centre-negative).
+- TRS MIDI cables match the device’s **Type A/B** setting.  
+- You’re using the [**latest firmware**](https://update.piratemidi.com) (see Firmware Updates below).  
+- The device appears correctly in the [**Pirate MIDI Web Editor**](https://edit.piratemidi.com).
 
 If issues continue, contact support and include:
-    - Which device (e.g., Bridge6, Bridge4, Scribble, uLOOP+, Flexihub Lite)  
-    - Firmware version
-    - Your setup description including cables you're using, pedals or hubs you're interfacing with, and step-by-step details of the issue.
-    - Screenshots or short videos if possible 
+
+- Which device (e.g., Bridge6, Bridge4, Scribble, uLOOP+, Flexihub Lite)  
+- Firmware version
+- Your setup description including cables you're using, pedals or hubs you're interfacing with, and step-by-step details of the issue.
+- Screenshots or short videos if possible 
 
 Email: **support@piratemidi.com**
 
@@ -41,19 +44,21 @@ All firmware updates are handled through the **Pirate MIDI Web Updater**:
 [https://update.piratemidi.com](https://update.piratemidi.com)
 
 If the updater doesn’t detect your device:
-    - Try a different USB cable  
-    - Use another USB port 
-    - Reboot your computer 
-    - Avoid USB hubs 
-    - Try Chrome or Edge on desktop 
+
+- Try a different USB cable  
+- Use another USB port 
+- Reboot your computer 
+- Avoid USB hubs 
+- Try Chrome or Edge on desktop 
 
 !!! warning 
     Other browsers and mobile browsers will not work. Always use Chrome or Chromium browser on a desktop or laptop computer running MacOS or Windows. We do not support Linux devices.
 
 ### Web Editor Issues
 If the Web Editor doesn’t load or can’t connect:
-    - Use Chrome or another Chromium browser on desktop or laptop only 
-    - Make sure your firmware is up to date. Older versions may be deprecated 
+    
+- Use Chrome or another Chromium browser on desktop or laptop only 
+- Make sure your firmware is up to date. Older versions may be deprecated 
 
 ---
 
@@ -63,15 +68,17 @@ If the Web Editor doesn’t load or can’t connect:
 Contact: **support@piratemidi.com**
 
 Include:
-    - Order number  
-    - Your name  
-    - Description of the issue
+
+- Order number  
+- Your name  
+- Description of the issue
 
 ### Shipping Delays
 Pirate MIDI ships globally, but delays are common during:
-    - Black Friday / Cyber Monday  
-    - Holiday seasons  
-    - Weather or customs/political events
+
+- Black Friday / Cyber Monday  
+- Holiday seasons  
+- Weather or customs/political events
 
 If your tracking hasn’t moved for several days, email support@piratemidi.com and we’ll investigate.
 
@@ -79,10 +86,11 @@ If your tracking hasn’t moved for several days, email support@piratemidi.com a
 Pirate MIDI hardware includes a **12-month warranty** against manufacturing defects.
 
 For warranty claims:
-    - Email **support@piratemidi.com**  
-    - Include proof of purchase  
-    - Describe the fault  
-    - Provide photos or video where possible  
+
+- Email **support@piratemidi.com**  
+- Include proof of purchase  
+- Describe the fault  
+- Provide photos or video where possible  
 
 ---
 
@@ -110,9 +118,10 @@ GitHub organisation:
 [https://github.com/Pirate-MIDI](https://github.com/Pirate-MIDI)
 
 Issues should be reported in the relevant Discord support forum:
-    - Firmware bugs
-    - Feature requests
-    - Web Editor issues
+
+- Firmware bugs
+- Feature requests
+- Web Editor issues
 
 ### Custom Implementations
 If you’re building advanced integrations using our Device API, you can join the [Device API chat thread](https://discord.com/channels/1026256363174764647/1027400607788703844) in our Discord server.
@@ -122,16 +131,18 @@ If you’re building advanced integrations using our Device API, you can join th
 ## 6. When to Contact Support vs. Search the Manuals
 
 ### Contact Support If:
-    - Your device won’t power on **AND** Firmware fails to update  
-    - The display is unresponsive after a Factory Reset
-    - You believe the hardware is physically faulty  
-    - You need help with missing or incorrect orders  
+
+- Your device won’t power on **AND** Firmware fails to update  
+- The display is unresponsive after a Factory Reset
+- You believe the hardware is physically faulty  
+- You need help with missing or incorrect orders  
 
 ### Check the Manuals First If:
-    - You need help configuring presets or global settings  
-    - You’re setting up MIDI clock  
-    - You need TRS Type A/B info 
-    - You're learning the Web Editor
+
+- You need help configuring presets or global settings  
+- You’re setting up MIDI clock  
+- You need TRS Type A/B info 
+- You're learning the Web Editor
 
 ---
 
