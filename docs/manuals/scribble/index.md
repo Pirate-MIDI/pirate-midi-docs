@@ -376,4 +376,4 @@ To enter DFU Mode, press and hold switch 2 (right switch) as you plug USB into t
     This is only required in certain manual update procedures - not the normal update process using update.piratemidi.com
 
 ## Support
-For contact details, warranty, and more please go to our [Support Page](../support/index.md).
+For contact details, warranty, and more please go to our [Support Page](../../support/index.md).
