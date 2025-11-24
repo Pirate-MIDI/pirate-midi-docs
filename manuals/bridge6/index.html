@@ -97,7 +97,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bridge6-midi-controller-user-manual-v215" class="md-skip">
+        <a href="#bridge6-midi-controller-user-manual-v217" class="md-skip">
           Skip to content
         </a>
       
@@ -5835,7 +5835,7 @@
   
 
 
-<h1 id="bridge6-midi-controller-user-manual-v215">BRIDGE6 MIDI Controller – User Manual (v2.1.5)<a class="headerlink" href="#bridge6-midi-controller-user-manual-v215" title="Permanent link">&para;</a></h1>
+<h1 id="bridge6-midi-controller-user-manual-v217">BRIDGE6 MIDI Controller – User Manual (v2.1.7)<a class="headerlink" href="#bridge6-midi-controller-user-manual-v217" title="Permanent link">&para;</a></h1>
 <div class="admonition quote">
 <p class="admonition-title">Quote</p>
 <p>This device was created and designed to empower your creativity.</p>
@@ -5844,6 +5844,7 @@
 </div>
 <hr />
 <h2 id="bridge6-overview">BRIDGE6 Overview<a class="headerlink" href="#bridge6-overview" title="Permanent link">&para;</a></h2>
+<p><img alt="Bridge6" src="../../assets/Bridge6Images/B6%201440p%20b6%20Top%20Shot.png" /></p>
 <p>The BRIDGE6 is a 6-switch MIDI foot controller with RGB LEDs, an OLED screen, and a super tough aluminium enclosure. It’s made in New South Wales, Australia and was the result of a successful Kickstarter campaign in 2020. Now PIRATE MIDI builds and sells MIDI devices all over the world.</p>
 <p>The BRIDGE6 can send stacks of MIDI messages through different footswitch press types (Press, Hold, Double-Press etc.) with 100 different banks of switches to scroll through. This means that the 600+ MIDI messages on each bank can be individually assigned across the whole device for a total of more than <strong>60,000 unique messages and controls</strong>.</p>
 <p>To help you connect to a wide variety of music gear, we’ve included two Flexiports of our own design. These ¼” (6.35 mm) TRS jacks can be set to whatever mode best suits your setup. From expression pedals to beat sync pulse to switch emulation, you can use this MIDI controller to control devices that don’t even have MIDI!</p>
@@ -5884,16 +5885,16 @@
 </ul>
 <hr />
 <h2 id="hardware-layout">Hardware Layout<a class="headerlink" href="#hardware-layout" title="Permanent link">&para;</a></h2>
+<p><img alt="Bridge6 Top" src="../../assets/Bridge6Images/B6%20Top%20Shot%202022.png" /></p>
 <ol>
 <li>Six soft-touch footswitches. No clicking. Work with multiple press types (double-press, hold, etc).  </li>
 <li>Heavy-duty aluminium enclosure with black anodising. Scratch-resistant and no flex.  </li>
 <li>Bright, crisp, and easy-to-read OLED graphical display. Menus, icons, and scribble strips are all a breeze on this display.  </li>
-<li>
-<p>Twelve RGB LEDs which you can assign to any colour you like for any function you like (flashing, solid, dim etc).</p>
-</li>
-<li>
-<p>Flexiports 1 and 2: multi-function ¼" (6.35 mm) TRS jacks which can be used in a number of different modes.  </p>
-</li>
+<li>Twelve RGB LEDs which you can assign to any colour you like for any function you like (flashing, solid, dim etc).</li>
+</ol>
+<p><img alt="Bridge6 Rear" src="../../assets/Bridge6Images/B6%201440p%20Rear%20Shot.png" /></p>
+<ol>
+<li>Flexiports 1 and 2: multi-function ¼" (6.35 mm) TRS jacks which can be used in a number of different modes.  </li>
 <li>2.1 mm 9 V DC barrel jack, as standard on most effects pedals and power supplies.  </li>
 <li>Dedicated ¼" (6.35 mm) TRS MIDI In conforming to the MIDI.org specification (Type A).  </li>
 <li>Dedicated DIN5 MIDI Out conforming to the MIDI.org specification.  </li>
@@ -5902,14 +5903,17 @@
 <hr />
 <h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
 <h3 id="1-bank-up-bank-down">1. Bank Up / Bank Down<a class="headerlink" href="#1-bank-up-bank-down" title="Permanent link">&para;</a></h3>
+<p><img alt="Bank Up and Down" src="../../assets/Bridge6Images/B6%20Top_BANKING.png" /></p>
 <p>To go to the next bank, press <strong>switch 2 and switch 3</strong> together.<br />
 To go to the previous bank, press <strong>switch 1 and switch 2</strong> together.</p>
 <p>These can be customised or turned off (see chapter 18, <em>Bank Navigation</em>).</p>
 <h3 id="2-entering-the-menu">2. Entering the Menu<a class="headerlink" href="#2-entering-the-menu" title="Permanent link">&para;</a></h3>
+<p><img alt="Enter Menu" src="../../assets/Bridge6Images/B6%20Top_ENTER%20MENU.png" /></p>
 <p>To enter the onboard menu, <strong>hold switch 1 and switch 4 simultaneously</strong>.</p>
 <p>All settings can be changed with onboard menus as well as the editor.</p>
 <p>Hold <strong>switch 5</strong> to exit the menu.</p>
 <h3 id="3-dont-miss-the-rest">3. Don’t Miss the Rest!<a class="headerlink" href="#3-dont-miss-the-rest" title="Permanent link">&para;</a></h3>
+<p><img alt="MIDI Messages Editing" src="../../assets/Bridge6Images/B6%20Top_EDIT%20MIDI%202.png" /></p>
 <p>Many menus and settings have a second or third page of settings. Always make sure you haven’t missed vital settings by scrolling to the right using <strong>switch 6</strong> until you get back to the first position.</p>
 <h3 id="4-general-navigation">4. General Navigation<a class="headerlink" href="#4-general-navigation" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7666,13 +7670,38 @@ If your BRIDGE6 behaves differently than described, your firmware may be outdate
 <div class="tabbed-block"></div>
 </div>
 </div>
-<p>These functions target <strong>specific switches</strong>, using values 0–5 for <strong>FS1–FS6</strong>.
-| Function                     | MIDI CC# | Value                  |
-|------------------------------|----------|-------------------------|
-| <strong>Press Action</strong>             | 0–5      | FS1–FS6                |
-| <strong>Release Action</strong>           | 0–5      | FS1–FS6                |
-| <strong>Hold Action</strong>              | 0–5      | FS1–FS6                |
-| <strong>Hold Release Action</strong>      | 0–5      | FS1–FS6                |</p>
+<p>These functions target <strong>specific switches</strong>, using values 0–5 for <strong>FS1–FS6</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>MIDI CC#</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Press Action</strong></td>
+<td>0–5</td>
+<td>FS1–FS6</td>
+</tr>
+<tr>
+<td><strong>Release Action</strong></td>
+<td>0–5</td>
+<td>FS1–FS6</td>
+</tr>
+<tr>
+<td><strong>Hold Action</strong></td>
+<td>0–5</td>
+<td>FS1–FS6</td>
+</tr>
+<tr>
+<td><strong>Hold Release Action</strong></td>
+<td>0–5</td>
+<td>FS1–FS6</td>
+</tr>
+</tbody>
+</table>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Sequential Control</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block"></div>
@@ -7949,7 +7978,7 @@ These controls follow the Clock A/B structure exactly as printed in the PDF.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="November 24, 2025 17:31:13 UTC"><span class="timeago" datetime="2025-11-24T17:31:13+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="November 24, 2025 17:31:13 UTC">2025-11-24</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="November 24, 2025 18:07:51 UTC"><span class="timeago" datetime="2025-11-24T18:07:51+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="November 24, 2025 18:07:51 UTC">2025-11-24</span>
   </span>
 
     
