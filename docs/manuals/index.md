@@ -12,7 +12,7 @@ Click on any of our devices below to view our user manual. You can also navigate
 -   :material-book: **[Scribble](scribble/index.md)**  
     
     ![Scribble](../assets/ProductThumbnails/Scribble%20Thumbnail%20976px.jpg)
-    Powerhouse MIDI controller with six footswitches.
+    Mini LCD and MIDI Controller to give your pedals Superpowers.
 
 -   :material-book: **[Polar](polar/index.md)**  
     
