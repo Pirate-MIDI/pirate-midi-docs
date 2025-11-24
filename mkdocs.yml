@@ -54,8 +54,8 @@ plugins:
       enable_creation_date: true
       type: timeago
   - pdf-export:
-      verbose: true
-      media_type: print
+#      verbose: true
+#      media_type: print
 
 nav:
   - Home: index.md
