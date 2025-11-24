@@ -1783,7 +1783,8 @@ Change the 3.5mm TRS MIDI Out port between <code>Type A</code> &amp; <code>Type 
 <p>Some original Chase Bliss Audio pedals with MIDI require the Tip of the TRS cable to be completely disconnected, and the Scribble cannot do that. You will need to phyiscally modify any TRS cable you're using to disconnect the Tip if you want to use them. 
 <em>(You will also need to set the MIDI out to Type B, of course.)</em></p>
 </div>
-<p><strong>Global BPM:</strong> Set the tempo of the Scribble's own MIDI clock generator. Global BPM will apply to all presets unless the <strong>Clock Mode</strong> is set to <code>Preset</code>.</p>
+<p><strong>Global BPM:</strong> 
+Set the tempo of the Scribble's own MIDI clock generator. Global BPM will apply to all presets unless the <strong>Clock Mode</strong> is set to <code>Preset</code>.</p>
 <p><strong>Clock Mode:</strong> </p>
 <ul>
 <li><strong><code>Preset</code></strong>: The MIDI clock will set its tempo according to the "BPM" setting in the Preset Settings. This allows different pre-assigned tempos per preset. </li>
@@ -1796,17 +1797,24 @@ Change the 3.5mm TRS MIDI Out port between <code>Type A</code> &amp; <code>Type 
 <li><strong><code>Global</code></strong>: The MIDI clock will be the same on every preset. Determined by the <strong>Global BPM</strong> setting above.</li>
 <li><strong><code>None</code></strong>: MIDI clock is entirely disabled.</li>
 </ul>
-<p><strong>Clock Display Type</strong>: This lets you change the BPM readout on the Scribble between a BPM number, milliseconds number, or a flashing indicator only. </p>
-<p><strong>MIDI Thru Routing</strong>: When MIDI comes into the Scribble via any of the three inputs (TRS, USB, BLE), you can choose whether that MIDI is automatically duplicated to any of the other outputs, or whether it ends its journey inside the Scribble.</p>
+<p><strong>Clock Display Type</strong>: 
+This lets you change the BPM readout on the Scribble between a BPM number, milliseconds number, or a flashing indicator only. </p>
+<p><strong>MIDI Thru Routing</strong>: 
+When MIDI comes into the Scribble via any of the three inputs (TRS, USB, BLE), you can choose whether that MIDI is automatically duplicated to any of the other outputs, or whether it ends its journey inside the Scribble.</p>
 <p>This doesn't affect any MIDI messages that Scribble itself generates and sends.</p>
-<p><strong>Clock Outputs</strong>: MIDI clock messages can be limited to only send to selected MIDI outputs instead of all three. </p>
-<p><strong>Device MIDI Channel</strong>: Set a MIDI channel for your Scribble. This is highly recommended, and will be necessary to use when you are using the external MIDI control CC messages to change presets, trigger custom MIDI messages, etc.</p>
-<p><strong>Preset MIDI PC Outputs</strong>: This feature allows you to select a MIDI channel for each of the MIDI outputs (TRS, USB, BLE) and turn on an automatic Program Change (PC) message that will be sent when the Scribble changes presets.</p>
+<p><strong>Clock Outputs</strong>: 
+MIDI clock messages can be limited to only send to selected MIDI outputs instead of all three. </p>
+<p><strong>Device MIDI Channel</strong>: 
+Set a MIDI channel for your Scribble. This is highly recommended, and will be necessary to use when you are using the external MIDI control CC messages to change presets, trigger custom MIDI messages, etc.</p>
+<p><strong>Preset MIDI PC Outputs</strong>: 
+This feature allows you to select a MIDI channel for each of the MIDI outputs (TRS, USB, BLE) and turn on an automatic Program Change (PC) message that will be sent when the Scribble changes presets.</p>
 <p>This is an easy way to keep your pedal in sync with Scribble. Say you've connected a Chase Bliss Audio pedal whose channel is set to 2 (CBA's default). Simply connect your Scribble to your pedal, turn on the TRS <strong>PC Output</strong> to channel 2, and when you use the onboard buttons to change presets on the Scribble, the Chase Bliss Audio pedal will follow along. </p>
-<p><strong>CC Values</strong>: These fields contain the factory default MIDI CCs for externally controlling the Scribble. However, if you prefer, you can set custom CC numbers instead.</p>
+<p><strong>CC Values</strong>: 
+These fields contain the factory default MIDI CCs for externally controlling the Scribble. However, if you prefer, you can set custom CC numbers instead.</p>
 <h3 id="global-switch-settings">Global Switch Settings<a class="headerlink" href="#global-switch-settings" title="Permanent link">&para;</a></h3>
 <p><img alt="Scribble Global Switch Settings" src="../../assets/ScribbleImages/scribble-editor-global-switch-settings.png" /></p>
-<p><strong>Switch Modes</strong>: These modes change how each of the buttons work. You can limit Scribble preset changes only to certain switch actions, or remove them entirely.</p>
+<p><strong>Switch Modes</strong>: 
+These modes change how each of the buttons work. You can limit Scribble preset changes only to certain switch actions, or remove them entirely.</p>
 <ul>
 <li><code>Press Preset Down</code></li>
 <li><code>Press Preset Up</code></li>
@@ -1814,15 +1822,19 @@ Change the 3.5mm TRS MIDI Out port between <code>Type A</code> &amp; <code>Type 
 <li><code>Hold Preset Up</code></li>
 <li><code>MIDI Only</code> Send only your custom MIDI messages</li>
 </ul>
-<p><strong>Press/Hold Messages</strong>: Just like preset-level switch messages, you can add custom MIDI messages that are sent on a <code>Press</code> or a <code>Hold</code> action. These will activate on every single preset, and they will be sent <strong>in addition</strong> to the preset-level switch messages. </p>
+<p><strong>Press/Hold Messages</strong>: 
+Just like preset-level switch messages, you can add custom MIDI messages that are sent on a <code>Press</code> or a <code>Hold</code> action. These will activate on every single preset, and they will be sent <strong>in addition</strong> to the preset-level switch messages. </p>
 <h3 id="global-messages">Global Messages<a class="headerlink" href="#global-messages" title="Permanent link">&para;</a></h3>
 <p><img alt="Scribble Global Messages" src="../../assets/ScribbleImages/scribble-editor-global-messages.png" /></p>
-<p><strong>Global Custom Trigger Messages</strong>: Just like preset-level custom trigger messages, these messages will only be sent when the default or user-assigned CC number is sent to the Scribble from an external MIDI source. The difference is that these MIDI messages will trigger the same regardless of which preset the Scribble is currently on. </p>
+<p><strong>Global Custom Trigger Messages</strong>: 
+Just like preset-level custom trigger messages, these messages will only be sent when the default or user-assigned CC number is sent to the Scribble from an external MIDI source. The difference is that these MIDI messages will trigger the same regardless of which preset the Scribble is currently on. </p>
 <p>The default CC for the Global Custom Trigger Messages is <code>17</code>.</p>
 <h3 id="wireless-settings">Wireless Settings<a class="headerlink" href="#wireless-settings" title="Permanent link">&para;</a></h3>
 <p><img alt="Scribble Wireless Settings" src="../../assets/ScribbleImages/scribble-editor-wireless-settings.png" /></p>
-<p><strong>Wireless Type</strong>: Use this to turn off the BLE system entirely if you prefer. </p>
-<p><strong>BLE Mode</strong>: <code>Server</code> mode is the default, and <code>Client</code> is currently experimental and may not work properly. A future firmware update will expand this function. </p>
+<p><strong>Wireless Type</strong>: 
+Use this to turn off the BLE system entirely if you prefer. </p>
+<p><strong>BLE Mode</strong>: 
+<code>Server</code> mode is the default, and <code>Client</code> is currently experimental and may not work properly. A future firmware update will expand this function. </p>
 <p><code>Server</code> mode is the standard mode for devices, as opposed to computers, phones, etc. </p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -1949,7 +1961,7 @@ Tablets, phones, and computers can also connect and send MIDI. Apps like TouchOS
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="November 24, 2025 11:02:08 UTC"><span class="timeago" datetime="2025-11-24T11:02:08+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="November 24, 2025 11:02:08 UTC">2025-11-24</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="November 24, 2025 11:06:27 UTC"><span class="timeago" datetime="2025-11-24T11:06:27+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="November 24, 2025 11:06:27 UTC">2025-11-24</span>
   </span>
 
     
