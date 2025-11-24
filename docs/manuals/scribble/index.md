@@ -218,4 +218,244 @@ Scribble uses the same updater as BridgeOS devices.
 To enter DFU Mode, press and hold switch 2 (right switch) as you plug USB into the device (no 9V DC). Your Scribble should now show as a different USB name on your computer. 
 
 !!! note
-This is only required in certain manual update procedures - not the normal update process using update.piratemidi.com
+    This is only required in certain manual update procedures - not the normal update process using update.piratemidi.com
+
+
+# Scribble User Manual
+
+## 1. Introduction
+### What is Scribble?
+Scribble is a mini LCD screen 
+### Key Benefits at a Glance
+- Dynamic scribble-strip display  
+- USB/TRS/Bluetooth MIDI  
+- Onboard switching  
+- Custom layouts & colours  
+- Standalone or integrated use  
+
+### What’s in the Box
+### System Requirements
+
+---
+
+## 2. Hardware Overview
+### Front & Rear Panels
+- Display  
+- Onboard switches  
+- USB Device  
+- USB Host  
+- TRS MIDI I/O (Type A/B)  
+- Power options (USB / 9V DC)  
+- Expression input  
+
+### Physical Connections
+- Recommended cable types  
+- Powering Scribble  
+- Connecting to pedals, hubs, computers, mobile devices  
+
+---
+
+## 3. Getting Started
+### Quick Start Checklist
+### Connecting to the Pirate MIDI Web Editor
+- Browser compatibility  
+- USB vs BLE  
+- Multi-device connection support  
+
+### How Saving Works
+- Global vs Preset JSON  
+- Auto-save vs manual write  
+
+---
+
+## 4. Web Editor Overview
+### Editor Layout
+- Navigation sidebar  
+- Live display preview  
+- MIDI monitor  
+- Device info & firmware panel  
+
+### Global vs Preset Configuration
+- Priority rules  
+- Practical use cases  
+- Typical workflows  
+
+---
+
+# 5. Global Settings
+
+## 5.1 Global Settings Summary
+High-level explanation of Global vs Preset controls and when to use each.
+
+## 5.2 Global MIDI Settings
+### Default MIDI Channel  
+### PC Output Routing  
+### MIDI Thru  
+### MIDI Clock Settings  
+### Channel Aliases  
+
+## 5.3 Display & Layout
+### Default Layout  
+### Brightness  
+### Colour Themes  
+### Font Size  
+### Icon Packs  
+
+## 5.4 Global Switch Settings
+### Switch Actions  
+- Tap / Hold / Double-tap  
+### Default Behaviours  
+### Override Rules  
+
+## 5.5 Global Messages
+### Static Messages  
+### Multi-Message Sequences  
+### Conditional Behaviours  
+
+## 5.6 Wireless Settings
+### BLE Mode  
+### USB Host Power Options  
+
+---
+
+# 6. Preset Settings
+
+## 6.1 Preset Settings Overview
+### What Presets Are  
+### Override vs Inherit Rules  
+### Use Cases  
+
+## 6.2 Per-Preset Display
+### Layout Selection  
+### Per-Preset Colours & Text  
+### Dynamic Display Fields  
+
+## 6.3 Per-Preset Switch Settings
+### Assigning Switch Functions  
+### Triggering Messages  
+### Bank/Preset Actions  
+
+## 6.4 Per-Preset MIDI Settings
+### Custom MIDI Channel Overrides  
+### Custom CC Control  
+- Toggle  
+- Momentary  
+- Ramps  
+- Sequences  
+
+### Custom Trigger Messages  
+- PC  
+- CC  
+- NRPN  
+- Sysex  
+
+## 6.5 Per-Preset MIDI Clock
+### Per-Preset BPM  
+### Clock Start/Stop  
+### Tap Tempo  
+### Sync Options  
+
+---
+
+# 7. MIDI Clock System
+
+## 7.1 Overview of MIDI Clock
+### Receive  
+### Generate  
+### Pass-through  
+### Per-preset BPM  
+
+## 7.2 Receiving MIDI Clock
+### Behaviour  
+### Display Indicators  
+### Troubleshooting  
+
+## 7.3 Generating MIDI Clock
+### Global Clock Generation  
+### Syncing Multiple Pedals  
+### Splitting Clock Signals  
+
+---
+
+# 8. Wireless & Bluetooth
+
+## 8.1 BLE Control
+### BLE MIDI Basics  
+### Connecting to Smartphones/Tablets  
+### Latency Considerations  
+### Power Notes  
+
+## 8.2 Wireless Settings Recap
+### Enable/Disable BLE  
+### USB Host Routing  
+
+---
+
+# 9. Advanced Features
+
+## 9.1 Channel Aliases
+### Naming Devices  
+### Shortcut Workflow  
+### Project Organisation  
+
+## 9.2 Custom CC Control Deep Dive
+### LFO-Style Ramps  
+### CC Cycling  
+### Momentary vs Toggle Logic  
+
+## 9.3 Custom Trigger Messages
+### Multi-Message Stacks  
+### Switch-Triggered vs Preset-Triggered  
+### Using Sysex with Advanced Pedals  
+
+---
+
+# 10. Pedal Examples
+
+## 10.1 Strymon Example
+### Layout  
+### PC/CC Mapping  
+### Reactive Display  
+
+## 10.2 Line 6 HX Example
+### Snapshot Switching  
+### Per-Preset Visuals  
+
+## 10.3 MIDI-Enabled Analog Pedals
+### Tap Tempo  
+### CC-Based Expression Emulation  
+
+---
+
+# 11. Troubleshooting & FAQ
+### Connection Issues  
+### Display Not Updating  
+### Web Editor Not Detecting the Device  
+### TRS MIDI Type A/B Issues  
+### Expression Pedal Conflicts  
+### BLE Pairing  
+### Power/Voltage Problems  
+
+---
+
+# 12. Firmware Updates
+### Using the Pirate MIDI Web Updater  
+### Preserved Data  
+### Factory Reset  
+
+---
+
+# 13. Technical Specifications
+### Power Requirements  
+### MIDI Implementation Summary  
+### Display Specs  
+### Latency Notes  
+### Physical Dimensions  
+
+---
+
+# 14. Support
+### Contact Information  
+### Warranty  
+### Replacement Parts  
+### Getting Your Scribble

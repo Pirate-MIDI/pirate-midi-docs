@@ -65,8 +65,8 @@ nav:
   - Support: support/index.md
 
 extra_css:
- # - assets/branding.css
- # - assets/print.css
+  - assets/branding.css
+  - assets/print.css
 
 extra:
   social:

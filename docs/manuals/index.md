@@ -9,6 +9,16 @@ Click on any of our devices below to view our user manual. You can also navigate
 
 <div class="grid cards" markdown>
 
+-   :material-book: **[Scribble](scribble/index.md)**  
+    
+    ![Scribble](../assets/ProductThumbnails/Scribble%20Thumbnail%20976px.jpg)
+    Powerhouse MIDI controller with six footswitches.
+
+-   :material-book: **[Polar](polar/index.md)**  
+    
+    ![Polar](../assets/ProductThumbnails/Polar%20Max%20Thumbnail%20976px.jpg) 
+    Mini-sized controller in multiple variants for controlling ToneX pedals.
+
 -   :material-book: **[Bridge6](bridge6/index.md)**  
     
     ![Bridge6](../assets/ProductThumbnails/Bridge6%20Thumbnail%20976px.jpg)
@@ -24,10 +34,6 @@ Click on any of our devices below to view our user manual. You can also navigate
     ![Aero](../assets/ProductThumbnails/Aero%20Thumbnail%20976px.jpg)  
     Ultra-compact three-switch controller that punches above its size.
 
--   :material-book: **[Polar](polar/index.md)**  
-    
-    ![Polar](../assets/ProductThumbnails/Polar%20Max%20Thumbnail%20976px.jpg) 
-    Mini-sized controller in multiple variants for controlling ToneX pedals.
 
 -   :material-book: **[CLiCK v2](click-v2/index.md)**  
     
