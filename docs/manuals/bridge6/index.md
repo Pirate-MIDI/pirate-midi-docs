@@ -1,4 +1,4 @@
-# BRIDGE6 MIDI Controller – User Manual (v2.1.5)
+# BRIDGE6 MIDI Controller – User Manual (v2.1.7)
 
 !!! quote
     This device was created and designed to empower your creativity.
@@ -10,6 +10,8 @@
 ---
 
 ## BRIDGE6 Overview
+
+![Bridge6](../../assets/Bridge6Images/B6%201440p%20b6%20Top%20Shot.png)
 
 The BRIDGE6 is a 6-switch MIDI foot controller with RGB LEDs, an OLED screen, and a super tough aluminium enclosure. It’s made in New South Wales, Australia and was the result of a successful Kickstarter campaign in 2020. Now PIRATE MIDI builds and sells MIDI devices all over the world.
 
@@ -63,10 +65,14 @@ Documentation is updated for each firmware update according to new features and 
 
 ## Hardware Layout
 
+![Bridge6 Top](../../assets/Bridge6Images/B6%20Top%20Shot%202022.png)
+
 1. Six soft-touch footswitches. No clicking. Work with multiple press types (double-press, hold, etc).  
 2. Heavy-duty aluminium enclosure with black anodising. Scratch-resistant and no flex.  
 3. Bright, crisp, and easy-to-read OLED graphical display. Menus, icons, and scribble strips are all a breeze on this display.  
 4. Twelve RGB LEDs which you can assign to any colour you like for any function you like (flashing, solid, dim etc).
+
+![Bridge6 Rear](../../assets/Bridge6Images/B6%201440p%20Rear%20Shot.png)
 
 5. Flexiports 1 and 2: multi-function ¼" (6.35 mm) TRS jacks which can be used in a number of different modes.  
 6. 2.1 mm 9 V DC barrel jack, as standard on most effects pedals and power supplies.  
@@ -80,12 +86,16 @@ Documentation is updated for each firmware update according to new features and 
 
 ### 1. Bank Up / Bank Down
 
+![Bank Up and Down](../../assets/Bridge6Images/B6%20Top_BANKING.png)
+
 To go to the next bank, press **switch 2 and switch 3** together.  
 To go to the previous bank, press **switch 1 and switch 2** together.
 
 These can be customised or turned off (see chapter 18, *Bank Navigation*).
 
 ### 2. Entering the Menu
+
+![Enter Menu](../../assets/Bridge6Images/B6%20Top_ENTER%20MENU.png)
 
 To enter the onboard menu, **hold switch 1 and switch 4 simultaneously**.
 
@@ -94,6 +104,8 @@ All settings can be changed with onboard menus as well as the editor.
 Hold **switch 5** to exit the menu.
 
 ### 3. Don’t Miss the Rest!
+
+![MIDI Messages Editing](../../assets/Bridge6Images/B6%20Top_EDIT%20MIDI%202.png)
 
 Many menus and settings have a second or third page of settings. Always make sure you haven’t missed vital settings by scrolling to the right using **switch 6** until you get back to the first position.
 
@@ -2225,7 +2237,9 @@ You can set the MIDI channel here:
 
 
 === "Switch Control"
+
 These functions target **specific switches**, using values 0–5 for **FS1–FS6**.
+
 | Function                     | MIDI CC# | Value                  |
 |------------------------------|----------|-------------------------|
 | **Press Action**             | 0–5      | FS1–FS6                |
