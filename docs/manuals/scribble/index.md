@@ -210,7 +210,8 @@ Change the 3.5mm TRS MIDI Out port between `Type A` & `Type B` TRS MIDI. This ty
     Some original Chase Bliss Audio pedals with MIDI require the Tip of the TRS cable to be completely disconnected, and the Scribble cannot do that. You will need to phyiscally modify any TRS cable you're using to disconnect the Tip if you want to use them. 
     *(You will also need to set the MIDI out to Type B, of course.)*
 
-**Global BPM:** Set the tempo of the Scribble's own MIDI clock generator. Global BPM will apply to all presets unless the **Clock Mode** is set to `Preset`.
+**Global BPM:** 
+Set the tempo of the Scribble's own MIDI clock generator. Global BPM will apply to all presets unless the **Clock Mode** is set to `Preset`.
 
 **Clock Mode:** 
 
@@ -222,27 +223,34 @@ Change the 3.5mm TRS MIDI Out port between `Type A` & `Type B` TRS MIDI. This ty
 - **`Global`**: The MIDI clock will be the same on every preset. Determined by the **Global BPM** setting above.
 - **`None`**: MIDI clock is entirely disabled.
 
-**Clock Display Type**: This lets you change the BPM readout on the Scribble between a BPM number, milliseconds number, or a flashing indicator only. 
+**Clock Display Type**: 
+This lets you change the BPM readout on the Scribble between a BPM number, milliseconds number, or a flashing indicator only. 
 
-**MIDI Thru Routing**: When MIDI comes into the Scribble via any of the three inputs (TRS, USB, BLE), you can choose whether that MIDI is automatically duplicated to any of the other outputs, or whether it ends its journey inside the Scribble.
+**MIDI Thru Routing**: 
+When MIDI comes into the Scribble via any of the three inputs (TRS, USB, BLE), you can choose whether that MIDI is automatically duplicated to any of the other outputs, or whether it ends its journey inside the Scribble.
 
 This doesn't affect any MIDI messages that Scribble itself generates and sends.
 
-**Clock Outputs**: MIDI clock messages can be limited to only send to selected MIDI outputs instead of all three. 
+**Clock Outputs**: 
+MIDI clock messages can be limited to only send to selected MIDI outputs instead of all three. 
 
-**Device MIDI Channel**: Set a MIDI channel for your Scribble. This is highly recommended, and will be necessary to use when you are using the external MIDI control CC messages to change presets, trigger custom MIDI messages, etc.
+**Device MIDI Channel**: 
+Set a MIDI channel for your Scribble. This is highly recommended, and will be necessary to use when you are using the external MIDI control CC messages to change presets, trigger custom MIDI messages, etc.
 
-**Preset MIDI PC Outputs**: This feature allows you to select a MIDI channel for each of the MIDI outputs (TRS, USB, BLE) and turn on an automatic Program Change (PC) message that will be sent when the Scribble changes presets.
+**Preset MIDI PC Outputs**: 
+This feature allows you to select a MIDI channel for each of the MIDI outputs (TRS, USB, BLE) and turn on an automatic Program Change (PC) message that will be sent when the Scribble changes presets.
 
 This is an easy way to keep your pedal in sync with Scribble. Say you've connected a Chase Bliss Audio pedal whose channel is set to 2 (CBA's default). Simply connect your Scribble to your pedal, turn on the TRS **PC Output** to channel 2, and when you use the onboard buttons to change presets on the Scribble, the Chase Bliss Audio pedal will follow along. 
 
-**CC Values**: These fields contain the factory default MIDI CCs for externally controlling the Scribble. However, if you prefer, you can set custom CC numbers instead.
+**CC Values**: 
+These fields contain the factory default MIDI CCs for externally controlling the Scribble. However, if you prefer, you can set custom CC numbers instead.
 
 ### Global Switch Settings
 
 ![Scribble Global Switch Settings](../../assets/ScribbleImages/scribble-editor-global-switch-settings.png)
 
-**Switch Modes**: These modes change how each of the buttons work. You can limit Scribble preset changes only to certain switch actions, or remove them entirely.
+**Switch Modes**: 
+These modes change how each of the buttons work. You can limit Scribble preset changes only to certain switch actions, or remove them entirely.
 
 - `Press Preset Down`
 - `Press Preset Up`
@@ -250,13 +258,15 @@ This is an easy way to keep your pedal in sync with Scribble. Say you've connect
 - `Hold Preset Up`
 - `MIDI Only` Send only your custom MIDI messages
 
-**Press/Hold Messages**: Just like preset-level switch messages, you can add custom MIDI messages that are sent on a `Press` or a `Hold` action. These will activate on every single preset, and they will be sent **in addition** to the preset-level switch messages. 
+**Press/Hold Messages**: 
+Just like preset-level switch messages, you can add custom MIDI messages that are sent on a `Press` or a `Hold` action. These will activate on every single preset, and they will be sent **in addition** to the preset-level switch messages. 
 
 ### Global Messages
 
 ![Scribble Global Messages](../../assets/ScribbleImages/scribble-editor-global-messages.png)
 
-**Global Custom Trigger Messages**: Just like preset-level custom trigger messages, these messages will only be sent when the default or user-assigned CC number is sent to the Scribble from an external MIDI source. The difference is that these MIDI messages will trigger the same regardless of which preset the Scribble is currently on. 
+**Global Custom Trigger Messages**: 
+Just like preset-level custom trigger messages, these messages will only be sent when the default or user-assigned CC number is sent to the Scribble from an external MIDI source. The difference is that these MIDI messages will trigger the same regardless of which preset the Scribble is currently on. 
 
 The default CC for the Global Custom Trigger Messages is `17`.
 
@@ -264,9 +274,11 @@ The default CC for the Global Custom Trigger Messages is `17`.
 
 ![Scribble Wireless Settings](../../assets/ScribbleImages/scribble-editor-wireless-settings.png)
 
-**Wireless Type**: Use this to turn off the BLE system entirely if you prefer. 
+**Wireless Type**: 
+Use this to turn off the BLE system entirely if you prefer. 
 
-**BLE Mode**: `Server` mode is the default, and `Client` is currently experimental and may not work properly. A future firmware update will expand this function. 
+**BLE Mode**: 
+`Server` mode is the default, and `Client` is currently experimental and may not work properly. A future firmware update will expand this function. 
 
 `Server` mode is the standard mode for devices, as opposed to computers, phones, etc. 
 
