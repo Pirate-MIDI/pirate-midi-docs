@@ -53,12 +53,6 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       type: timeago
-  - to-pdf:
-      ignore_errors: true
-      copyright: Copyright © PIRATE MIDI 2026
-      toc_level: 2
-      output_path: pdf/pm-docs.pdf
-      download_link: header
 
 nav:
   - Home: index.md

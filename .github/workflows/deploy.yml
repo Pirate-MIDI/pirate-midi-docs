@@ -43,8 +43,7 @@ jobs:
           mkdocs-material \
           "mkdocs-material[imaging]" \
           "mkdocs-material[extras]" \
-          mkdocs-git-revision-date-localized-plugin \
-          mkdocs-to-pdf
+          mkdocs-git-revision-date-localized-plugin
 
       # Optional: build first so the job fails early if config is bad
       - name: Build
