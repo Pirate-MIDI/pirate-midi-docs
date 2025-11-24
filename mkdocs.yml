@@ -55,7 +55,7 @@ plugins:
       type: timeago
   - to-pdf:
       copyright: Copyright © PIRATE MIDI 2026
-      toc_leve: 2
+      toc_level: 2
       output_path: pdf/pm-docs.pdf
       download_link: header
 
