@@ -84,6 +84,18 @@ Documentation is updated for each firmware update according to new features and 
 
 ## Quick Start
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%;">
+  <iframe 
+    src="https://www.youtube.com/embed/E4o5pKDkX4Y?si=75RP_BSjUNBNEozM"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+  ></iframe>
+</div>
+
 ### 1. Bank Up / Bank Down
 
 ![Bank Up and Down](../../assets/Bridge6Images/B6%20Top_BANKING.png)
