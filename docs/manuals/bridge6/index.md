@@ -2218,16 +2218,14 @@ You can set the MIDI channel here:
 ## MIDI Functions Controlled by CC
 
 === "Navigation"
-    | Function        | MIDI CC# | Value        |
-    |-----------------|-----------|--------------|
-    | **Bank Up**     | 20        | Any (0–127)  |
-    | **Bank Down**   | 21        | Any (0–127)  |
+| Function        | MIDI CC# | Value        |
+|-----------------|-----------|--------------|
+| **Bank Up**     | 20        | Any (0–127)  |
+| **Bank Down**   | 21        | Any (0–127)  |
 
 
-### Switch Control
-
+=== "Switch Control"
 These functions target **specific switches**, using values 0–5 for **FS1–FS6**.
-
 | Function                     | MIDI CC# | Value                  |
 |------------------------------|----------|-------------------------|
 | **Press Action**             | 0–5      | FS1–FS6                |
@@ -2236,8 +2234,7 @@ These functions target **specific switches**, using values 0–5 for **FS1–FS6
 | **Hold Release Action**      | 0–5      | FS1–FS6                |
 
 
-### Sequential Control
-
+=== "Sequential Control"
 | Function                        | MIDI CC# | Value          |
 |--------------------------------|----------|-----------------|
 | **Sequential Increment Step**  | 20       | 0–5 (FS1–FS6)  |
@@ -2246,8 +2243,7 @@ These functions target **specific switches**, using values 0–5 for **FS1–FS6
 | **Sequential Reset**           | 23       | 0–5 (FS1–FS6)  |
 
 
-### Scrolling Control
-
+=== "Scrolling Control"
 | Function                       | MIDI CC# | Value          |
 |-------------------------------|----------|-----------------|
 | **Scrolling Increment Step**  | 30       | 0–5 (FS1–FS6)  |
@@ -2259,8 +2255,7 @@ These functions target **specific switches**, using values 0–5 for **FS1–FS6
 
 Before setting LED colours, you must select an LED using **CC55**.
 
-#### LED Target Selection (CC55)
-
+=== "LED Target Selection (CC55)"
 | CC55 Value | LED Target |
 |------------|-------------|
 | 0          | FS1 Primary |
@@ -2276,16 +2271,14 @@ Before setting LED colours, you must select an LED using **CC55**.
 | 10         | FS6 Primary |
 | 11         | FS6 Secondary |
 
-#### LED Colour Values
-
+=== "LED Colour Values"
 | Colour Component        | MIDI CC# | Value  |
 |-------------------------|----------|--------|
 | **Red Channel Intensity**   | 56       | 0–127 |
 | **Green Channel Intensity** | 57       | 0–127 |
 | **Blue Channel Intensity**  | 58       | 0–127 |
 
-#### LED Reset Functions
-
+=== "LED Reset Functions"
 | Function                   | MIDI CC# | Value                        |
 |---------------------------|----------|-------------------------------|
 | **Reset Target LED Values** | 59       | 0–11 (FS1 Primary → FS6 Secondary) |
@@ -2297,8 +2290,7 @@ Before setting LED colours, you must select an LED using **CC55**.
 For detailed behaviour, see Chapter 9.  
 These controls follow the Clock A/B structure exactly as printed in the PDF.
 
-### Targeting Clock & BPM Range (CC73)
-
+=== "Targeting Clock & BPM Range (CC73)"
 | Target Clock & Range          | CC73 Value |
 |-------------------------------|------------|
 | Clock A: **45–127 BPM**       | 0          |
@@ -2306,8 +2298,7 @@ These controls follow the Clock A/B structure exactly as printed in the PDF.
 | Clock B: **45–127 BPM**       | 2          |
 | Clock B: **128–240 BPM**      | 3          |
 
-### Setting Tempo (CC74)
-
+=== "Setting Tempo (CC74)"
 | Mode (based on CC73)              | CC74 Value | Result BPM                     |
 |----------------------------------|------------|--------------------------------|
 | **When targeting 45–127 BPM**    | 45–127     | BPM = CC74 value               |
