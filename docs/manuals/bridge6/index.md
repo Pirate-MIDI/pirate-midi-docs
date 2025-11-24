@@ -699,51 +699,44 @@ Smart Messages allow you to control internal functions of the BRIDGE6 or perform
 
 Smart Message types include:
 
-=== "Navigation"
+??? abstract "Navigation"
+    - **Bank Up**
+    - **Bank Down**
+    - **Bank Select**
+    - **Last Bank**
 
-- **Bank Up**
-- **Bank Down**
-- **Bank Select**
-- **Last Bank**
+??? abstract "Expression"
+    - **Increment Expression Message**
+    - **Decrement Expression Message**
+    - **Go to Expression Message**
 
-=== "Expression"
+??? abstract "TRS / Relay"
+    - **TRS Switch** (Off / Tip / Ring / Tip+Ring)
+    - **Relay Interface** (Off / Tip / Ring / Tip+Ring)
 
-- **Increment Expression Message**
-- **Decrement Expression Message**
-- **Go to Expression Message**
+??? abstract "UI Control"
+    - **Set UI Mode** (Simple or Extended)
 
-=== "TRS / Relay"
+??? abstract "Switch States"
+    - **Switch On**
+    - **Switch Off**
+    - **Switch Toggle**
 
-- **TRS Switch** (Off / Tip / Ring / Tip+Ring)
-- **Relay Interface** (Off / Tip / Ring / Tip+Ring)
+??? abstract "Sequential"
+    - **Reset Sequential**
+    - **Increment Sequential Step**
+    - **Decrement Sequential Step**
+    - **Set Step Sequential**
+    - **Queue Next Sequential Step**
+    - **Queue Sequential Step**
 
-=== "UI Control"
-
-- **Set UI Mode** (Simple or Extended)
-
-=== "Switch States"
-
-- **Switch On**
-- **Switch Off**
-- **Switch Toggle**
-
-=== "Sequential"
-
-- **Reset Sequential**
-- **Increment Sequential Step**
-- **Decrement Sequential Step**
-- **Set Step Sequential**
-- **Queue Next Sequential Step**
-- **Queue Sequential Step**
-
-=== "Scrolling"
-
-- **Reset Scrolling**
-- **Increment Scrolling Value**
-- **Decrement Scrolling Value**
-- **Set Value Scrolling**
-- **Queue Next Scrolling Value**
-- **Queue Scrolling Value**
+??? abstract "Scrolling"
+    - **Reset Scrolling**
+    - **Increment Scrolling Value**
+    - **Decrement Scrolling Value**
+    - **Set Value Scrolling**
+    - **Queue Next Scrolling Value**
+    - **Queue Scrolling Value**
 
 ### Key Press Messages
 
@@ -1352,7 +1345,7 @@ Frequency range:
 #### Clock Sync Mode
 Frequency is chosen as a **time division** of the tempo.
 
-=== "Available Time Divisions"
+??? abstract "Available Time Divisions"
     - 1/1  
     - 1/1 dotted  
     - 1/1 triplet  
