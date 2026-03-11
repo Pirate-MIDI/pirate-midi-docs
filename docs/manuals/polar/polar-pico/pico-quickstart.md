@@ -1,6 +1,6 @@
 ## 1. Quickstart
 
-![Polar Plus with ToneX One Context](../../assets/PolarImages/Polar%20Pico%20v2%20side.jpg)
+![Polar Plus with ToneX One Context](../../../assets/PolarImages/polar-pico-v2-side.jpg)
 
 ### Hardware Overview
 * **Enclosure**: Can be opened over and over with metal threaded inserts and hex screws

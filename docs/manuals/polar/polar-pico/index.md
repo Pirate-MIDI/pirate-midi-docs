@@ -1,7 +1,7 @@
 # POLAR PICO
 **Wireless ToneX One MIDI Controller**
 
-![Polar Pico with ToneX One](../../assets/PolarImages/Polar%20Pico%20v2%20context%201.jpeg)
+![Polar Pico with ToneX One](../../../assets/PolarImages/polar-pico-v2-context1.jpeg)
 ---
 
 ## Introduction
