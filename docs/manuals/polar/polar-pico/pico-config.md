@@ -34,7 +34,7 @@ The following settings can be found on the web configuration page. More detailed
 * **WiFi**: Change WiFi Mode, WiFi Power, Network Name (SSID), and Password.
 * **System**: Save and Reboot Polar to Activate New Settings.
 
-![Web Config example screenshot](../../../assets/PolarImages/screenshots/global-settings.PNG)
+<img src="../../../assets/PolarImages/screenshots/global-settings.PNG" alt="BT settings page" width="50%">
 
 ---
 
@@ -58,7 +58,7 @@ This toggle enables support for Control Change (CC) commands over Bluetooth. The
 * This toggle is **disabled by default**, because the M-Vave Chocolate pedal, when changing banks, sends a conflicting change that modifies the ToneX parameters.
 * This setting should not be enabled with a Chocolate controller that has the default configuration loaded.
 
-![BT settings page](../../../assets/PolarImages/screenshots/bt-settings.PNG)
+<img src="../../../assets/PolarImages/screenshots/bt-settings.PNG" alt="BT settings page" width="50%">
 
 ---
 
@@ -68,7 +68,7 @@ This toggle enables support for Control Change (CC) commands over Bluetooth. The
 * **Disabled (default)**: Setting the same preset index multiple times will not have any effect.
 * **Enabled**: Setting the same preset a second time will set the ToneX pedal to bypass mode. Setting it a third time will exit bypass mode. This setting is most suited to use with pedal models.
 
-![FS toggle example](../../../assets/PolarImages/screenshots/misc-settings.PNG)
+<img src="../../../assets/PolarImages/screenshots/misc-settings.PNG" alt="BT settings page" width="50%">
 
 ### Preset/Bank Switch Loop
 This setting controls whether incrementing the preset from the last preset will "loop" back around to the first preset or not. It also affects decrementing from the first preset to the last or not.
@@ -85,21 +85,7 @@ This setting does what it says. If you don't like the flash of the tempo on the 
 
 ---
 
-## 5. Firmware Updates
-
-### Polar & ToneX One Update Instructions
-IK Multimedia does not support MIDI, and this open source project is not in their consideration.
-1.  **Do not update your ToneX One firmware** (if there is a new release available) until you have checked the GitHub discussions page in case of incompatibility. Check the [Releases page here](https://github.com/Builty/TonexOneController/releases).
-2.  If you update your ToneX One, your Polar may not work until a new firmware update has been released for it.
-
-!!! Success Ready to go
-    If there is a new release on the GitHub Releases page and no new ToneX One update, you can update safely.
-
-Detailed instructions for installing the firmware can be found [here](https://github.com/Builty/TonexOneController/blob/main/FirmwareUploading.md).
-
----
-
-## 6. Contributing to the Project
+## 5. Contributing to the Project
 
 * **Via Purchase**: Your purchase has already funded the open source project. 10% of all Polar controller revenue is sent to Greg Smith as a thank you for creating and maintaining the software and firmware.
 * **Via Discussion**: Lodge an issue or discuss feature ideas on the [GitHub repo](https://github.com/Builty/TonexOneController).

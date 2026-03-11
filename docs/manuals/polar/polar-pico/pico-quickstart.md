@@ -15,7 +15,9 @@
 
 ### What You Need
 * **USB Type C cable**: The cable that comes with the ToneX One is perfect for this.
+
 * **9V DC power**: Use the included adapter cable. Pedalboard power supplies are suitable. Needs at least 300mA.
+
 * **MIDI controller**: This can be an app, a DAW, a MIDI controller pedal or desktop device - anything that can send MIDI messages.
 * **Computer or Phone**: Use the browser and WiFi settings on your computer or phone to access the configuration web page for the Polar controllers.
 
