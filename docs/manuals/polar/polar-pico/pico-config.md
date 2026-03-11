@@ -19,7 +19,7 @@ For the first time, you need to connect to the controller in Access Point (AP) m
 ### QR Code Connection
 You can also connect to the controller by scanning the below QR code using your phone camera or QR scanning app:
 
-![Polar WiFi Connection QR Code](../../assets/PolarImages/polar-qr.png)
+![Polar WiFi Connection QR Code](../../../assets/PolarImages/polar-qr.png)
 
 ### Settings Changed in Web Configuration
 The following settings can be found on the web configuration page. More detailed descriptions for each setting can be found on the [GitHub page](https://github.com/Builty/TonexOneController/blob/main/WebConfiguration.md).
