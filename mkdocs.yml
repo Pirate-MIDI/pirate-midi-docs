@@ -64,11 +64,11 @@ nav:
       - Aero: manuals/aero/index.md
       - Polar:
         - Polar Pico:
-            - Introduction: manuals/polar/polar-pico/index.md
-            - Quickstart: manuals/polar/polar-pico/pico-quickstart.md
-            - Connect & Configure: manuals/polar/polar-pico/pico-config.md
-            - MIDI Commands: manuals/polar/polar-pico/pico-midi-commands.md
-            - Warranty: manuals/polar/polar-pico/pico-warranty.md
+          - Introduction: manuals/polar/polar-pico/index.md
+          - Quickstart: manuals/polar/polar-pico/pico-quickstart.md
+          - Connect & Configure: manuals/polar/polar-pico/pico-config.md
+          - MIDI Commands: manuals/polar/polar-pico/pico-midi-commands.md
+          - Warranty: manuals/polar/polar-pico/pico-warranty.md
       - CLiCK v2: manuals/click-v2/index.md
       - Exp-Doubler: manuals/exp-doubler/index.md
       - CLiCK v1: manuals/click-v1/index.md
