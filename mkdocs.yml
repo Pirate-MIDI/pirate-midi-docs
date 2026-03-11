@@ -62,13 +62,13 @@ nav:
       - Bridge6: manuals/bridge6/index.md
       - Bridge4: manuals/bridge4/index.md
       - Aero: manuals/aero/index.md
-      - Polar: manuals/polar/index.md
+      - Polar:
         - Polar Pico:
           - Introduction: manuals/polar/polar-pico/index.md
           - Quickstart: manuals/polar/polar-pico/pico-quickstart.md
           - Connect & Configure: manuals/polar/polar-pico/pico-config.md
-          - MIDI Commands: manuals/polar/polar-pico/pico-midi-commands.md
           - Update Firmware: manuals/polar/polar-pico/pico-firmware.md
+          - MIDI Commands: manuals/polar/polar-pico/pico-midi-commands.md
           - Warranty: manuals/polar/polar-pico/pico-warranty.md
       - CLiCK v2: manuals/click-v2/index.md
       - Exp-Doubler: manuals/exp-doubler/index.md

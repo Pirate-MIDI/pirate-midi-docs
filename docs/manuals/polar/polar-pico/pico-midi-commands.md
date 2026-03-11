@@ -6,6 +6,9 @@ There is no setup needed to use these commands. You can take your Polar out of t
 
 The default MIDI channel for the device is channel 1. You can change this in the web config.
 
+!!! tip "Hot Tip: Use our MIDI Controllers!"
+    If you're using a PIRATE MIDI controller, you can use our Device Library to save you time. Instead of looking up commands in this list and typing in numbers, just click and choose the commands you want inside our web editor and the MIDI numbers will be automatically filled for you - no more manual diving!
+
 ### ToneX/ToneX One
 
 | Name | MIDI CC# | Value |

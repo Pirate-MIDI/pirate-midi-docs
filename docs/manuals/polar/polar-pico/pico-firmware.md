@@ -9,7 +9,7 @@ IK Multimedia does not support MIDI, and this open source project is not in thei
 
 Normally, installing the firmware is a simple and automatic process which you can do using [this web tool](https://builty.github.io/TonexOneController/).
 
-!!! Success Ready to go
+!!! success "Ready to go"
     If there is a new release on the GitHub Releases page and no new ToneX One update, you can update safely.
 
 Detailed instructions for installing the firmware can be found [here](https://github.com/Builty/TonexOneController/blob/main/FirmwareUploading.md).
