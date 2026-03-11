@@ -9,8 +9,8 @@ For the first time, you need to connect to the controller in Access Point (AP) m
 3.  Enter the password for the network: **12345678**.
 4.  The controller will automatically supply a network address for your device (DHCP is supported).
     
-    !!! Attention 
-        some phones may attempt to use this network for Internet access, which will not be available. Watch out for any messages asking you to confirm the connection.
+!!! tip 
+    Some phones may attempt to use this network for Internet access, which will not be available. Watch out for any messages asking you to confirm the connection.
 
 5.  Open a web browser on your phone, tablet, or computer.
 6.  In the address bar of the web browser, enter [http://tonex.local](http://tonex.local). This should load the web config screen.
@@ -21,7 +21,7 @@ You can also connect to the controller by scanning the below QR code using your 
 
 ![Polar WiFi Connection QR Code](../../../assets/PolarImages/polar-qr.png)
 
-### Settings Changed in Web Configuration
+### Settings Changed by Web Configuration
 The following settings can be found on the web configuration page. More detailed descriptions for each setting can be found on the [GitHub page](https://github.com/Builty/TonexOneController/blob/main/WebConfiguration.md).
 
 * **Gate/Noise Gate**: Enable, Post, Threshold, Release, Depth.
@@ -33,6 +33,8 @@ The following settings can be found on the web configuration page. More detailed
 * **External Switches**: Change Settings for External Switches (would require extra modification. See GitHub repo for more details).
 * **WiFi**: Change WiFi Mode, WiFi Power, Network Name (SSID), and Password.
 * **System**: Save and Reboot Polar to Activate New Settings.
+
+![Web Config example screenshot](../../../assets/PolarImages/screenshots/global-settings.PNG)
 
 ---
 
@@ -56,21 +58,30 @@ This toggle enables support for Control Change (CC) commands over Bluetooth. The
 * This toggle is **disabled by default**, because the M-Vave Chocolate pedal, when changing banks, sends a conflicting change that modifies the ToneX parameters.
 * This setting should not be enabled with a Chocolate controller that has the default configuration loaded.
 
+![BT settings page](../../../assets/PolarImages/screenshots/bt-settings.PNG)
+
 ---
 
 ## 4. Miscellaneous Settings
 
-### Preset Twice Toggle
+### Preset Twice Toggle (Toggle Bypass)
 * **Disabled (default)**: Setting the same preset index multiple times will not have any effect.
 * **Enabled**: Setting the same preset a second time will set the ToneX pedal to bypass mode. Setting it a third time will exit bypass mode. This setting is most suited to use with pedal models.
 
-### Footswitch (onboard) Mode
-This setting controls how directly wired (onboard) footswitches will function. Note this has nothing to do with Bluetooth footswitch pedals, or the externally connected footswitches.
-* **Dual Next/Previous**: 2 footswitches that select preset next and previous.
-* 
+![FS toggle example](../../../assets/PolarImages/screenshots/misc-settings.PNG)
 
-### Save and Reboot
-The Save and Reboot buttons on each configuration page will save all settings and reboot the controller to take effect.
+### Preset/Bank Switch Loop
+This setting controls whether incrementing the preset from the last preset will "loop" back around to the first preset or not. It also affects decrementing from the first preset to the last or not.
+
+### High Touch Sensitivity
+For models with a touch screen, the acrylic overlay can decrease the responsiveness of the touch interface. Turning this toggle on will increase the sensitivity to return performance to normal with the acrylic protector in place. 
+
+### Disable BPM Flash
+This setting does what it says. If you don't like the flash of the tempo on the main screen, turn this toggle on to stop the flashing.
+
+
+!!! success Save and Reboot
+    The Save and Reboot buttons on each configuration page will save all settings and reboot the controller to take effect.
 
 ---
 
@@ -81,7 +92,7 @@ IK Multimedia does not support MIDI, and this open source project is not in thei
 1.  **Do not update your ToneX One firmware** (if there is a new release available) until you have checked the GitHub discussions page in case of incompatibility. Check the [Releases page here](https://github.com/Builty/TonexOneController/releases).
 2.  If you update your ToneX One, your Polar may not work until a new firmware update has been released for it.
 
-!!! Note
+!!! Success Ready to go
     If there is a new release on the GitHub Releases page and no new ToneX One update, you can update safely.
 
 Detailed instructions for installing the firmware can be found [here](https://github.com/Builty/TonexOneController/blob/main/FirmwareUploading.md).

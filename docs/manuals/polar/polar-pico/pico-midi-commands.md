@@ -1,4 +1,10 @@
-## 7. MIDI Implementation
+## 7. MIDI Commands
+
+Polar devices are designed to connect to the ToneX, ToneX One, or the Valeton GP-5. Below you will find two different MIDI command tables. One for the IK Multimedia products, and one for the Valeton products.
+
+There is no setup needed to use these commands. You can take your Polar out of the box, plug in the power and connect the USB to the pedal of your choice, then send these MIDI commands to the Polar to control the listed parameters. 
+
+The default MIDI channel for the device is channel 1. You can change this in the web config.
 
 ### ToneX/ToneX One
 
@@ -120,7 +126,7 @@
 | Global Volume | 122 | 0-127 |
 | Select Preset | 127 | 0-19 |
 
-### Valeton GP5
+### Valeton GP-5
 
 | Name | MIDI CC# | Value |
 | ------------ | ---------- | --------------------- |

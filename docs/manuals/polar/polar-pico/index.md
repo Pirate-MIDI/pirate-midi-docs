@@ -9,7 +9,7 @@ Thanks for purchasing a Polar Pico! This smart little box is designed to connect
 
 This is enabled by translating incoming MIDI commands into the USB serial messages that the ToneX One is expecting. 
 
-!!! attention
+!!! example Experimental
     This is considered a "hack" and not something that IK Multimedia will provide customer support for.
 
 ### Contacting Support

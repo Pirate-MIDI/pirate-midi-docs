@@ -20,4 +20,4 @@
 * **Computer or Phone**: Use the browser and WiFi settings on your computer or phone to access the configuration web page for the Polar controllers.
 
 ### First Time Setup
-The device is pre-configured to work as soon as you power it up with all the hardware features activated. Simply plug in the ToneX One pedal, plug a MIDI device into the 3.5mm TRS jack, and you can select presets using Program Change (PC) messages, or change parameters, scroll presets, and toggle effects using the MIDI messages listed at the end of this manual.
+The device is pre-configured to work as soon as you power it up with all the hardware features activated. Simply plug in the ToneX One pedal, plug a MIDI device into the 3.5mm TRS jack, and you can select presets using Program Change (PC) messages, or change parameters, scroll presets, and toggle effects using the MIDI messages listed on the [MIDI Commands page](../polar-pico/pico-midi-commands.md).
