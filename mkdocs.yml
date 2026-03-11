@@ -62,7 +62,7 @@ nav:
       - Bridge6: manuals/bridge6/index.md
       - Bridge4: manuals/bridge4/index.md
       - Aero: manuals/aero/index.md
-      - Polar:
+      - Polar: manuals/polar/index.md
         - Polar Pico:
           - Introduction: manuals/polar/polar-pico/index.md
           - Quickstart: manuals/polar/polar-pico/pico-quickstart.md
