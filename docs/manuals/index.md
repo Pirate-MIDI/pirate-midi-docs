@@ -14,10 +14,10 @@ Click on any of our devices below to view our user manual. You can also navigate
     ![Scribble](../assets/ProductThumbnails/Scribble%20Thumbnail%20976px.jpg)
     Mini LCD and MIDI Controller to give your pedals Superpowers.
 
--   :material-book: **[Polar](polar/index.md)**  
+-   :material-book: **[Polar Pico](polar/polar-pico/index.md)**  
     
-    ![Polar](../assets/ProductThumbnails/Polar%20Max%20Thumbnail%20976px.jpg) 
-    Mini-sized controller in multiple variants for controlling ToneX pedals.
+    ![Polar Pico](../assets/PolarImages/polar-pico-v2-side.jpg) 
+    Tiny box for adding MIDI control and wireless editing to ToneX/ToneX One and GP-5.
 
 -   :material-book: **[Bridge6](bridge6/index.md)**  
     
