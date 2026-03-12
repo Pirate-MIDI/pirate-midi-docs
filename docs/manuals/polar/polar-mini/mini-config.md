@@ -34,7 +34,7 @@ The following settings can be found on the web configuration page. More detailed
 * **WiFi**: Change WiFi Mode, WiFi Power, Network Name (SSID), and Password.
 * **System**: Save and Reboot Polar to Activate New Settings.
 
-<img src="../../../assets/PolarImages/screenshots/global-settings.PNG" alt="BT settings page" width="50%">
+![Global settings page](../../../assets/PolarImages/screenshots/global-settings.PNG)
 
 ---
 
@@ -58,7 +58,7 @@ This toggle enables support for Control Change (CC) commands over Bluetooth. The
 * This toggle is **disabled by default**, because the M-Vave Chocolate pedal, when changing banks, sends a conflicting change that modifies the ToneX parameters.
 * This setting should not be enabled with a Chocolate controller that has the default configuration loaded.
 
-<img src="../../../assets/PolarImages/screenshots/bt-settings.PNG" alt="BT settings page" width="50%">
+![Bluetooth settings page](../../../assets/PolarImages/screenshots/bt-settings.PNG)
 
 ---
 
@@ -68,16 +68,13 @@ This toggle enables support for Control Change (CC) commands over Bluetooth. The
 * **Disabled (default)**: Setting the same preset index multiple times will not have any effect.
 * **Enabled**: Setting the same preset a second time will set the ToneX pedal to bypass mode. Setting it a third time will exit bypass mode. This setting is most suited to use with pedal models.
 
-<img src="../../../assets/PolarImages/screenshots/misc-settings.PNG" alt="BT settings page" width="50%">
+![Miscellaneous settings page](../../../assets/PolarImages/screenshots/misc-settings.PNG)
 
 ### Preset/Bank Switch Loop
 This setting controls whether incrementing the preset from the last preset will "loop" back around to the first preset or not. It also affects decrementing from the first preset to the last or not.
 
 ### High Touch Sensitivity
 For models with a touch screen, the acrylic overlay can decrease the responsiveness of the touch interface. Turning this toggle on will increase the sensitivity to return performance to normal with the acrylic protector in place. 
-
-### Disable BPM Flash
-This setting does what it says. If you don't like the flash of the tempo on the main screen, turn this toggle on to stop the flashing.
 
 
 !!! success "Save and Reboot"
