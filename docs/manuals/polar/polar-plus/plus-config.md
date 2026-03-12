@@ -76,6 +76,9 @@ This setting controls whether incrementing the preset from the last preset will 
 ### High Touch Sensitivity
 For models with a touch screen, the acrylic overlay can decrease the responsiveness of the touch interface. Turning this toggle on will increase the sensitivity to return performance to normal with the acrylic protector in place. 
 
+### Disable BPM Flash
+This setting does what it says. If you don't like the flash of the tempo on the main screen, turn this toggle on to stop the flashing.
+
 
 !!! success "Save and Reboot"
     The Save and Reboot buttons on each configuration page will save all settings and reboot the controller to take effect.
