@@ -24,8 +24,7 @@ Welcome to the Pirate MIDI Docs site. Here you can find documentation for all ou
 
     Use our _Device API_ and create custom third party integrations with any app or device.
 
-    [:octicons-arrow-right-24: Go To Documentation](device-api/index.md)
-    
+    [:octicons-arrow-right-24: Go To Documentation](https://developer.piratemidi.com)
 -   :octicons-tools-24: __Technical Support & Troubleshooting__
 
     ---
