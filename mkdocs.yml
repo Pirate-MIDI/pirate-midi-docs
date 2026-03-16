@@ -84,7 +84,11 @@ nav:
           - Update Firmware: manuals/polar/polar-pico/pico-firmware.md
           - MIDI Commands: manuals/polar/polar-pico/pico-midi-commands.md
           - Warranty: manuals/polar/polar-pico/pico-warranty.md
-      - CLiCK v2: manuals/click-v2/index.md
+      - CLiCK v2: 
+        - Overview: manuals/click-v2/index.md
+        - Examples: manuals/click-v2/click-examples.md
+        - MIDI Implementation: manuals/click-v2/click-midi-implementation.md
+        - Warranty: manuals/click-v2/click-warranty.md
       - Exp-Doubler: manuals/exp-doubler/index.md
       - CLiCK v1: manuals/click-v1/index.md
       - µLOOP v1: manuals/µloop/index.md
