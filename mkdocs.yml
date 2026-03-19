@@ -61,7 +61,18 @@ nav:
       - Scribble: manuals/scribble/index.md
       - Bridge6: manuals/bridge6/index.md
       - Bridge4: manuals/bridge4/index.md
-      - Aero: manuals/aero/index.md
+      - Aero: 
+        - Introduction: manuals/aero/index.md
+        - Quickstart: manuals/aero/aero-quickstart.md
+        - Device Overview: manuals/aero/aero-device-overview.md
+        - Flexiports & MIDI: manuals/aero/aero-flexiports-and-midi.md
+        - Messages & Modes: manuals/aero/aero-messages-and-modes.md
+        - MIDI Clock: manuals/aero/aero-midi-clock.md
+        - LFOs & Aux Switches: manuals/aero/aero-lfo-aux.md
+        - More Features & Settings: manuals/aero/aero-features-and-settings.md
+        - Resetting & Updating: manuals/aero/aero-resetting-and-updating.md
+        - MIDI Implementation: manuals/aero/aero-midi-implementation.md
+        - Warranty: manuals/aero/aero-warranty.md
       - Polar:
         - Polar Plus:
           - Introduction: manuals/polar/polar-plus/index.md

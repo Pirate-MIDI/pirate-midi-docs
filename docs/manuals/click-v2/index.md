@@ -1,6 +1,8 @@
 # CLICK V2
 **Wireless MIDI & Utility Hub (v2.0.0)**
 
+![CLiCK v2 Context](../../assets/ClickImages/click-feature.jpg)
+
 ---
 
 ## Device Overview
@@ -11,7 +13,7 @@ With USB power only, the CLICK can be used as a USB MIDI interface with the buil
 Each of the 128 presets can save your desired relay states for the Tip and the Ring independently as well as the position of the expression output. Please note that expression output requires a 9v DC connection and will not work on USB power only. 
 
 !!! note
-    The Expression outputs does not function as a CV output, but a passive variable-resistance device which emulates a normal passive expression pedal.
+    The Expression output does not function as a CV output, but a passive variable-resistance device which emulates a normal passive expression pedal.
 
 For even more flexibility, the MIDI out jack can be switched between MIDI Type A, MIDI Type B, or an aux switch input jack for directly controlling preset changes (up or down) without needing to send MIDI to the CLICK. The onboard utility LEDs let you select what kind of information you want to see so that no matter which features of the CLICK you're using, you get useful LED feedback.
 
