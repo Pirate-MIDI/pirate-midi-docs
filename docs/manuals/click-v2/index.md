@@ -120,8 +120,10 @@ The CLiCK has 2 RGB LEDs with multiple modes selectable in the web editor's Glob
 
 ## 5. USB & USB MIDI
 The CLiCK is a class-compliant device. It is automatically recognized by Windows, macOS, iOS, Android, and iPadOS when connected via the USB C "Device" port. 
-* **Note**: Mobile devices may not provide enough power; use a powered USB hub or the 9V DC jack if needed.
-* **USB Host vs. Device**: The "Device" port connects to a host (Computer/Phone). The "Host" port (future update) will connect directly to MIDI pedals.
+
+**Note**: Mobile devices may not provide enough power; use a powered USB hub or the 9V DC jack if needed.
+
+**USB Host vs. Device**: The "Device" port connects to a host (Computer/Phone). The "Host" port is to connect to a single USB device like a MIDI controller, MIDI keyboard, sequencer, or pedal's USB MIDI port.
 
 ### USB Host
 USB MIDI devices like keyboards, synths, drum machines, MIDI controllers etc generally require a host like a tablet, phone, or computer to work with USB MIDI. The CLiCK performs this hardware role and is able to send and receive USB MIDI from such devices directly.
