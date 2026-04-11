@@ -6,9 +6,9 @@
 ---
 
 ## Device Overview
-The CLICK is a hub for wireless MIDI, relay switching, and emulated expression control. It is made in New South Wales, Australia and supports our Device API for external control. Now you can bring more of your non-MIDI devices into your MIDI universe.
+The CLICK is a hub for wireless MIDI, USB MIDI host, relay switching, and emulated expression control. It is made in New South Wales, Australia and supports our Device API for external control. Now you can bring more of your non-MIDI devices into your MIDI universe.
 
-With USB power only, the CLICK can be used as a USB MIDI interface with the built-in 3.5mm TRS MIDI jacks, a MIDI-controlled relay switcher with the 1/4" TRS relay jack, and a WiFi or Bluetooth LE MIDI interface.
+With USB power only, the CLICK can be used as a USB MIDI and USB MIDI host interface with the built-in 3.5mm TRS MIDI jacks, a MIDI-controlled relay switcher with the 1/4" TRS relay jack, USB C jacks, and a WiFi or Bluetooth LE MIDI interface.
 
 Each of the 128 presets can save your desired relay states for the Tip and the Ring independently as well as the position of the expression output. Please note that expression output requires a 9v DC connection and will not work on USB power only. 
 
@@ -55,7 +55,7 @@ It's important that firmware updates are installed when they are available. Old 
 ![CLiCK v2 Hardware Layout 1](../../assets/ClickImages/click-hardware-1.jpeg)
 
 1. **USB Device Port**: For powering the CLICK and connecting to computers to use CLICK as a USB MIDI interface.
-2. **USB Host Port**: (Currently inactive) Designed for USB MIDI Host functionality in a future update.
+2. **USB Host Port**: (Active from firmware v.2.0.5) Connect a single USB device and receive and send USB MIDI without needing to connect to a phone or computer.
 3. **9V DC Jack**: Centre negative 2.1mm barrel jack. 150mA recommended. Required for expression emulation.
 4. **3.5mm TRS MIDI**: Input and output. Output is switchable between Type A, Type B, or Aux switch input.
 
@@ -102,11 +102,11 @@ The CLiCK has 2 RGB LEDs with multiple modes selectable in the web editor's Glob
 ## 3. Overview of Connectors
 
 * **USB Device (Type-C)**: Class-compliant USB MIDI. Connect to computers, phones, or tablets.
-* **USB Host (Type-C)**: (Inactive) Future support for MIDI controllers/pedals.
-* **9V DC**: Standard pedal power. 150mA required.
-* **1/4" TRS Relay**: Two independent relays (Tip and Ring) controllable via MIDI CC or presets.
+* **USB Host (Type-C)**: Single-device USB host port. Cannot read USB hubs. Supplies USB specification power (5V, up to 500mA). Requires input power supply to match connected device's requirement.
+* **9V DC**: Standard pedal power. minimum 150mA required. More if powering a USB device via USB host port.
+* **1/4" TRS Relay**: Two independent silent relays (Tip and Ring) controllable via MIDI CC or presets.
 * **1/4" TRS Expression**: Passive variable-resistance emulation for non-MIDI pedals.
-* **3.5mm TRS MIDI**: Type A compliant input. Output is switchable (Type A, Type B, or Aux In).
+* **3.5mm TRS MIDI**: Type A opto-isolated input. Output is switchable (Type A, Type B, or Aux In).
 
 ---
 
@@ -119,9 +119,31 @@ The CLiCK has 2 RGB LEDs with multiple modes selectable in the web editor's Glob
 ---
 
 ## 5. USB & USB MIDI
-The CLiCK is a class-compliant device. It is automatically recognized by Windows, macOS, iOS, Android, and iPadOS.
+The CLiCK is a class-compliant device. It is automatically recognized by Windows, macOS, iOS, Android, and iPadOS when connected via the USB C "Device" port. 
 * **Note**: Mobile devices may not provide enough power; use a powered USB hub or the 9V DC jack if needed.
 * **USB Host vs. Device**: The "Device" port connects to a host (Computer/Phone). The "Host" port (future update) will connect directly to MIDI pedals.
+
+### USB Host
+USB MIDI devices like keyboards, synths, drum machines, MIDI controllers etc generally require a host like a tablet, phone, or computer to work with USB MIDI. The CLiCK performs this hardware role and is able to send and receive USB MIDI from such devices directly.
+
+USB Host will allow USB MIDI messages from class-compliant USB MIDI devices to be fed into your CLiCK. Use MIDI Thru settings to choose where those incoming messages are sent to, and whether outgoing messages are sent to the USB host port. 
+
+This includes devices that **only** have USB MIDI and no regular MIDI cable connectors (such as the Zoom Multistomp pedals, or UAFX pedals).
+
+Only one device can be connected to the USB Host port at a time, and it will be able to supply the standard USB 5V 500mA power to your device. 
+
+!!! note
+    Please keep in mind that some devices may not be designed to be powered solely by the USB port, and will still need a power supply.
+
+!!! warning "Requirements"
+    This feature will only work with USB "Full Speed" (i.e. USB 2.0)  devices. 
+
+    Also, some composite devices may not work. Composite devices are devices that enumerate as multiple different types of USB devices at once. For example, the device may work as an audio interface and a MIDI device at the same time. 
+
+    If you encounter issues with a device, we may be able to investigate a fix. Please email us and let us know as much detail as possible about the situation. 
+
+    support@piratemidi.com
+
 
 ---
 

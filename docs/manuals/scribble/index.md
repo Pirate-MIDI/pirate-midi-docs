@@ -68,6 +68,13 @@ It shows **text labels**, **preset numbers**, **MIDI clock data**, and **connect
 Connect to any 5V USB-C or 9V DC power source.  
 On first power-up, a welcome process will start and prompt for any new firmware updates. After first power-up, this screen will not show again.
 
+!!! warning "USB Power Delivery (PD) Warning"
+    Please be aware that some USB Power Delivery (PD) power supplies and power banks will send out short pulses of high current or high voltage power to any attached device to try and find the maximum power level to use. In rare cases, these higher levels of voltage or current may damage your Scribble - especially if the power bank or power supply is not of sufficient quality. 
+    
+    Please avoid using these types of power supplies where possible to avoid accidental damage to the USB power circuitry.
+    
+    
+
 ### 2. Open the Web Editor
 Go to:  
 [**https://edit.piratemidi.com**](https://edit.piratemidi.com)
