@@ -101,7 +101,6 @@ nav:
         - MIDI Implementation: manuals/click-v2/click-midi-implementation.md
         - Warranty: manuals/click-v2/click-warranty.md
       - Exp-Doubler: manuals/exp-doubler/index.md
-      - CLiCK v1: manuals/click-v1/index.md
       - µLOOP v1: manuals/µloop/index.md
       - Thru Gizmo: manuals/thru-gizmo/index.md
   - Device API: https://developer.piratemidi.com
