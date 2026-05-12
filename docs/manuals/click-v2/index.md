@@ -81,7 +81,12 @@ The CLiCK has 2 RGB LEDs with multiple modes selectable in the web editor's Glob
 * **Wireless Status (Bluetooth LE)**: Solid Red (No connection), Pulsing Blue (Connected).
 * **Wireless Status (WiFi)**: Pulsing Teal (AP Mode/Setup), Pulsing Purple (Connected to network).
 * **MIDI In**: Normally off, flashes purple upon receiving MIDI input.
-* **Relay State**: Shows different colours based on Tip and Ring states (open/closed).
+* **Relay State**: Shows different colours based on Tip and Ring states (open/closed). 
+    * Green: Tip=Open Ring=Closed
+    * Purple: Tip=Closed Ring=Open
+    * White: Both Closed (connected)
+    * Off: Both Open (disconnected)
+
 * **Expression**: Indicates expression position via brightness levels.
 
 ---

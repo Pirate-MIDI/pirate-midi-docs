@@ -163,8 +163,8 @@ Here you will find a set of submenus which let you set colours, modes, and MIDI 
 | Submenu | What's Inside |
 |--------|---------|
 | **Preset Settings** | Text Fields, Colours, Tempo |
-| **Switch Messages** | Add MIDI Messages To Each Switch |
-| **Preset Messages** | Add Other Custom MIDI Messages |
+| **Switch Messages** | Add MIDI Messages and Smart Messages To Each Switch |
+| **Preset Messages** | Add Other Custom MIDI Messages and Smart Messages |
 
 ![Scribble Preset Settings Page](../../assets/ScribbleImages/scribble-editor-preset-settings.png)
 
@@ -179,13 +179,42 @@ Preset Messages are sent when you enter the selected preset on the Scribble. For
 #### Preset Custom Trigger Messages
 Preset Custom Trigger Messages are only activated when the default or user-assigned MIDI CC message is received by the Scribble. The default CC for Preset Custom Trigger Messages is `16`.
 
+## Message Types
+
+### MIDI Messages
+You can add custom MIDI messages to any message stack on the Scribble. The types of MIDI messages you can add are:
+
+- Control Change
+- Program Change
+- Channel Pressure
+- Pitch Bend
+- Note Off
+- Note On
+- Poly Pressure
+
+### Smart Messages
+
+![Scribble Smart Messages](../../assets/ScribbleImages/scribble-editor-smart-messages.png)
+
+#### Blocking Delay
+Add this delay message anywhere in a message stack to add a custom delay from 10ms to 1270ms in 10ms increments. You can add them anywhere and they will add a pause between MIDI messages to allow for devices which has a slower processing time or which get overwhelmed by a lot of messages in quick succession. 
+
+#### Send Current Preset
+Design specifically to enable simpler preset saving in Chase Bliss Audio pedals. Send this Smart Message and your Scribble will send the current preset number as a PC message which is useful for overwriting the current preset on Chase Bliss Pedals. 
+
+#### Set Tempo
+This message lets you use a button to instantly change the preset's tempo or global tempo (depending on which you're using) to a pre-defined tempo that you add in this Smart Message. Say the preset is 120bpm, but you want the option to set it to 140bpm - just add a Set Tempo Smart Message with 140bpm and you can switch to 140bpm instantly. 
+
+#### Change Tempo
+Set positive or negative numbers in this message to allow incrementing or decrementing the tempo by pre-defined step sizes. If you add `5` as the value on switch 2 and `-5` as the value on switch 1, you will have quick control of the tempo in 5bpm increments. 
+
 ## Global Settings Page
 Here you will find a set of submenus which let you configure MIDI channel, MIDI outputs, MIDI Thru routing, custom global messages, and more. MIDI Messages added to a *global* message stack will not be restricted to a single preset, but available at all times in all presets.
 
 | Submenu | What's Inside |
 |--------|---------|
-| **Device Settings** | USB Display Name, Light/Dark Mode, Display Brightness, Colours |
-| **MIDI Settings** | TRS MIDI Type, Clock Mode, Ext CC, MIDI Channel, Thru Routing |
+| **Device Settings** | USB Display Name, Light/Dark Mode, Display Brightness, Colours, |
+| **MIDI Settings** | TRS MIDI Type, Clock Mode, Ext CC, MIDI Channel, Thru Routing, MIDI Value Display (Bar Graph) |
 | **Switch Settings** | Switch Modes, Global Switch Messages |
 | **Global Messages** | Global Custom Trigger MIDI Messages |
 | **Wireless Settings** | Wireless Mode, BLE Mode |
@@ -233,6 +262,26 @@ Set the tempo of the Scribble's own MIDI clock generator. Global BPM will apply 
 **Clock Display Type**: 
 This lets you change the BPM readout on the Scribble between a BPM number, milliseconds number, or a flashing indicator only. 
 
+**Tap Tempo Quantization**:
+This averages the tempo to the nearest 0.2, 0.5, 1, and 5bpm when using the tap tempo Smart Message. 
+
+![Scribble Tap Tempo Quantization](../../assets/ScribbleImages/scribble-editor-tap-tempo-quantization.png)
+
+#### MIDI Value Display (Bar Graph)
+These options allow the Scribble to dynmaically display changes to a MIDI CC value as it comes into the Scribble. This value can, of course, be passed through the Scribble and out to other devices using MIDI Thru routing. 
+
+* **MIDI Value Display** - change the mode of the dynmaic display
+    - `None`
+    - `Bar` *(horizontal bar graph)*
+    - `Bar + Percent` *(graph and percentage value)*
+    - `Bar + Value` *(graph and CC's last sent value 0-127)*
+    - `Percent Only` *(no graph)*
+    - `Value only` *(no graph)*
+
+![Scribble Bar Graph Options](../../assets/ScribbleImages/scribble-editor-midi-value-display.png)
+
+![Scribble Showing Bar Graph](../../assets/ScribbleImages/scribble-midi-value-display.jpg)
+
 **MIDI Thru Routing**: 
 When MIDI comes into the Scribble via any of the three inputs (TRS, USB, BLE), you can choose whether that MIDI is automatically duplicated to any of the other outputs, or whether it ends its journey inside the Scribble.
 
@@ -264,6 +313,7 @@ These modes change how each of the buttons work. You can limit Scribble preset c
 - `Hold Preset Down`
 - `Hold Preset Up`
 - `MIDI Only` Send only your custom MIDI messages
+- `Tap Tempo` only changes tempo - no other messages will send
 
 **Press/Hold Messages**: 
 Just like preset-level switch messages, you can add custom MIDI messages that are sent on a `Press` or a `Hold` action. These will activate on every single preset, and they will be sent **in addition** to the preset-level switch messages. 
@@ -330,6 +380,25 @@ Compatible with:
 ### BLE MIDI
 Bluetooth Low Energy (BLE) MIDI can be used with WIDI by CME, M-Vave Chocolate, and other BLE MIDI devices to wirelessly send MIDI to your Scribble to control it. 
 Tablets, phones, and computers can also connect and send MIDI. Apps like TouchOSC, DAWs, OnSong, and other sheet music apps can often send MIDI over BLE. 
+
+To connect a BLE MIDI device, you will need a third party app on your tablet or phone. If you're connecting to a computer, this is not needed.
+After you connect the Scribble to your device with one of these apps, then the BLE MIDI input and output of the Scribble will show up in the MIDI-compatible apps you're using on your device. 
+
+#### App Suggestions
+
+!!! warning
+    Pirate MIDI takes no responsiblity for the performance or security of these apps. They are not endorsed or reviewed by us. 
+    Choose a suitable app based on your own requirements. 
+
+
+**iOS**
+- [midimittr](https://apps.apple.com/us/app/midimittr/id925495245)
+- [Bluetooth MIDI Connect](https://apps.apple.com/us/app/bluetooth-midi-connect/id1108321791)
+- [Conji](https://apps.apple.com/us/app/conji-bluetooth-le-midi/id1515014813)
+
+**Android**
+- [MIDI BLE Connect](https://play.google.com/store/apps/details?id=com.mobileer.example.midibtlepairing&pcampaignid=web_share)
+- [Bluetooth MIDI Connect](https://play.google.com/store/apps/details?id=bluetooth.midi.connect&pcampaignid=web_share)
 
 ---
 
