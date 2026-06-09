@@ -7,10 +7,10 @@
 ## Introduction
 Thanks for purchasing a Polar Mini! This smart little box is designed to connect a ToneX One into a MIDI control system - whether that's using an app on your phone, a foot controller, a DAW, or a keyboard. Based on the ESP32 hardware platform, and using the open source firmware and software built by Greg Smith (Builty), the Polar series allows you to switch presets, toggle effects, change parameters, and more - all with MIDI control.
 
-This is enabled by translating incoming MIDI commands into the USB serial messages that the ToneX One is expecting. 
+This is enabled by translating incoming MIDI commands into the USB serial messages that the ToneX One and GP-5 are expecting. 
 
 !!! example "Experimental"
-    This is considered a "hack" and not something that IK Multimedia will provide customer support for.
+    This is considered a "hack" and not something that IK Multimedia or Valeton will provide customer support for.
 
 ## Video Resources
 

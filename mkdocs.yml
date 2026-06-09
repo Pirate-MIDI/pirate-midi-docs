@@ -74,6 +74,13 @@ nav:
         - MIDI Implementation: manuals/aero/aero-midi-implementation.md
         - Warranty: manuals/aero/aero-warranty.md
       - Polar:
+        - Polar Max:
+          - Introduction: manuals/polar/polar-max/index.md
+          - Quickstart: manuals/polar/polar-max/max-quickstart.md
+          - Connect & Configure: manuals/polar/polar-max/max-config.md
+          - Update Firmware: manuals/polar/polar-max/max-firmware.md
+          - MIDI Commands: manuals/polar/polar-max/max-midi-commands.md
+          - Warranty: manuals/polar/polar-max/max-warranty.md
         - Polar Plus:
           - Introduction: manuals/polar/polar-plus/index.md
           - Quickstart: manuals/polar/polar-plus/plus-quickstart.md
