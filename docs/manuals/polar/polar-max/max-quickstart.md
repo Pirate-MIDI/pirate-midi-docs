@@ -13,7 +13,7 @@
 
 * **Cooling/Buttons**: Vent holes for cooling as well as convenient access to reset and bootloader buttons.
 
-* **Button Orientation**: With switch holes (right side of the Polar Max) pointing towards you, **Bootloader=Left & Reset=Right**.
+* **Button Orientation**: With switch holes (left side of the Polar Max) pointing towards you, **Bootloader=Right & Reset=Left**.
 
 * **Power**: 9V DC 2.1mm centre negative barrel jack for power.
 
