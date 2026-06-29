@@ -193,6 +193,9 @@ WiFi mode enables RTP MIDI (AppleMIDI) over your network.
 * **Configuration**: Connect to the "CLiCK Setup" WiFi network and visit `192.168.4.1` in your browser to enter your local network credentials.
 * **Status**: LED2 pulses purple when connected to your network.
 
+!!! note "Edit Saved WiFi Details"
+    To change the saved WiFi details, you'll need to turn off the network of the saved details so that it fails to connect. When it fails, it will default to broadcasting its own "CLiCK Setup" WiFi network again.
+
 ---
 
 ## 10. Resetting or Updating
