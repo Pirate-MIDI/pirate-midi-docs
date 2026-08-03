@@ -10,9 +10,14 @@ Click on any of our devices below to view our user manual. You can also navigate
 <div class="grid cards" markdown>
 
 -   :material-book: **[Scribble](scribble/index.md)**  
-    
+  
     ![Scribble](../assets/ProductThumbnails/Scribble%20Thumbnail%20976px.jpg)
     Mini LCD and MIDI Controller to give your pedals Superpowers.
+
+-   :material-book: **[Polar Max](polar/polar-max/index.md)**  
+    
+    ![Polar Max](../assets/ProductThumbnails/Polar%20Max%20Thumbnail%20976px.jpg)
+    Switches, LEDs, and touchscreen for adding MIDI control & wireless editing to ToneX/ToneX One and GP-5.
 
 -   :material-book: **[Polar Plus](polar/polar-plus/index.md)**  
     
