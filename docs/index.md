@@ -1,5 +1,7 @@
 # Pirate MIDI Documentation
 
+![PIRATE MIDI](assets/B6%20Top%20Color%20Setting%202_1080.jpeg)
+
 Welcome to the Pirate MIDI Docs site. Here you can find documentation for all our products as well as our Device API. This site is a constantly updated resource. If something doesn't match what you're seeing, please make sure to [update your firmware to the latest version](https://update.piratemidi.com)
 
 !!! tip
@@ -25,6 +27,7 @@ Welcome to the Pirate MIDI Docs site. Here you can find documentation for all ou
     Use our _Device API_ and create custom third party integrations with any app or device.
 
     [:octicons-arrow-right-24: Go To Documentation](https://developer.piratemidi.com)
+
 -   :octicons-tools-24: __Technical Support & Troubleshooting__
 
     ---
