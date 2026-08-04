@@ -2,15 +2,15 @@
 
 ## Hardware Overview
 
-**Top:** 2x Marked Aluminium Knobs
-**Rear:** 1x Flexiport 1/4" TRS Jack, 1x 2.1mm centre-negative 9V DC Jack
-**Left Side:** 2x 1/4" TRS Jacks for regular (single) expression connection
+- **Top:** 2x Marked Aluminium Knobs
+- **Rear:** 1x Flexiport 1/4" TRS Jack, 1x 2.1mm centre-negative 9V DC Jack
+- **Left Side:** 2x 1/4" TRS Jacks for regular (single) expression connection
 
-**Current Draw:** 100mA @ 9V DC
-**Potentiometers:** 10kΩ Linear
+- **Current Draw:** 100mA @ 9V DC
+- **Potentiometers:** 10kΩ Linear
 
-**Dimensions:** 103mm × 36mm × 60mm
-**Weight:** 315 grams *(11oz.)*
+- **Dimensions:** 103mm × 36mm × 60mm
+- **Weight:** 315 grams *(11oz.)*
 
 
 ## Introduction
