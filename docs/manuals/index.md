@@ -34,6 +34,16 @@ Click on any of our devices below to view our user manual. You can also navigate
     ![Polar Pico](../assets/ProductThumbnails/Polar%20Pico%20Thumbnail%20976px.jpg) 
     Tiny box for adding MIDI control & wireless editing to ToneX/ToneX One and GP-5.
 
+-   :material-book: **[Nexus](nexus/index.md)**  
+    
+    ![Nexus](../assets/ProductThumbnails/Polar%20Pico%20Thumbnail%20976px.jpg) 
+    10-output MIDI hub with dipswitches.
+
+-   :material-book: **[Exp Mate](exp-mate/index.md)**  
+    
+    ![Exp Mate](../assets/ProductThumbnails/Polar%20Pico%20Thumbnail%20976px.jpg) 
+    Dual expression knob device with optional Flexiport connection.
+
 -   :material-book: **[Aero](aero/index.md)**  
     
     ![Aero](../assets/ProductThumbnails/Aero%20Thumbnail%20976px.jpg)  
