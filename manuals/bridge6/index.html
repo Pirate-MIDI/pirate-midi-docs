@@ -23,18 +23,23 @@
       
       
       <link rel="icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="zensical-0.0.53">
     
     
       
-        <title>Bridge6 - Pirate MIDI Documentation</title>
+        <title>BRIDGE6 MIDI Controller – User Manual (v2.1.7) - Pirate MIDI Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.20815dad.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
       
       
 
@@ -48,37 +53,22 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CGoogle+Sans+Code:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CGoogle+Sans+Code:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Inter";--md-code-font:"Google Sans Code"}</style>
       
     
-    
-      <link rel="stylesheet" href="../../css/timeago.css">
     
       <link rel="stylesheet" href="../../assets/branding.css">
     
       <link rel="stylesheet" href="../../assets/print.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
     
     
-  
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Bridge6 - Pirate MIDI Documentation" />
-<meta property="og:description" content="Official documentation for Pirate MIDI products and tools" />
-<meta property="og:image" content="https://docs.piratemidi.com/assets/images/social/manuals/bridge6/index.png" />
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://docs.piratemidi.com/manuals/bridge6/" />
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="Bridge6 - Pirate MIDI Documentation" />
-<meta property="twitter:description" content="Official documentation for Pirate MIDI products and tools" />
-<meta property="twitter:image" content="https://docs.piratemidi.com/assets/images/social/manuals/bridge6/index.png" />
-</head>
+  </head>
   
   
     
@@ -93,7 +83,7 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
     <div data-md-component="skip">
       
         
@@ -113,12 +103,12 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Pirate MIDI Documentation" class="md-header__button md-logo" aria-label="Pirate MIDI Documentation" data-md-component="logo">
       
-  <img src="../../assets/logo-white.png" alt="logo">
+  <img src="../../assets/logo-white.png" alt="Pirate MIDI Documentation">
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -130,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bridge6
+              BRIDGE6 MIDI Controller – User Manual (v2.1.7)
             
           </span>
         </div>
@@ -170,64 +160,30 @@
     
       
       
-        <label class="md-header__button md-icon" for="__search">
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
         </label>
-        <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
 </div>
       
     
-    
-      <div class="md-header__source">
+    <div class="md-header__source">
+      
         <a href="https://github.com/Pirate-MIDI/pirate-midi-docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     Pirate MIDI Docs (GitHub)
   </div>
 </a>
-      </div>
-    
+      
+    </div>
   </nav>
   
 </header>
@@ -251,9 +207,6 @@
       <a href="../.." class="md-tabs__link">
         
   
-  
-    
-  
   Home
 
       </a>
@@ -269,11 +222,13 @@
   
   
     
+      
+    
+    
     
       <li class="md-tabs__item md-tabs__item--active">
         <a href="../" class="md-tabs__link">
           
-  
   
   Manuals
 
@@ -292,9 +247,6 @@
       <a href="https://developer.piratemidi.com" class="md-tabs__link">
         
   
-  
-    
-  
   Device API
 
       </a>
@@ -310,9 +262,6 @@
     <li class="md-tabs__item">
       <a href="../../support/" class="md-tabs__link">
         
-  
-  
-    
   
   Support
 
@@ -345,7 +294,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Pirate MIDI Documentation" class="md-nav__button md-logo" aria-label="Pirate MIDI Documentation" data-md-component="logo">
       
-  <img src="../../assets/logo-white.png" alt="logo">
+  <img src="../../assets/logo-white.png" alt="Pirate MIDI Documentation">
 
     </a>
     Pirate MIDI Documentation
@@ -355,7 +304,7 @@
       <a href="https://github.com/Pirate-MIDI/pirate-midi-docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     Pirate MIDI Docs (GitHub)
@@ -379,8 +328,7 @@
   <span class="md-ellipsis">
     
   
-    Home
-  
+  Home
 
     
   </span>
@@ -425,8 +373,7 @@
   <span class="md-ellipsis">
     
   
-    Manuals
-  
+  Manuals
 
     
   </span>
@@ -441,8 +388,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Manuals
-  
+  Manuals
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -461,8 +407,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
-  
+  Overview
 
     
   </span>
@@ -489,8 +434,7 @@
   <span class="md-ellipsis">
     
   
-    Scribble
-  
+  Scribble
 
     
   </span>
@@ -513,7 +457,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
       
       
         
@@ -526,8 +470,7 @@
   <span class="md-ellipsis">
     
   
-    Bridge6
-  
+  Bridge6
 
     
   </span>
@@ -537,15 +480,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Bridge6
-  
+  Bridge6
 
     
   </span>
@@ -556,7 +498,8 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
   
   
   
@@ -565,16 +508,16 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      On this page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#bridge6-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         BRIDGE6 Overview
-      
+      </span>
     </span>
   </a>
   
@@ -583,9 +526,9 @@
         <li class="md-nav__item">
   <a href="#technical-information" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Technical Information
-      
+      </span>
     </span>
   </a>
   
@@ -595,9 +538,9 @@
           <li class="md-nav__item">
   <a href="#links-to-downloads" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Links to Downloads
-      
+      </span>
     </span>
   </a>
   
@@ -606,9 +549,9 @@
           <li class="md-nav__item">
   <a href="#dimensions" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Dimensions
-      
+      </span>
     </span>
   </a>
   
@@ -617,9 +560,9 @@
           <li class="md-nav__item">
   <a href="#display" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Display
-      
+      </span>
     </span>
   </a>
   
@@ -628,9 +571,9 @@
           <li class="md-nav__item">
   <a href="#weight" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Weight
-      
+      </span>
     </span>
   </a>
   
@@ -639,9 +582,9 @@
           <li class="md-nav__item">
   <a href="#power-requirement" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Power Requirement
-      
+      </span>
     </span>
   </a>
   
@@ -650,9 +593,9 @@
           <li class="md-nav__item">
   <a href="#box-contents" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Box Contents
-      
+      </span>
     </span>
   </a>
   
@@ -666,9 +609,9 @@
         <li class="md-nav__item">
   <a href="#hardware-layout" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Hardware Layout
-      
+      </span>
     </span>
   </a>
   
@@ -677,9 +620,9 @@
         <li class="md-nav__item">
   <a href="#quick-start" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Quick Start
-      
+      </span>
     </span>
   </a>
   
@@ -689,9 +632,9 @@
           <li class="md-nav__item">
   <a href="#1-bank-up-bank-down" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         1. Bank Up / Bank Down
-      
+      </span>
     </span>
   </a>
   
@@ -700,9 +643,9 @@
           <li class="md-nav__item">
   <a href="#2-entering-the-menu" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         2. Entering the Menu
-      
+      </span>
     </span>
   </a>
   
@@ -711,9 +654,9 @@
           <li class="md-nav__item">
   <a href="#3-dont-miss-the-rest" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         3. Don’t Miss the Rest!
-      
+      </span>
     </span>
   </a>
   
@@ -722,9 +665,9 @@
           <li class="md-nav__item">
   <a href="#4-general-navigation" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         4. General Navigation
-      
+      </span>
     </span>
   </a>
   
@@ -734,9 +677,9 @@
           <li class="md-nav__item">
   <a href="#set-banking-program-change-outputs" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Set Banking Program Change Outputs
-      
+      </span>
     </span>
   </a>
   
@@ -745,9 +688,9 @@
           <li class="md-nav__item">
   <a href="#switch-groups-broadcastresponse-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Switch Groups &amp; Broadcast/Response Settings
-      
+      </span>
     </span>
   </a>
   
@@ -756,9 +699,9 @@
           <li class="md-nav__item">
   <a href="#check-that-your-bridge6-firmware-is-up-to-date" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Check That Your BRIDGE6 Firmware Is Up to Date
-      
+      </span>
     </span>
   </a>
   
@@ -777,9 +720,9 @@
         <li class="md-nav__item">
   <a href="#1-device-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         1. Device Interface
-      
+      </span>
     </span>
   </a>
   
@@ -789,9 +732,9 @@
           <li class="md-nav__item">
   <a href="#footswitches" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Footswitches
-      
+      </span>
     </span>
   </a>
   
@@ -800,9 +743,9 @@
           <li class="md-nav__item">
   <a href="#oled-display" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         OLED Display
-      
+      </span>
     </span>
   </a>
   
@@ -811,9 +754,9 @@
           <li class="md-nav__item">
   <a href="#rgb-leds" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         RGB LEDs
-      
+      </span>
     </span>
   </a>
   
@@ -827,9 +770,9 @@
         <li class="md-nav__item">
   <a href="#2-power-navigation" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         2. Power &amp; Navigation
-      
+      </span>
     </span>
   </a>
   
@@ -839,9 +782,9 @@
           <li class="md-nav__item">
   <a href="#powering-your-bridge6" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Powering Your BRIDGE6
-      
+      </span>
     </span>
   </a>
   
@@ -850,9 +793,9 @@
           <li class="md-nav__item">
   <a href="#switching-power-sources" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Switching Power Sources
-      
+      </span>
     </span>
   </a>
   
@@ -861,9 +804,9 @@
           <li class="md-nav__item">
   <a href="#basic-navigation-bank-up-bank-down" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Basic Navigation – Bank Up &amp; Bank Down
-      
+      </span>
     </span>
   </a>
   
@@ -872,9 +815,9 @@
           <li class="md-nav__item">
   <a href="#opening-the-menu" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Opening the Menu
-      
+      </span>
     </span>
   </a>
   
@@ -883,9 +826,9 @@
           <li class="md-nav__item">
   <a href="#second-screen-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Second-Screen Settings
-      
+      </span>
     </span>
   </a>
   
@@ -894,9 +837,9 @@
           <li class="md-nav__item">
   <a href="#ready-to-rock" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Ready to Rock
-      
+      </span>
     </span>
   </a>
   
@@ -910,9 +853,9 @@
         <li class="md-nav__item">
   <a href="#3-overview-of-connectors" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         3. Overview of Connectors
-      
+      </span>
     </span>
   </a>
   
@@ -922,9 +865,9 @@
           <li class="md-nav__item">
   <a href="#usb-type-c" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         USB (Type-C)
-      
+      </span>
     </span>
   </a>
   
@@ -933,9 +876,9 @@
           <li class="md-nav__item">
   <a href="#trs-midi-in" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         TRS MIDI In
-      
+      </span>
     </span>
   </a>
   
@@ -944,9 +887,9 @@
           <li class="md-nav__item">
   <a href="#din5-midi-out" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         DIN5 MIDI Out
-      
+      </span>
     </span>
   </a>
   
@@ -955,9 +898,9 @@
           <li class="md-nav__item">
   <a href="#9v-dc-centre-negative" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         9V DC (centre-negative)
-      
+      </span>
     </span>
   </a>
   
@@ -966,9 +909,9 @@
           <li class="md-nav__item">
   <a href="#trs-flexiports-1-2" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         TRS Flexiports 1 &amp; 2
-      
+      </span>
     </span>
   </a>
   
@@ -982,9 +925,9 @@
         <li class="md-nav__item">
   <a href="#4-flexiports" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         4. Flexiports
-      
+      </span>
     </span>
   </a>
   
@@ -994,9 +937,9 @@
           <li class="md-nav__item">
   <a href="#flexiport-modes-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Flexiport Modes Summary
-      
+      </span>
     </span>
   </a>
   
@@ -1005,9 +948,9 @@
           <li class="md-nav__item">
   <a href="#midi-out-flexiports" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI Out (Flexiports)
-      
+      </span>
     </span>
   </a>
   
@@ -1016,9 +959,9 @@
           <li class="md-nav__item">
   <a href="#expression-pedal-in" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Expression Pedal In
-      
+      </span>
     </span>
   </a>
   
@@ -1028,9 +971,9 @@
           <li class="md-nav__item">
   <a href="#expression-pedal-calibration" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Expression Pedal Calibration
-      
+      </span>
     </span>
   </a>
   
@@ -1044,9 +987,9 @@
           <li class="md-nav__item">
   <a href="#exp-doubler-in" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Exp-Doubler In
-      
+      </span>
     </span>
   </a>
   
@@ -1055,9 +998,9 @@
           <li class="md-nav__item">
   <a href="#tap-tempo-output" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Tap Tempo Output
-      
+      </span>
     </span>
   </a>
   
@@ -1066,9 +1009,9 @@
           <li class="md-nav__item">
   <a href="#aux-switch-in" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Aux Switch In
-      
+      </span>
     </span>
   </a>
   
@@ -1077,9 +1020,9 @@
           <li class="md-nav__item">
   <a href="#switch-out" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Switch Out
-      
+      </span>
     </span>
   </a>
   
@@ -1089,9 +1032,9 @@
           <li class="md-nav__item">
   <a href="#assigning-switch-out-actions-to-a-footswitch" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Assigning “Switch Out” Actions to a Footswitch
-      
+      </span>
     </span>
   </a>
   
@@ -1105,9 +1048,9 @@
           <li class="md-nav__item">
   <a href="#ms-relay" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MS Relay
-      
+      </span>
     </span>
   </a>
   
@@ -1116,9 +1059,9 @@
           <li class="md-nav__item">
   <a href="#pulse-clock-out" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Pulse Clock Out
-      
+      </span>
     </span>
   </a>
   
@@ -1127,9 +1070,9 @@
           <li class="md-nav__item">
   <a href="#device-link" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Device Link
-      
+      </span>
     </span>
   </a>
   
@@ -1139,9 +1082,9 @@
           <li class="md-nav__item">
   <a href="#setting-the-main-satellite-roles" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Setting the Main / Satellite Roles
-      
+      </span>
     </span>
   </a>
   
@@ -1150,9 +1093,9 @@
           <li class="md-nav__item">
   <a href="#device-link-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Device Link Settings
-      
+      </span>
     </span>
   </a>
   
@@ -1171,21 +1114,21 @@
         <li class="md-nav__item">
   <a href="#5-midi-in-out-thru" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         5. MIDI In / Out / Thru
-      
+      </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="5. MIDI In / Out / Thru">
+    <nav class="md-nav" aria-label="5. MIDI In &#x2f; Out &#x2f; Thru">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#midi-out-din5" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI Out (DIN5)
-      
+      </span>
     </span>
   </a>
   
@@ -1194,9 +1137,9 @@
           <li class="md-nav__item">
   <a href="#midi-in-trs" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI In (TRS)
-      
+      </span>
     </span>
   </a>
   
@@ -1205,9 +1148,9 @@
           <li class="md-nav__item">
   <a href="#external-midi-control" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         External MIDI Control
-      
+      </span>
     </span>
   </a>
   
@@ -1216,9 +1159,9 @@
           <li class="md-nav__item">
   <a href="#midi-thru" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI Thru
-      
+      </span>
     </span>
   </a>
   
@@ -1228,9 +1171,9 @@
           <li class="md-nav__item">
   <a href="#midi-loopback" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI Loopback
-      
+      </span>
     </span>
   </a>
   
@@ -1249,9 +1192,9 @@
         <li class="md-nav__item">
   <a href="#6-usb-midi" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         6. USB MIDI
-      
+      </span>
     </span>
   </a>
   
@@ -1261,9 +1204,9 @@
           <li class="md-nav__item">
   <a href="#usb-type-c_1" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         USB (Type-C)
-      
+      </span>
     </span>
   </a>
   
@@ -1277,9 +1220,9 @@
         <li class="md-nav__item">
   <a href="#7-messages-modes" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         7. Messages &amp; Modes
-      
+      </span>
     </span>
   </a>
   
@@ -1289,9 +1232,9 @@
           <li class="md-nav__item">
   <a href="#midi-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI Messages
-      
+      </span>
     </span>
   </a>
   
@@ -1300,9 +1243,9 @@
           <li class="md-nav__item">
   <a href="#smart-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Smart Messages
-      
+      </span>
     </span>
   </a>
   
@@ -1311,9 +1254,9 @@
           <li class="md-nav__item">
   <a href="#key-press-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Key Press Messages
-      
+      </span>
     </span>
   </a>
   
@@ -1327,9 +1270,9 @@
         <li class="md-nav__item">
   <a href="#primary-footswitch-modes" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Primary Footswitch Modes
-      
+      </span>
     </span>
   </a>
   
@@ -1339,9 +1282,9 @@
           <li class="md-nav__item">
   <a href="#toggle-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Toggle Mode
-      
+      </span>
     </span>
   </a>
   
@@ -1350,9 +1293,9 @@
           <li class="md-nav__item">
   <a href="#momentary-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Momentary Mode
-      
+      </span>
     </span>
   </a>
   
@@ -1361,9 +1304,9 @@
           <li class="md-nav__item">
   <a href="#tap-tempo-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Tap Tempo Mode
-      
+      </span>
     </span>
   </a>
   
@@ -1372,9 +1315,9 @@
           <li class="md-nav__item">
   <a href="#sequential-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Sequential Mode
-      
+      </span>
     </span>
   </a>
   
@@ -1383,9 +1326,9 @@
           <li class="md-nav__item">
   <a href="#sequential-linked-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Sequential Linked Mode
-      
+      </span>
     </span>
   </a>
   
@@ -1394,9 +1337,9 @@
           <li class="md-nav__item">
   <a href="#scrolling-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Scrolling Mode
-      
+      </span>
     </span>
   </a>
   
@@ -1405,9 +1348,9 @@
           <li class="md-nav__item">
   <a href="#scrolling-linked-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Scrolling Linked Mode
-      
+      </span>
     </span>
   </a>
   
@@ -1421,9 +1364,9 @@
         <li class="md-nav__item">
   <a href="#secondary-footswitch-modes" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Secondary Footswitch Modes
-      
+      </span>
     </span>
   </a>
   
@@ -1433,9 +1376,9 @@
           <li class="md-nav__item">
   <a href="#double-tap-toggle" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Double Tap Toggle
-      
+      </span>
     </span>
   </a>
   
@@ -1444,9 +1387,9 @@
           <li class="md-nav__item">
   <a href="#hold-toggle" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Hold Toggle
-      
+      </span>
     </span>
   </a>
   
@@ -1455,9 +1398,9 @@
           <li class="md-nav__item">
   <a href="#double-tap-momentary" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Double Tap Momentary
-      
+      </span>
     </span>
   </a>
   
@@ -1466,9 +1409,9 @@
           <li class="md-nav__item">
   <a href="#hold-momentary" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Hold Momentary
-      
+      </span>
     </span>
   </a>
   
@@ -1482,9 +1425,9 @@
         <li class="md-nav__item">
   <a href="#expanding-your-midi-routing" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Expanding Your MIDI Routing
-      
+      </span>
     </span>
   </a>
   
@@ -1493,9 +1436,9 @@
         <li class="md-nav__item">
   <a href="#lfos-low-frequency-oscillators" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         LFOs (Low Frequency Oscillators)
-      
+      </span>
     </span>
   </a>
   
@@ -1504,9 +1447,9 @@
         <li class="md-nav__item">
   <a href="#expression-pedals" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Expression Pedals
-      
+      </span>
     </span>
   </a>
   
@@ -1515,9 +1458,9 @@
         <li class="md-nav__item">
   <a href="#expression-ladder-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Expression Ladder Messages
-      
+      </span>
     </span>
   </a>
   
@@ -1526,9 +1469,9 @@
         <li class="md-nav__item">
   <a href="#aux-switches" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Aux Switches
-      
+      </span>
     </span>
   </a>
   
@@ -1537,9 +1480,9 @@
         <li class="md-nav__item">
   <a href="#boot-messages-boot-delay" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Boot Messages &amp; Boot Delay
-      
+      </span>
     </span>
   </a>
   
@@ -1548,9 +1491,9 @@
         <li class="md-nav__item">
   <a href="#device-link_1" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Device Link
-      
+      </span>
     </span>
   </a>
   
@@ -1559,9 +1502,9 @@
         <li class="md-nav__item">
   <a href="#8-message-stacks" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         8. Message Stacks
-      
+      </span>
     </span>
   </a>
   
@@ -1571,9 +1514,9 @@
           <li class="md-nav__item">
   <a href="#81-footswitches" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         8.1 Footswitches
-      
+      </span>
     </span>
   </a>
   
@@ -1583,9 +1526,9 @@
           <li class="md-nav__item">
   <a href="#viewing-messages-on-footswitches" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Viewing Messages on Footswitches
-      
+      </span>
     </span>
   </a>
   
@@ -1594,9 +1537,9 @@
           <li class="md-nav__item">
   <a href="#add" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Add
-      
+      </span>
     </span>
   </a>
   
@@ -1605,9 +1548,9 @@
           <li class="md-nav__item">
   <a href="#delete" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Delete
-      
+      </span>
     </span>
   </a>
   
@@ -1616,9 +1559,9 @@
           <li class="md-nav__item">
   <a href="#edit" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Edit
-      
+      </span>
     </span>
   </a>
   
@@ -1632,9 +1575,9 @@
           <li class="md-nav__item">
   <a href="#82-expression-pedals" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         8.2 Expression Pedals
-      
+      </span>
     </span>
   </a>
   
@@ -1644,9 +1587,9 @@
           <li class="md-nav__item">
   <a href="#viewing-bank-level-expression-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Viewing Bank-Level Expression Messages
-      
+      </span>
     </span>
   </a>
   
@@ -1655,9 +1598,9 @@
           <li class="md-nav__item">
   <a href="#viewing-global-expression-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Viewing Global Expression Messages
-      
+      </span>
     </span>
   </a>
   
@@ -1666,9 +1609,9 @@
           <li class="md-nav__item">
   <a href="#editing-expression-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Editing Expression Messages
-      
+      </span>
     </span>
   </a>
   
@@ -1677,9 +1620,9 @@
           <li class="md-nav__item">
   <a href="#minmax-value" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Min/Max Value
-      
+      </span>
     </span>
   </a>
   
@@ -1693,9 +1636,9 @@
           <li class="md-nav__item">
   <a href="#83-sequential-mode-advanced-details" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         8.3 Sequential Mode (Advanced Details)
-      
+      </span>
     </span>
   </a>
   
@@ -1704,9 +1647,9 @@
           <li class="md-nav__item">
   <a href="#84-scrolling-mode-advanced-details" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         8.4 Scrolling Mode (Advanced Details)
-      
+      </span>
     </span>
   </a>
   
@@ -1716,9 +1659,9 @@
           <li class="md-nav__item">
   <a href="#direction" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Direction
-      
+      </span>
     </span>
   </a>
   
@@ -1727,9 +1670,9 @@
           <li class="md-nav__item">
   <a href="#send-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Send Mode
-      
+      </span>
     </span>
   </a>
   
@@ -1738,9 +1681,9 @@
           <li class="md-nav__item">
   <a href="#minmax" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Min/Max
-      
+      </span>
     </span>
   </a>
   
@@ -1749,9 +1692,9 @@
           <li class="md-nav__item">
   <a href="#step-size" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Step Size
-      
+      </span>
     </span>
   </a>
   
@@ -1765,9 +1708,9 @@
           <li class="md-nav__item">
   <a href="#85-scrolling-linked-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         8.5 Scrolling Linked Mode
-      
+      </span>
     </span>
   </a>
   
@@ -1781,9 +1724,9 @@
         <li class="md-nav__item">
   <a href="#9-midi-clock" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         9. MIDI Clock
-      
+      </span>
     </span>
   </a>
   
@@ -1793,9 +1736,9 @@
           <li class="md-nav__item">
   <a href="#91-assigning-midi-clock-to-a-footswitch" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         9.1. Assigning MIDI Clock to a Footswitch
-      
+      </span>
     </span>
   </a>
   
@@ -1804,9 +1747,9 @@
           <li class="md-nav__item">
   <a href="#led-indicators" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         LED Indicators
-      
+      </span>
     </span>
   </a>
   
@@ -1815,9 +1758,9 @@
           <li class="md-nav__item">
   <a href="#sending-start-stop-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Sending Start &amp; Stop Messages
-      
+      </span>
     </span>
   </a>
   
@@ -1826,9 +1769,9 @@
           <li class="md-nav__item">
   <a href="#92-assigning-midi-clock-outputs" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         9.2. Assigning MIDI Clock Outputs
-      
+      </span>
     </span>
   </a>
   
@@ -1837,9 +1780,9 @@
           <li class="md-nav__item">
   <a href="#93-preset-or-inherit-midi-clock-tempo-per-bank" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         9.3. Preset or Inherit MIDI Clock Tempo Per Bank
-      
+      </span>
     </span>
   </a>
   
@@ -1848,9 +1791,9 @@
           <li class="md-nav__item">
   <a href="#94-sending-midi-clock-as-analog-tap-impulses" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         9.4. Sending MIDI Clock as Analog Tap Impulses
-      
+      </span>
     </span>
   </a>
   
@@ -1859,9 +1802,9 @@
           <li class="md-nav__item">
   <a href="#95-sending-midi-clock-as-beat-sync-pulse" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         9.5. Sending MIDI Clock as Beat Sync Pulse
-      
+      </span>
     </span>
   </a>
   
@@ -1870,9 +1813,9 @@
           <li class="md-nav__item">
   <a href="#96-controlling-clock-tempo-with-midi" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         9.6. Controlling Clock Tempo with MIDI
-      
+      </span>
     </span>
   </a>
   
@@ -1882,9 +1825,9 @@
           <li class="md-nav__item">
   <a href="#cc-73-target-clock-range" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         CC 73 — Target Clock &amp; Range
-      
+      </span>
     </span>
   </a>
   
@@ -1893,9 +1836,9 @@
           <li class="md-nav__item">
   <a href="#cc-74-tempo-value" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         CC 74 — Tempo Value
-      
+      </span>
     </span>
   </a>
   
@@ -1904,9 +1847,9 @@
           <li class="md-nav__item">
   <a href="#examples" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Examples
-      
+      </span>
     </span>
   </a>
   
@@ -1925,9 +1868,9 @@
         <li class="md-nav__item">
   <a href="#10-lfos" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         10. LFOs
-      
+      </span>
     </span>
   </a>
   
@@ -1937,9 +1880,9 @@
           <li class="md-nav__item">
   <a href="#1-lfo-state" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         1. LFO State
-      
+      </span>
     </span>
   </a>
   
@@ -1948,9 +1891,9 @@
           <li class="md-nav__item">
   <a href="#2-lfo-sync" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         2. LFO Sync
-      
+      </span>
     </span>
   </a>
   
@@ -1959,9 +1902,9 @@
           <li class="md-nav__item">
   <a href="#3-lfo-frequency" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         3. LFO Frequency
-      
+      </span>
     </span>
   </a>
   
@@ -1971,9 +1914,9 @@
           <li class="md-nav__item">
   <a href="#free-mode-hz" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Free Mode (Hz)
-      
+      </span>
     </span>
   </a>
   
@@ -1982,9 +1925,9 @@
           <li class="md-nav__item">
   <a href="#clock-sync-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Clock Sync Mode
-      
+      </span>
     </span>
   </a>
   
@@ -1998,9 +1941,9 @@
           <li class="md-nav__item">
   <a href="#4-lfo-trigger" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         4. LFO Trigger
-      
+      </span>
     </span>
   </a>
   
@@ -2010,9 +1953,9 @@
           <li class="md-nav__item">
   <a href="#toggle" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Toggle
-      
+      </span>
     </span>
   </a>
   
@@ -2021,9 +1964,9 @@
           <li class="md-nav__item">
   <a href="#hold" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Hold
-      
+      </span>
     </span>
   </a>
   
@@ -2037,9 +1980,9 @@
           <li class="md-nav__item">
   <a href="#5-lfo-limits" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         5. LFO Limits
-      
+      </span>
     </span>
   </a>
   
@@ -2048,9 +1991,9 @@
           <li class="md-nav__item">
   <a href="#6-lfo-shape-waveform" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         6. LFO Shape (Waveform)
-      
+      </span>
     </span>
   </a>
   
@@ -2059,9 +2002,9 @@
           <li class="md-nav__item">
   <a href="#7-lfo-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         7. LFO Messages
-      
+      </span>
     </span>
   </a>
   
@@ -2070,9 +2013,9 @@
           <li class="md-nav__item">
   <a href="#8-lfo-modulation-source" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         8. LFO Modulation Source
-      
+      </span>
     </span>
   </a>
   
@@ -2081,9 +2024,9 @@
           <li class="md-nav__item">
   <a href="#9-lfo-modulation-target" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         9. LFO Modulation Target
-      
+      </span>
     </span>
   </a>
   
@@ -2092,9 +2035,9 @@
           <li class="md-nav__item">
   <a href="#10-lfo-reset" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         10. LFO Reset
-      
+      </span>
     </span>
   </a>
   
@@ -2103,9 +2046,9 @@
           <li class="md-nav__item">
   <a href="#11-lfo-step" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         11. LFO Step
-      
+      </span>
     </span>
   </a>
   
@@ -2114,9 +2057,9 @@
           <li class="md-nav__item">
   <a href="#12-save-exit" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         12. Save &amp; Exit
-      
+      </span>
     </span>
   </a>
   
@@ -2130,9 +2073,9 @@
         <li class="md-nav__item">
   <a href="#11-switch-out" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         11. Switch Out
-      
+      </span>
     </span>
   </a>
   
@@ -2142,9 +2085,9 @@
           <li class="md-nav__item">
   <a href="#1-activating-trs-out-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         1. Activating TRS Out Mode
-      
+      </span>
     </span>
   </a>
   
@@ -2153,9 +2096,9 @@
           <li class="md-nav__item">
   <a href="#2-setting-trs-out-per-switch" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         2. Setting TRS Out per Switch
-      
+      </span>
     </span>
   </a>
   
@@ -2169,9 +2112,9 @@
         <li class="md-nav__item">
   <a href="#12-aux-switch-in" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         12. Aux Switch In
-      
+      </span>
     </span>
   </a>
   
@@ -2181,9 +2124,9 @@
           <li class="md-nav__item">
   <a href="#1-activating-aux-switch-in-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         1. Activating Aux Switch In Mode
-      
+      </span>
     </span>
   </a>
   
@@ -2192,9 +2135,9 @@
           <li class="md-nav__item">
   <a href="#2-setting-auxiliary-switch-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         2. Setting Auxiliary Switch Messages
-      
+      </span>
     </span>
   </a>
   
@@ -2204,9 +2147,9 @@
           <li class="md-nav__item">
   <a href="#bank-level-aux-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Bank-Level Aux Messages
-      
+      </span>
     </span>
   </a>
   
@@ -2215,9 +2158,9 @@
           <li class="md-nav__item">
   <a href="#global-level-aux-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Global-Level Aux Messages
-      
+      </span>
     </span>
   </a>
   
@@ -2231,9 +2174,9 @@
           <li class="md-nav__item">
   <a href="#behaviour-notes" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Behaviour Notes
-      
+      </span>
     </span>
   </a>
   
@@ -2247,9 +2190,9 @@
         <li class="md-nav__item">
   <a href="#13-switch-groups" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         13. Switch Groups
-      
+      </span>
     </span>
   </a>
   
@@ -2259,9 +2202,9 @@
           <li class="md-nav__item">
   <a href="#1-navigating-switch-groups" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         1. Navigating Switch Groups
-      
+      </span>
     </span>
   </a>
   
@@ -2270,9 +2213,9 @@
           <li class="md-nav__item">
   <a href="#2-editing-switch-groups" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         2. Editing Switch Groups
-      
+      </span>
     </span>
   </a>
   
@@ -2281,9 +2224,9 @@
           <li class="md-nav__item">
   <a href="#switch" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Switch
-      
+      </span>
     </span>
   </a>
   
@@ -2292,9 +2235,9 @@
           <li class="md-nav__item">
   <a href="#broadcast" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Broadcast
-      
+      </span>
     </span>
   </a>
   
@@ -2303,9 +2246,9 @@
           <li class="md-nav__item">
   <a href="#respond-to" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Respond To
-      
+      </span>
     </span>
   </a>
   
@@ -2314,9 +2257,9 @@
           <li class="md-nav__item">
   <a href="#response-type" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Response Type
-      
+      </span>
     </span>
   </a>
   
@@ -2326,9 +2269,9 @@
           <li class="md-nav__item">
   <a href="#or" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         OR
-      
+      </span>
     </span>
   </a>
   
@@ -2337,9 +2280,9 @@
           <li class="md-nav__item">
   <a href="#and" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         AND
-      
+      </span>
     </span>
   </a>
   
@@ -2348,9 +2291,9 @@
           <li class="md-nav__item">
   <a href="#toggle_1" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         TOGGLE
-      
+      </span>
     </span>
   </a>
   
@@ -2359,9 +2302,9 @@
           <li class="md-nav__item">
   <a href="#on" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         ON
-      
+      </span>
     </span>
   </a>
   
@@ -2370,9 +2313,9 @@
           <li class="md-nav__item">
   <a href="#off" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         OFF
-      
+      </span>
     </span>
   </a>
   
@@ -2386,9 +2329,9 @@
           <li class="md-nav__item">
   <a href="#sequential-mode-switches-in-switch-groups" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Sequential Mode Switches in Switch Groups
-      
+      </span>
     </span>
   </a>
   
@@ -2402,9 +2345,9 @@
         <li class="md-nav__item">
   <a href="#14-interface-leds" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         14. Interface – LEDs
-      
+      </span>
     </span>
   </a>
   
@@ -2414,9 +2357,9 @@
           <li class="md-nav__item">
   <a href="#led-color-selection" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         LED Color Selection
-      
+      </span>
     </span>
   </a>
   
@@ -2425,9 +2368,9 @@
           <li class="md-nav__item">
   <a href="#sequential-mode-colour-notes" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Sequential Mode Colour Notes
-      
+      </span>
     </span>
   </a>
   
@@ -2436,9 +2379,9 @@
           <li class="md-nav__item">
   <a href="#custom-led-colours" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Custom LED Colours
-      
+      </span>
     </span>
   </a>
   
@@ -2447,9 +2390,9 @@
           <li class="md-nav__item">
   <a href="#primary-led-behaviour" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Primary LED Behaviour
-      
+      </span>
     </span>
   </a>
   
@@ -2458,9 +2401,9 @@
           <li class="md-nav__item">
   <a href="#secondary-led-behaviour" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Secondary LED Behaviour
-      
+      </span>
     </span>
   </a>
   
@@ -2469,9 +2412,9 @@
           <li class="md-nav__item">
   <a href="#external-led-control" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         External LED Control
-      
+      </span>
     </span>
   </a>
   
@@ -2481,9 +2424,9 @@
           <li class="md-nav__item">
   <a href="#targeting-an-led" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Targeting an LED
-      
+      </span>
     </span>
   </a>
   
@@ -2492,9 +2435,9 @@
           <li class="md-nav__item">
   <a href="#setting-led-colours" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Setting LED Colours
-      
+      </span>
     </span>
   </a>
   
@@ -2508,9 +2451,9 @@
           <li class="md-nav__item">
   <a href="#led-brightness" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         LED Brightness
-      
+      </span>
     </span>
   </a>
   
@@ -2524,9 +2467,9 @@
         <li class="md-nav__item">
   <a href="#15-interface-bank-names" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         15. Interface – Bank Names
-      
+      </span>
     </span>
   </a>
   
@@ -2536,9 +2479,9 @@
           <li class="md-nav__item">
   <a href="#changing-the-bank-name" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Changing the Bank Name
-      
+      </span>
     </span>
   </a>
   
@@ -2547,9 +2490,9 @@
           <li class="md-nav__item">
   <a href="#scroll-acceleration" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Scroll Acceleration
-      
+      </span>
     </span>
   </a>
   
@@ -2558,9 +2501,9 @@
           <li class="md-nav__item">
   <a href="#inverting-the-bank-name-colour" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Inverting the Bank Name Colour
-      
+      </span>
     </span>
   </a>
   
@@ -2569,9 +2512,9 @@
           <li class="md-nav__item">
   <a href="#change-bank-numbering" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Change Bank Numbering
-      
+      </span>
     </span>
   </a>
   
@@ -2585,9 +2528,9 @@
         <li class="md-nav__item">
   <a href="#16-interface-ui-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         16. Interface – UI Mode
-      
+      </span>
     </span>
   </a>
   
@@ -2597,9 +2540,9 @@
           <li class="md-nav__item">
   <a href="#how-to-change-the-ui" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         How to Change the UI
-      
+      </span>
     </span>
   </a>
   
@@ -2608,9 +2551,9 @@
           <li class="md-nav__item">
   <a href="#simple-ui" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Simple UI
-      
+      </span>
     </span>
   </a>
   
@@ -2619,9 +2562,9 @@
           <li class="md-nav__item">
   <a href="#extended-ui" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Extended UI
-      
+      </span>
     </span>
   </a>
   
@@ -2630,9 +2573,9 @@
           <li class="md-nav__item">
   <a href="#flexiport-status-indicators-extended-ui" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Flexiport Status Indicators (Extended UI)
-      
+      </span>
     </span>
   </a>
   
@@ -2642,9 +2585,9 @@
           <li class="md-nav__item">
   <a href="#midi-out-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI Out Mode
-      
+      </span>
     </span>
   </a>
   
@@ -2653,9 +2596,9 @@
           <li class="md-nav__item">
   <a href="#expression-in-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Expression In Mode
-      
+      </span>
     </span>
   </a>
   
@@ -2664,9 +2607,9 @@
           <li class="md-nav__item">
   <a href="#exp-doubler-in-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Exp-Doubler In Mode
-      
+      </span>
     </span>
   </a>
   
@@ -2675,9 +2618,9 @@
           <li class="md-nav__item">
   <a href="#tap-tempo-out-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Tap Tempo Out Mode
-      
+      </span>
     </span>
   </a>
   
@@ -2686,9 +2629,9 @@
           <li class="md-nav__item">
   <a href="#aux-switch-in-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Aux Switch In Mode
-      
+      </span>
     </span>
   </a>
   
@@ -2697,9 +2640,9 @@
           <li class="md-nav__item">
   <a href="#switch-out-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Switch Out Mode
-      
+      </span>
     </span>
   </a>
   
@@ -2708,9 +2651,9 @@
           <li class="md-nav__item">
   <a href="#device-link-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Device Link Mode
-      
+      </span>
     </span>
   </a>
   
@@ -2729,9 +2672,9 @@
         <li class="md-nav__item">
   <a href="#17-interface-switch-labels" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         17. Interface – Switch Labels
-      
+      </span>
     </span>
   </a>
   
@@ -2741,9 +2684,9 @@
           <li class="md-nav__item">
   <a href="#changing-customising-switch-labels" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Changing &amp; Customising Switch Labels
-      
+      </span>
     </span>
   </a>
   
@@ -2757,9 +2700,9 @@
         <li class="md-nav__item">
   <a href="#18-bank-navigation" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         18. Bank Navigation
-      
+      </span>
     </span>
   </a>
   
@@ -2769,9 +2712,9 @@
           <li class="md-nav__item">
   <a href="#changing-bank-navigation-triggers" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Changing Bank Navigation Triggers
-      
+      </span>
     </span>
   </a>
   
@@ -2780,9 +2723,9 @@
           <li class="md-nav__item">
   <a href="#setlists" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Setlists
-      
+      </span>
     </span>
   </a>
   
@@ -2791,9 +2734,9 @@
           <li class="md-nav__item">
   <a href="#activating-a-setlist-onboard" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Activating a Setlist Onboard
-      
+      </span>
     </span>
   </a>
   
@@ -2807,9 +2750,9 @@
         <li class="md-nav__item">
   <a href="#19-other-global-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         19. Other Global Settings
-      
+      </span>
     </span>
   </a>
   
@@ -2819,9 +2762,9 @@
           <li class="md-nav__item">
   <a href="#midi-channel" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI Channel
-      
+      </span>
     </span>
   </a>
   
@@ -2830,9 +2773,9 @@
           <li class="md-nav__item">
   <a href="#persistent-switch-states" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Persistent Switch States
-      
+      </span>
     </span>
   </a>
   
@@ -2841,9 +2784,9 @@
           <li class="md-nav__item">
   <a href="#transmit-switch-states" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Transmit Switch States
-      
+      </span>
     </span>
   </a>
   
@@ -2852,9 +2795,9 @@
           <li class="md-nav__item">
   <a href="#program-change-pc-bank-output" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Program Change (PC) Bank Output
-      
+      </span>
     </span>
   </a>
   
@@ -2863,9 +2806,9 @@
           <li class="md-nav__item">
   <a href="#switch-hold-time" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Switch Hold Time
-      
+      </span>
     </span>
   </a>
   
@@ -2879,9 +2822,9 @@
         <li class="md-nav__item">
   <a href="#20-resetting-or-updating" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         20. Resetting or Updating
-      
+      </span>
     </span>
   </a>
   
@@ -2891,9 +2834,9 @@
           <li class="md-nav__item">
   <a href="#factory-reset" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Factory Reset
-      
+      </span>
     </span>
   </a>
   
@@ -2902,9 +2845,9 @@
           <li class="md-nav__item">
   <a href="#global-settings-reset" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Global Settings Reset
-      
+      </span>
     </span>
   </a>
   
@@ -2913,9 +2856,9 @@
           <li class="md-nav__item">
   <a href="#updating-firmware" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Updating Firmware
-      
+      </span>
     </span>
   </a>
   
@@ -2929,9 +2872,9 @@
         <li class="md-nav__item">
   <a href="#21-midi-implementation" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         21. MIDI Implementation
-      
+      </span>
     </span>
   </a>
   
@@ -2940,9 +2883,9 @@
         <li class="md-nav__item">
   <a href="#midi-functions-controlled-by-cc" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI Functions Controlled by CC
-      
+      </span>
     </span>
   </a>
   
@@ -2952,9 +2895,9 @@
           <li class="md-nav__item">
   <a href="#led-control" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         LED Control
-      
+      </span>
     </span>
   </a>
   
@@ -2968,9 +2911,9 @@
         <li class="md-nav__item">
   <a href="#midi-clock-control" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI Clock Control
-      
+      </span>
     </span>
   </a>
   
@@ -2999,8 +2942,7 @@
   <span class="md-ellipsis">
     
   
-    Bridge4
-  
+  Bridge4
 
     
   </span>
@@ -3041,8 +2983,7 @@
   <span class="md-ellipsis">
     
   
-    Aero
-  
+  Aero
 
     
   </span>
@@ -3057,8 +2998,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Aero
-  
+  Aero
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -3077,8 +3017,7 @@
   <span class="md-ellipsis">
     
   
-    Introduction
-  
+  Introduction
 
     
   </span>
@@ -3105,8 +3044,7 @@
   <span class="md-ellipsis">
     
   
-    Quickstart
-  
+  Quickstart
 
     
   </span>
@@ -3133,8 +3071,7 @@
   <span class="md-ellipsis">
     
   
-    Device Overview
-  
+  Device Overview
 
     
   </span>
@@ -3161,8 +3098,7 @@
   <span class="md-ellipsis">
     
   
-    Flexiports & MIDI
-  
+  Flexiports & MIDI
 
     
   </span>
@@ -3189,8 +3125,7 @@
   <span class="md-ellipsis">
     
   
-    Messages & Modes
-  
+  Messages & Modes
 
     
   </span>
@@ -3217,8 +3152,7 @@
   <span class="md-ellipsis">
     
   
-    MIDI Clock
-  
+  MIDI Clock
 
     
   </span>
@@ -3245,8 +3179,7 @@
   <span class="md-ellipsis">
     
   
-    LFOs & Aux Switches
-  
+  LFOs & Aux Switches
 
     
   </span>
@@ -3273,8 +3206,7 @@
   <span class="md-ellipsis">
     
   
-    More Features & Settings
-  
+  More Features & Settings
 
     
   </span>
@@ -3301,8 +3233,7 @@
   <span class="md-ellipsis">
     
   
-    Resetting & Updating
-  
+  Resetting & Updating
 
     
   </span>
@@ -3329,8 +3260,7 @@
   <span class="md-ellipsis">
     
   
-    MIDI Implementation
-  
+  MIDI Implementation
 
     
   </span>
@@ -3357,8 +3287,7 @@
   <span class="md-ellipsis">
     
   
-    Warranty
-  
+  Warranty
 
     
   </span>
@@ -3407,8 +3336,7 @@
   <span class="md-ellipsis">
     
   
-    Polar
-  
+  Polar
 
     
   </span>
@@ -3423,8 +3351,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Polar
-  
+  Polar
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -3457,8 +3384,7 @@
   <span class="md-ellipsis">
     
   
-    Polar Max
-  
+  Polar Max
 
     
   </span>
@@ -3473,8 +3399,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Polar Max
-  
+  Polar Max
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -3493,8 +3418,7 @@
   <span class="md-ellipsis">
     
   
-    Introduction
-  
+  Introduction
 
     
   </span>
@@ -3521,8 +3445,7 @@
   <span class="md-ellipsis">
     
   
-    Quickstart
-  
+  Quickstart
 
     
   </span>
@@ -3549,8 +3472,7 @@
   <span class="md-ellipsis">
     
   
-    Connect & Configure
-  
+  Connect & Configure
 
     
   </span>
@@ -3577,8 +3499,7 @@
   <span class="md-ellipsis">
     
   
-    Update Firmware
-  
+  Update Firmware
 
     
   </span>
@@ -3605,8 +3526,7 @@
   <span class="md-ellipsis">
     
   
-    MIDI Commands
-  
+  MIDI Commands
 
     
   </span>
@@ -3633,8 +3553,7 @@
   <span class="md-ellipsis">
     
   
-    Warranty
-  
+  Warranty
 
     
   </span>
@@ -3683,8 +3602,7 @@
   <span class="md-ellipsis">
     
   
-    Polar Plus
-  
+  Polar Plus
 
     
   </span>
@@ -3699,8 +3617,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Polar Plus
-  
+  Polar Plus
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -3719,8 +3636,7 @@
   <span class="md-ellipsis">
     
   
-    Introduction
-  
+  Introduction
 
     
   </span>
@@ -3747,8 +3663,7 @@
   <span class="md-ellipsis">
     
   
-    Quickstart
-  
+  Quickstart
 
     
   </span>
@@ -3775,8 +3690,7 @@
   <span class="md-ellipsis">
     
   
-    Connect & Configure
-  
+  Connect & Configure
 
     
   </span>
@@ -3803,8 +3717,7 @@
   <span class="md-ellipsis">
     
   
-    Update Firmware
-  
+  Update Firmware
 
     
   </span>
@@ -3831,8 +3744,7 @@
   <span class="md-ellipsis">
     
   
-    MIDI Commands
-  
+  MIDI Commands
 
     
   </span>
@@ -3859,8 +3771,7 @@
   <span class="md-ellipsis">
     
   
-    Warranty
-  
+  Warranty
 
     
   </span>
@@ -3909,8 +3820,7 @@
   <span class="md-ellipsis">
     
   
-    Polar Mini
-  
+  Polar Mini
 
     
   </span>
@@ -3925,8 +3835,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Polar Mini
-  
+  Polar Mini
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -3945,8 +3854,7 @@
   <span class="md-ellipsis">
     
   
-    Introduction
-  
+  Introduction
 
     
   </span>
@@ -3973,8 +3881,7 @@
   <span class="md-ellipsis">
     
   
-    Quickstart
-  
+  Quickstart
 
     
   </span>
@@ -4001,8 +3908,7 @@
   <span class="md-ellipsis">
     
   
-    Connect & Configure
-  
+  Connect & Configure
 
     
   </span>
@@ -4029,8 +3935,7 @@
   <span class="md-ellipsis">
     
   
-    Update Firmware
-  
+  Update Firmware
 
     
   </span>
@@ -4057,8 +3962,7 @@
   <span class="md-ellipsis">
     
   
-    MIDI Commands
-  
+  MIDI Commands
 
     
   </span>
@@ -4085,8 +3989,7 @@
   <span class="md-ellipsis">
     
   
-    Warranty
-  
+  Warranty
 
     
   </span>
@@ -4135,8 +4038,7 @@
   <span class="md-ellipsis">
     
   
-    Polar Pico
-  
+  Polar Pico
 
     
   </span>
@@ -4151,8 +4053,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Polar Pico
-  
+  Polar Pico
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -4171,8 +4072,7 @@
   <span class="md-ellipsis">
     
   
-    Introduction
-  
+  Introduction
 
     
   </span>
@@ -4199,8 +4099,7 @@
   <span class="md-ellipsis">
     
   
-    Quickstart
-  
+  Quickstart
 
     
   </span>
@@ -4227,8 +4126,7 @@
   <span class="md-ellipsis">
     
   
-    Connect & Configure
-  
+  Connect & Configure
 
     
   </span>
@@ -4255,8 +4153,7 @@
   <span class="md-ellipsis">
     
   
-    Update Firmware
-  
+  Update Firmware
 
     
   </span>
@@ -4283,8 +4180,7 @@
   <span class="md-ellipsis">
     
   
-    MIDI Commands
-  
+  MIDI Commands
 
     
   </span>
@@ -4311,8 +4207,7 @@
   <span class="md-ellipsis">
     
   
-    Warranty
-  
+  Warranty
 
     
   </span>
@@ -4355,8 +4250,7 @@
   <span class="md-ellipsis">
     
   
-    Nexus
-  
+  Nexus
 
     
   </span>
@@ -4383,8 +4277,7 @@
   <span class="md-ellipsis">
     
   
-    Exp Mate
-  
+  Exp Mate
 
     
   </span>
@@ -4425,8 +4318,7 @@
   <span class="md-ellipsis">
     
   
-    CLiCK v2
-  
+  CLiCK v2
 
     
   </span>
@@ -4441,8 +4333,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    CLiCK v2
-  
+  CLiCK v2
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -4461,8 +4352,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
-  
+  Overview
 
     
   </span>
@@ -4489,8 +4379,7 @@
   <span class="md-ellipsis">
     
   
-    Examples
-  
+  Examples
 
     
   </span>
@@ -4517,8 +4406,7 @@
   <span class="md-ellipsis">
     
   
-    MIDI Implementation
-  
+  MIDI Implementation
 
     
   </span>
@@ -4545,8 +4433,7 @@
   <span class="md-ellipsis">
     
   
-    Warranty
-  
+  Warranty
 
     
   </span>
@@ -4581,8 +4468,7 @@
   <span class="md-ellipsis">
     
   
-    Exp-Doubler
-  
+  Exp-Doubler
 
     
   </span>
@@ -4609,8 +4495,7 @@
   <span class="md-ellipsis">
     
   
-    µLOOP v1
-  
+  µLOOP v1
 
     
   </span>
@@ -4637,8 +4522,7 @@
   <span class="md-ellipsis">
     
   
-    Thru Gizmo
-  
+  Thru Gizmo
 
     
   </span>
@@ -4672,8 +4556,7 @@
   <span class="md-ellipsis">
     
   
-    Device API
-  
+  Device API
 
     
   </span>
@@ -4699,8 +4582,7 @@
   <span class="md-ellipsis">
     
   
-    Support
-  
+  Support
 
     
   </span>
@@ -4722,10 +4604,24 @@
               
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
   
   
   
@@ -4734,16 +4630,16 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      On this page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#bridge6-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         BRIDGE6 Overview
-      
+      </span>
     </span>
   </a>
   
@@ -4752,9 +4648,9 @@
         <li class="md-nav__item">
   <a href="#technical-information" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Technical Information
-      
+      </span>
     </span>
   </a>
   
@@ -4764,9 +4660,9 @@
           <li class="md-nav__item">
   <a href="#links-to-downloads" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Links to Downloads
-      
+      </span>
     </span>
   </a>
   
@@ -4775,9 +4671,9 @@
           <li class="md-nav__item">
   <a href="#dimensions" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Dimensions
-      
+      </span>
     </span>
   </a>
   
@@ -4786,9 +4682,9 @@
           <li class="md-nav__item">
   <a href="#display" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Display
-      
+      </span>
     </span>
   </a>
   
@@ -4797,9 +4693,9 @@
           <li class="md-nav__item">
   <a href="#weight" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Weight
-      
+      </span>
     </span>
   </a>
   
@@ -4808,9 +4704,9 @@
           <li class="md-nav__item">
   <a href="#power-requirement" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Power Requirement
-      
+      </span>
     </span>
   </a>
   
@@ -4819,9 +4715,9 @@
           <li class="md-nav__item">
   <a href="#box-contents" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Box Contents
-      
+      </span>
     </span>
   </a>
   
@@ -4835,9 +4731,9 @@
         <li class="md-nav__item">
   <a href="#hardware-layout" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Hardware Layout
-      
+      </span>
     </span>
   </a>
   
@@ -4846,9 +4742,9 @@
         <li class="md-nav__item">
   <a href="#quick-start" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Quick Start
-      
+      </span>
     </span>
   </a>
   
@@ -4858,9 +4754,9 @@
           <li class="md-nav__item">
   <a href="#1-bank-up-bank-down" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         1. Bank Up / Bank Down
-      
+      </span>
     </span>
   </a>
   
@@ -4869,9 +4765,9 @@
           <li class="md-nav__item">
   <a href="#2-entering-the-menu" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         2. Entering the Menu
-      
+      </span>
     </span>
   </a>
   
@@ -4880,9 +4776,9 @@
           <li class="md-nav__item">
   <a href="#3-dont-miss-the-rest" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         3. Don’t Miss the Rest!
-      
+      </span>
     </span>
   </a>
   
@@ -4891,9 +4787,9 @@
           <li class="md-nav__item">
   <a href="#4-general-navigation" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         4. General Navigation
-      
+      </span>
     </span>
   </a>
   
@@ -4903,9 +4799,9 @@
           <li class="md-nav__item">
   <a href="#set-banking-program-change-outputs" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Set Banking Program Change Outputs
-      
+      </span>
     </span>
   </a>
   
@@ -4914,9 +4810,9 @@
           <li class="md-nav__item">
   <a href="#switch-groups-broadcastresponse-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Switch Groups &amp; Broadcast/Response Settings
-      
+      </span>
     </span>
   </a>
   
@@ -4925,9 +4821,9 @@
           <li class="md-nav__item">
   <a href="#check-that-your-bridge6-firmware-is-up-to-date" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Check That Your BRIDGE6 Firmware Is Up to Date
-      
+      </span>
     </span>
   </a>
   
@@ -4946,9 +4842,9 @@
         <li class="md-nav__item">
   <a href="#1-device-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         1. Device Interface
-      
+      </span>
     </span>
   </a>
   
@@ -4958,9 +4854,9 @@
           <li class="md-nav__item">
   <a href="#footswitches" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Footswitches
-      
+      </span>
     </span>
   </a>
   
@@ -4969,9 +4865,9 @@
           <li class="md-nav__item">
   <a href="#oled-display" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         OLED Display
-      
+      </span>
     </span>
   </a>
   
@@ -4980,9 +4876,9 @@
           <li class="md-nav__item">
   <a href="#rgb-leds" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         RGB LEDs
-      
+      </span>
     </span>
   </a>
   
@@ -4996,9 +4892,9 @@
         <li class="md-nav__item">
   <a href="#2-power-navigation" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         2. Power &amp; Navigation
-      
+      </span>
     </span>
   </a>
   
@@ -5008,9 +4904,9 @@
           <li class="md-nav__item">
   <a href="#powering-your-bridge6" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Powering Your BRIDGE6
-      
+      </span>
     </span>
   </a>
   
@@ -5019,9 +4915,9 @@
           <li class="md-nav__item">
   <a href="#switching-power-sources" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Switching Power Sources
-      
+      </span>
     </span>
   </a>
   
@@ -5030,9 +4926,9 @@
           <li class="md-nav__item">
   <a href="#basic-navigation-bank-up-bank-down" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Basic Navigation – Bank Up &amp; Bank Down
-      
+      </span>
     </span>
   </a>
   
@@ -5041,9 +4937,9 @@
           <li class="md-nav__item">
   <a href="#opening-the-menu" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Opening the Menu
-      
+      </span>
     </span>
   </a>
   
@@ -5052,9 +4948,9 @@
           <li class="md-nav__item">
   <a href="#second-screen-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Second-Screen Settings
-      
+      </span>
     </span>
   </a>
   
@@ -5063,9 +4959,9 @@
           <li class="md-nav__item">
   <a href="#ready-to-rock" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Ready to Rock
-      
+      </span>
     </span>
   </a>
   
@@ -5079,9 +4975,9 @@
         <li class="md-nav__item">
   <a href="#3-overview-of-connectors" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         3. Overview of Connectors
-      
+      </span>
     </span>
   </a>
   
@@ -5091,9 +4987,9 @@
           <li class="md-nav__item">
   <a href="#usb-type-c" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         USB (Type-C)
-      
+      </span>
     </span>
   </a>
   
@@ -5102,9 +4998,9 @@
           <li class="md-nav__item">
   <a href="#trs-midi-in" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         TRS MIDI In
-      
+      </span>
     </span>
   </a>
   
@@ -5113,9 +5009,9 @@
           <li class="md-nav__item">
   <a href="#din5-midi-out" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         DIN5 MIDI Out
-      
+      </span>
     </span>
   </a>
   
@@ -5124,9 +5020,9 @@
           <li class="md-nav__item">
   <a href="#9v-dc-centre-negative" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         9V DC (centre-negative)
-      
+      </span>
     </span>
   </a>
   
@@ -5135,9 +5031,9 @@
           <li class="md-nav__item">
   <a href="#trs-flexiports-1-2" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         TRS Flexiports 1 &amp; 2
-      
+      </span>
     </span>
   </a>
   
@@ -5151,9 +5047,9 @@
         <li class="md-nav__item">
   <a href="#4-flexiports" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         4. Flexiports
-      
+      </span>
     </span>
   </a>
   
@@ -5163,9 +5059,9 @@
           <li class="md-nav__item">
   <a href="#flexiport-modes-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Flexiport Modes Summary
-      
+      </span>
     </span>
   </a>
   
@@ -5174,9 +5070,9 @@
           <li class="md-nav__item">
   <a href="#midi-out-flexiports" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI Out (Flexiports)
-      
+      </span>
     </span>
   </a>
   
@@ -5185,9 +5081,9 @@
           <li class="md-nav__item">
   <a href="#expression-pedal-in" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Expression Pedal In
-      
+      </span>
     </span>
   </a>
   
@@ -5197,9 +5093,9 @@
           <li class="md-nav__item">
   <a href="#expression-pedal-calibration" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Expression Pedal Calibration
-      
+      </span>
     </span>
   </a>
   
@@ -5213,9 +5109,9 @@
           <li class="md-nav__item">
   <a href="#exp-doubler-in" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Exp-Doubler In
-      
+      </span>
     </span>
   </a>
   
@@ -5224,9 +5120,9 @@
           <li class="md-nav__item">
   <a href="#tap-tempo-output" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Tap Tempo Output
-      
+      </span>
     </span>
   </a>
   
@@ -5235,9 +5131,9 @@
           <li class="md-nav__item">
   <a href="#aux-switch-in" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Aux Switch In
-      
+      </span>
     </span>
   </a>
   
@@ -5246,9 +5142,9 @@
           <li class="md-nav__item">
   <a href="#switch-out" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Switch Out
-      
+      </span>
     </span>
   </a>
   
@@ -5258,9 +5154,9 @@
           <li class="md-nav__item">
   <a href="#assigning-switch-out-actions-to-a-footswitch" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Assigning “Switch Out” Actions to a Footswitch
-      
+      </span>
     </span>
   </a>
   
@@ -5274,9 +5170,9 @@
           <li class="md-nav__item">
   <a href="#ms-relay" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MS Relay
-      
+      </span>
     </span>
   </a>
   
@@ -5285,9 +5181,9 @@
           <li class="md-nav__item">
   <a href="#pulse-clock-out" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Pulse Clock Out
-      
+      </span>
     </span>
   </a>
   
@@ -5296,9 +5192,9 @@
           <li class="md-nav__item">
   <a href="#device-link" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Device Link
-      
+      </span>
     </span>
   </a>
   
@@ -5308,9 +5204,9 @@
           <li class="md-nav__item">
   <a href="#setting-the-main-satellite-roles" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Setting the Main / Satellite Roles
-      
+      </span>
     </span>
   </a>
   
@@ -5319,9 +5215,9 @@
           <li class="md-nav__item">
   <a href="#device-link-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Device Link Settings
-      
+      </span>
     </span>
   </a>
   
@@ -5340,21 +5236,21 @@
         <li class="md-nav__item">
   <a href="#5-midi-in-out-thru" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         5. MIDI In / Out / Thru
-      
+      </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="5. MIDI In / Out / Thru">
+    <nav class="md-nav" aria-label="5. MIDI In &#x2f; Out &#x2f; Thru">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#midi-out-din5" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI Out (DIN5)
-      
+      </span>
     </span>
   </a>
   
@@ -5363,9 +5259,9 @@
           <li class="md-nav__item">
   <a href="#midi-in-trs" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI In (TRS)
-      
+      </span>
     </span>
   </a>
   
@@ -5374,9 +5270,9 @@
           <li class="md-nav__item">
   <a href="#external-midi-control" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         External MIDI Control
-      
+      </span>
     </span>
   </a>
   
@@ -5385,9 +5281,9 @@
           <li class="md-nav__item">
   <a href="#midi-thru" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI Thru
-      
+      </span>
     </span>
   </a>
   
@@ -5397,9 +5293,9 @@
           <li class="md-nav__item">
   <a href="#midi-loopback" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI Loopback
-      
+      </span>
     </span>
   </a>
   
@@ -5418,9 +5314,9 @@
         <li class="md-nav__item">
   <a href="#6-usb-midi" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         6. USB MIDI
-      
+      </span>
     </span>
   </a>
   
@@ -5430,9 +5326,9 @@
           <li class="md-nav__item">
   <a href="#usb-type-c_1" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         USB (Type-C)
-      
+      </span>
     </span>
   </a>
   
@@ -5446,9 +5342,9 @@
         <li class="md-nav__item">
   <a href="#7-messages-modes" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         7. Messages &amp; Modes
-      
+      </span>
     </span>
   </a>
   
@@ -5458,9 +5354,9 @@
           <li class="md-nav__item">
   <a href="#midi-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI Messages
-      
+      </span>
     </span>
   </a>
   
@@ -5469,9 +5365,9 @@
           <li class="md-nav__item">
   <a href="#smart-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Smart Messages
-      
+      </span>
     </span>
   </a>
   
@@ -5480,9 +5376,9 @@
           <li class="md-nav__item">
   <a href="#key-press-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Key Press Messages
-      
+      </span>
     </span>
   </a>
   
@@ -5496,9 +5392,9 @@
         <li class="md-nav__item">
   <a href="#primary-footswitch-modes" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Primary Footswitch Modes
-      
+      </span>
     </span>
   </a>
   
@@ -5508,9 +5404,9 @@
           <li class="md-nav__item">
   <a href="#toggle-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Toggle Mode
-      
+      </span>
     </span>
   </a>
   
@@ -5519,9 +5415,9 @@
           <li class="md-nav__item">
   <a href="#momentary-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Momentary Mode
-      
+      </span>
     </span>
   </a>
   
@@ -5530,9 +5426,9 @@
           <li class="md-nav__item">
   <a href="#tap-tempo-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Tap Tempo Mode
-      
+      </span>
     </span>
   </a>
   
@@ -5541,9 +5437,9 @@
           <li class="md-nav__item">
   <a href="#sequential-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Sequential Mode
-      
+      </span>
     </span>
   </a>
   
@@ -5552,9 +5448,9 @@
           <li class="md-nav__item">
   <a href="#sequential-linked-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Sequential Linked Mode
-      
+      </span>
     </span>
   </a>
   
@@ -5563,9 +5459,9 @@
           <li class="md-nav__item">
   <a href="#scrolling-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Scrolling Mode
-      
+      </span>
     </span>
   </a>
   
@@ -5574,9 +5470,9 @@
           <li class="md-nav__item">
   <a href="#scrolling-linked-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Scrolling Linked Mode
-      
+      </span>
     </span>
   </a>
   
@@ -5590,9 +5486,9 @@
         <li class="md-nav__item">
   <a href="#secondary-footswitch-modes" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Secondary Footswitch Modes
-      
+      </span>
     </span>
   </a>
   
@@ -5602,9 +5498,9 @@
           <li class="md-nav__item">
   <a href="#double-tap-toggle" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Double Tap Toggle
-      
+      </span>
     </span>
   </a>
   
@@ -5613,9 +5509,9 @@
           <li class="md-nav__item">
   <a href="#hold-toggle" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Hold Toggle
-      
+      </span>
     </span>
   </a>
   
@@ -5624,9 +5520,9 @@
           <li class="md-nav__item">
   <a href="#double-tap-momentary" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Double Tap Momentary
-      
+      </span>
     </span>
   </a>
   
@@ -5635,9 +5531,9 @@
           <li class="md-nav__item">
   <a href="#hold-momentary" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Hold Momentary
-      
+      </span>
     </span>
   </a>
   
@@ -5651,9 +5547,9 @@
         <li class="md-nav__item">
   <a href="#expanding-your-midi-routing" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Expanding Your MIDI Routing
-      
+      </span>
     </span>
   </a>
   
@@ -5662,9 +5558,9 @@
         <li class="md-nav__item">
   <a href="#lfos-low-frequency-oscillators" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         LFOs (Low Frequency Oscillators)
-      
+      </span>
     </span>
   </a>
   
@@ -5673,9 +5569,9 @@
         <li class="md-nav__item">
   <a href="#expression-pedals" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Expression Pedals
-      
+      </span>
     </span>
   </a>
   
@@ -5684,9 +5580,9 @@
         <li class="md-nav__item">
   <a href="#expression-ladder-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Expression Ladder Messages
-      
+      </span>
     </span>
   </a>
   
@@ -5695,9 +5591,9 @@
         <li class="md-nav__item">
   <a href="#aux-switches" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Aux Switches
-      
+      </span>
     </span>
   </a>
   
@@ -5706,9 +5602,9 @@
         <li class="md-nav__item">
   <a href="#boot-messages-boot-delay" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Boot Messages &amp; Boot Delay
-      
+      </span>
     </span>
   </a>
   
@@ -5717,9 +5613,9 @@
         <li class="md-nav__item">
   <a href="#device-link_1" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Device Link
-      
+      </span>
     </span>
   </a>
   
@@ -5728,9 +5624,9 @@
         <li class="md-nav__item">
   <a href="#8-message-stacks" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         8. Message Stacks
-      
+      </span>
     </span>
   </a>
   
@@ -5740,9 +5636,9 @@
           <li class="md-nav__item">
   <a href="#81-footswitches" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         8.1 Footswitches
-      
+      </span>
     </span>
   </a>
   
@@ -5752,9 +5648,9 @@
           <li class="md-nav__item">
   <a href="#viewing-messages-on-footswitches" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Viewing Messages on Footswitches
-      
+      </span>
     </span>
   </a>
   
@@ -5763,9 +5659,9 @@
           <li class="md-nav__item">
   <a href="#add" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Add
-      
+      </span>
     </span>
   </a>
   
@@ -5774,9 +5670,9 @@
           <li class="md-nav__item">
   <a href="#delete" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Delete
-      
+      </span>
     </span>
   </a>
   
@@ -5785,9 +5681,9 @@
           <li class="md-nav__item">
   <a href="#edit" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Edit
-      
+      </span>
     </span>
   </a>
   
@@ -5801,9 +5697,9 @@
           <li class="md-nav__item">
   <a href="#82-expression-pedals" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         8.2 Expression Pedals
-      
+      </span>
     </span>
   </a>
   
@@ -5813,9 +5709,9 @@
           <li class="md-nav__item">
   <a href="#viewing-bank-level-expression-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Viewing Bank-Level Expression Messages
-      
+      </span>
     </span>
   </a>
   
@@ -5824,9 +5720,9 @@
           <li class="md-nav__item">
   <a href="#viewing-global-expression-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Viewing Global Expression Messages
-      
+      </span>
     </span>
   </a>
   
@@ -5835,9 +5731,9 @@
           <li class="md-nav__item">
   <a href="#editing-expression-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Editing Expression Messages
-      
+      </span>
     </span>
   </a>
   
@@ -5846,9 +5742,9 @@
           <li class="md-nav__item">
   <a href="#minmax-value" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Min/Max Value
-      
+      </span>
     </span>
   </a>
   
@@ -5862,9 +5758,9 @@
           <li class="md-nav__item">
   <a href="#83-sequential-mode-advanced-details" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         8.3 Sequential Mode (Advanced Details)
-      
+      </span>
     </span>
   </a>
   
@@ -5873,9 +5769,9 @@
           <li class="md-nav__item">
   <a href="#84-scrolling-mode-advanced-details" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         8.4 Scrolling Mode (Advanced Details)
-      
+      </span>
     </span>
   </a>
   
@@ -5885,9 +5781,9 @@
           <li class="md-nav__item">
   <a href="#direction" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Direction
-      
+      </span>
     </span>
   </a>
   
@@ -5896,9 +5792,9 @@
           <li class="md-nav__item">
   <a href="#send-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Send Mode
-      
+      </span>
     </span>
   </a>
   
@@ -5907,9 +5803,9 @@
           <li class="md-nav__item">
   <a href="#minmax" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Min/Max
-      
+      </span>
     </span>
   </a>
   
@@ -5918,9 +5814,9 @@
           <li class="md-nav__item">
   <a href="#step-size" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Step Size
-      
+      </span>
     </span>
   </a>
   
@@ -5934,9 +5830,9 @@
           <li class="md-nav__item">
   <a href="#85-scrolling-linked-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         8.5 Scrolling Linked Mode
-      
+      </span>
     </span>
   </a>
   
@@ -5950,9 +5846,9 @@
         <li class="md-nav__item">
   <a href="#9-midi-clock" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         9. MIDI Clock
-      
+      </span>
     </span>
   </a>
   
@@ -5962,9 +5858,9 @@
           <li class="md-nav__item">
   <a href="#91-assigning-midi-clock-to-a-footswitch" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         9.1. Assigning MIDI Clock to a Footswitch
-      
+      </span>
     </span>
   </a>
   
@@ -5973,9 +5869,9 @@
           <li class="md-nav__item">
   <a href="#led-indicators" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         LED Indicators
-      
+      </span>
     </span>
   </a>
   
@@ -5984,9 +5880,9 @@
           <li class="md-nav__item">
   <a href="#sending-start-stop-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Sending Start &amp; Stop Messages
-      
+      </span>
     </span>
   </a>
   
@@ -5995,9 +5891,9 @@
           <li class="md-nav__item">
   <a href="#92-assigning-midi-clock-outputs" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         9.2. Assigning MIDI Clock Outputs
-      
+      </span>
     </span>
   </a>
   
@@ -6006,9 +5902,9 @@
           <li class="md-nav__item">
   <a href="#93-preset-or-inherit-midi-clock-tempo-per-bank" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         9.3. Preset or Inherit MIDI Clock Tempo Per Bank
-      
+      </span>
     </span>
   </a>
   
@@ -6017,9 +5913,9 @@
           <li class="md-nav__item">
   <a href="#94-sending-midi-clock-as-analog-tap-impulses" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         9.4. Sending MIDI Clock as Analog Tap Impulses
-      
+      </span>
     </span>
   </a>
   
@@ -6028,9 +5924,9 @@
           <li class="md-nav__item">
   <a href="#95-sending-midi-clock-as-beat-sync-pulse" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         9.5. Sending MIDI Clock as Beat Sync Pulse
-      
+      </span>
     </span>
   </a>
   
@@ -6039,9 +5935,9 @@
           <li class="md-nav__item">
   <a href="#96-controlling-clock-tempo-with-midi" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         9.6. Controlling Clock Tempo with MIDI
-      
+      </span>
     </span>
   </a>
   
@@ -6051,9 +5947,9 @@
           <li class="md-nav__item">
   <a href="#cc-73-target-clock-range" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         CC 73 — Target Clock &amp; Range
-      
+      </span>
     </span>
   </a>
   
@@ -6062,9 +5958,9 @@
           <li class="md-nav__item">
   <a href="#cc-74-tempo-value" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         CC 74 — Tempo Value
-      
+      </span>
     </span>
   </a>
   
@@ -6073,9 +5969,9 @@
           <li class="md-nav__item">
   <a href="#examples" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Examples
-      
+      </span>
     </span>
   </a>
   
@@ -6094,9 +5990,9 @@
         <li class="md-nav__item">
   <a href="#10-lfos" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         10. LFOs
-      
+      </span>
     </span>
   </a>
   
@@ -6106,9 +6002,9 @@
           <li class="md-nav__item">
   <a href="#1-lfo-state" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         1. LFO State
-      
+      </span>
     </span>
   </a>
   
@@ -6117,9 +6013,9 @@
           <li class="md-nav__item">
   <a href="#2-lfo-sync" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         2. LFO Sync
-      
+      </span>
     </span>
   </a>
   
@@ -6128,9 +6024,9 @@
           <li class="md-nav__item">
   <a href="#3-lfo-frequency" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         3. LFO Frequency
-      
+      </span>
     </span>
   </a>
   
@@ -6140,9 +6036,9 @@
           <li class="md-nav__item">
   <a href="#free-mode-hz" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Free Mode (Hz)
-      
+      </span>
     </span>
   </a>
   
@@ -6151,9 +6047,9 @@
           <li class="md-nav__item">
   <a href="#clock-sync-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Clock Sync Mode
-      
+      </span>
     </span>
   </a>
   
@@ -6167,9 +6063,9 @@
           <li class="md-nav__item">
   <a href="#4-lfo-trigger" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         4. LFO Trigger
-      
+      </span>
     </span>
   </a>
   
@@ -6179,9 +6075,9 @@
           <li class="md-nav__item">
   <a href="#toggle" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Toggle
-      
+      </span>
     </span>
   </a>
   
@@ -6190,9 +6086,9 @@
           <li class="md-nav__item">
   <a href="#hold" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Hold
-      
+      </span>
     </span>
   </a>
   
@@ -6206,9 +6102,9 @@
           <li class="md-nav__item">
   <a href="#5-lfo-limits" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         5. LFO Limits
-      
+      </span>
     </span>
   </a>
   
@@ -6217,9 +6113,9 @@
           <li class="md-nav__item">
   <a href="#6-lfo-shape-waveform" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         6. LFO Shape (Waveform)
-      
+      </span>
     </span>
   </a>
   
@@ -6228,9 +6124,9 @@
           <li class="md-nav__item">
   <a href="#7-lfo-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         7. LFO Messages
-      
+      </span>
     </span>
   </a>
   
@@ -6239,9 +6135,9 @@
           <li class="md-nav__item">
   <a href="#8-lfo-modulation-source" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         8. LFO Modulation Source
-      
+      </span>
     </span>
   </a>
   
@@ -6250,9 +6146,9 @@
           <li class="md-nav__item">
   <a href="#9-lfo-modulation-target" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         9. LFO Modulation Target
-      
+      </span>
     </span>
   </a>
   
@@ -6261,9 +6157,9 @@
           <li class="md-nav__item">
   <a href="#10-lfo-reset" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         10. LFO Reset
-      
+      </span>
     </span>
   </a>
   
@@ -6272,9 +6168,9 @@
           <li class="md-nav__item">
   <a href="#11-lfo-step" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         11. LFO Step
-      
+      </span>
     </span>
   </a>
   
@@ -6283,9 +6179,9 @@
           <li class="md-nav__item">
   <a href="#12-save-exit" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         12. Save &amp; Exit
-      
+      </span>
     </span>
   </a>
   
@@ -6299,9 +6195,9 @@
         <li class="md-nav__item">
   <a href="#11-switch-out" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         11. Switch Out
-      
+      </span>
     </span>
   </a>
   
@@ -6311,9 +6207,9 @@
           <li class="md-nav__item">
   <a href="#1-activating-trs-out-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         1. Activating TRS Out Mode
-      
+      </span>
     </span>
   </a>
   
@@ -6322,9 +6218,9 @@
           <li class="md-nav__item">
   <a href="#2-setting-trs-out-per-switch" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         2. Setting TRS Out per Switch
-      
+      </span>
     </span>
   </a>
   
@@ -6338,9 +6234,9 @@
         <li class="md-nav__item">
   <a href="#12-aux-switch-in" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         12. Aux Switch In
-      
+      </span>
     </span>
   </a>
   
@@ -6350,9 +6246,9 @@
           <li class="md-nav__item">
   <a href="#1-activating-aux-switch-in-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         1. Activating Aux Switch In Mode
-      
+      </span>
     </span>
   </a>
   
@@ -6361,9 +6257,9 @@
           <li class="md-nav__item">
   <a href="#2-setting-auxiliary-switch-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         2. Setting Auxiliary Switch Messages
-      
+      </span>
     </span>
   </a>
   
@@ -6373,9 +6269,9 @@
           <li class="md-nav__item">
   <a href="#bank-level-aux-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Bank-Level Aux Messages
-      
+      </span>
     </span>
   </a>
   
@@ -6384,9 +6280,9 @@
           <li class="md-nav__item">
   <a href="#global-level-aux-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Global-Level Aux Messages
-      
+      </span>
     </span>
   </a>
   
@@ -6400,9 +6296,9 @@
           <li class="md-nav__item">
   <a href="#behaviour-notes" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Behaviour Notes
-      
+      </span>
     </span>
   </a>
   
@@ -6416,9 +6312,9 @@
         <li class="md-nav__item">
   <a href="#13-switch-groups" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         13. Switch Groups
-      
+      </span>
     </span>
   </a>
   
@@ -6428,9 +6324,9 @@
           <li class="md-nav__item">
   <a href="#1-navigating-switch-groups" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         1. Navigating Switch Groups
-      
+      </span>
     </span>
   </a>
   
@@ -6439,9 +6335,9 @@
           <li class="md-nav__item">
   <a href="#2-editing-switch-groups" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         2. Editing Switch Groups
-      
+      </span>
     </span>
   </a>
   
@@ -6450,9 +6346,9 @@
           <li class="md-nav__item">
   <a href="#switch" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Switch
-      
+      </span>
     </span>
   </a>
   
@@ -6461,9 +6357,9 @@
           <li class="md-nav__item">
   <a href="#broadcast" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Broadcast
-      
+      </span>
     </span>
   </a>
   
@@ -6472,9 +6368,9 @@
           <li class="md-nav__item">
   <a href="#respond-to" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Respond To
-      
+      </span>
     </span>
   </a>
   
@@ -6483,9 +6379,9 @@
           <li class="md-nav__item">
   <a href="#response-type" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Response Type
-      
+      </span>
     </span>
   </a>
   
@@ -6495,9 +6391,9 @@
           <li class="md-nav__item">
   <a href="#or" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         OR
-      
+      </span>
     </span>
   </a>
   
@@ -6506,9 +6402,9 @@
           <li class="md-nav__item">
   <a href="#and" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         AND
-      
+      </span>
     </span>
   </a>
   
@@ -6517,9 +6413,9 @@
           <li class="md-nav__item">
   <a href="#toggle_1" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         TOGGLE
-      
+      </span>
     </span>
   </a>
   
@@ -6528,9 +6424,9 @@
           <li class="md-nav__item">
   <a href="#on" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         ON
-      
+      </span>
     </span>
   </a>
   
@@ -6539,9 +6435,9 @@
           <li class="md-nav__item">
   <a href="#off" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         OFF
-      
+      </span>
     </span>
   </a>
   
@@ -6555,9 +6451,9 @@
           <li class="md-nav__item">
   <a href="#sequential-mode-switches-in-switch-groups" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Sequential Mode Switches in Switch Groups
-      
+      </span>
     </span>
   </a>
   
@@ -6571,9 +6467,9 @@
         <li class="md-nav__item">
   <a href="#14-interface-leds" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         14. Interface – LEDs
-      
+      </span>
     </span>
   </a>
   
@@ -6583,9 +6479,9 @@
           <li class="md-nav__item">
   <a href="#led-color-selection" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         LED Color Selection
-      
+      </span>
     </span>
   </a>
   
@@ -6594,9 +6490,9 @@
           <li class="md-nav__item">
   <a href="#sequential-mode-colour-notes" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Sequential Mode Colour Notes
-      
+      </span>
     </span>
   </a>
   
@@ -6605,9 +6501,9 @@
           <li class="md-nav__item">
   <a href="#custom-led-colours" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Custom LED Colours
-      
+      </span>
     </span>
   </a>
   
@@ -6616,9 +6512,9 @@
           <li class="md-nav__item">
   <a href="#primary-led-behaviour" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Primary LED Behaviour
-      
+      </span>
     </span>
   </a>
   
@@ -6627,9 +6523,9 @@
           <li class="md-nav__item">
   <a href="#secondary-led-behaviour" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Secondary LED Behaviour
-      
+      </span>
     </span>
   </a>
   
@@ -6638,9 +6534,9 @@
           <li class="md-nav__item">
   <a href="#external-led-control" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         External LED Control
-      
+      </span>
     </span>
   </a>
   
@@ -6650,9 +6546,9 @@
           <li class="md-nav__item">
   <a href="#targeting-an-led" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Targeting an LED
-      
+      </span>
     </span>
   </a>
   
@@ -6661,9 +6557,9 @@
           <li class="md-nav__item">
   <a href="#setting-led-colours" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Setting LED Colours
-      
+      </span>
     </span>
   </a>
   
@@ -6677,9 +6573,9 @@
           <li class="md-nav__item">
   <a href="#led-brightness" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         LED Brightness
-      
+      </span>
     </span>
   </a>
   
@@ -6693,9 +6589,9 @@
         <li class="md-nav__item">
   <a href="#15-interface-bank-names" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         15. Interface – Bank Names
-      
+      </span>
     </span>
   </a>
   
@@ -6705,9 +6601,9 @@
           <li class="md-nav__item">
   <a href="#changing-the-bank-name" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Changing the Bank Name
-      
+      </span>
     </span>
   </a>
   
@@ -6716,9 +6612,9 @@
           <li class="md-nav__item">
   <a href="#scroll-acceleration" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Scroll Acceleration
-      
+      </span>
     </span>
   </a>
   
@@ -6727,9 +6623,9 @@
           <li class="md-nav__item">
   <a href="#inverting-the-bank-name-colour" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Inverting the Bank Name Colour
-      
+      </span>
     </span>
   </a>
   
@@ -6738,9 +6634,9 @@
           <li class="md-nav__item">
   <a href="#change-bank-numbering" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Change Bank Numbering
-      
+      </span>
     </span>
   </a>
   
@@ -6754,9 +6650,9 @@
         <li class="md-nav__item">
   <a href="#16-interface-ui-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         16. Interface – UI Mode
-      
+      </span>
     </span>
   </a>
   
@@ -6766,9 +6662,9 @@
           <li class="md-nav__item">
   <a href="#how-to-change-the-ui" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         How to Change the UI
-      
+      </span>
     </span>
   </a>
   
@@ -6777,9 +6673,9 @@
           <li class="md-nav__item">
   <a href="#simple-ui" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Simple UI
-      
+      </span>
     </span>
   </a>
   
@@ -6788,9 +6684,9 @@
           <li class="md-nav__item">
   <a href="#extended-ui" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Extended UI
-      
+      </span>
     </span>
   </a>
   
@@ -6799,9 +6695,9 @@
           <li class="md-nav__item">
   <a href="#flexiport-status-indicators-extended-ui" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Flexiport Status Indicators (Extended UI)
-      
+      </span>
     </span>
   </a>
   
@@ -6811,9 +6707,9 @@
           <li class="md-nav__item">
   <a href="#midi-out-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI Out Mode
-      
+      </span>
     </span>
   </a>
   
@@ -6822,9 +6718,9 @@
           <li class="md-nav__item">
   <a href="#expression-in-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Expression In Mode
-      
+      </span>
     </span>
   </a>
   
@@ -6833,9 +6729,9 @@
           <li class="md-nav__item">
   <a href="#exp-doubler-in-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Exp-Doubler In Mode
-      
+      </span>
     </span>
   </a>
   
@@ -6844,9 +6740,9 @@
           <li class="md-nav__item">
   <a href="#tap-tempo-out-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Tap Tempo Out Mode
-      
+      </span>
     </span>
   </a>
   
@@ -6855,9 +6751,9 @@
           <li class="md-nav__item">
   <a href="#aux-switch-in-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Aux Switch In Mode
-      
+      </span>
     </span>
   </a>
   
@@ -6866,9 +6762,9 @@
           <li class="md-nav__item">
   <a href="#switch-out-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Switch Out Mode
-      
+      </span>
     </span>
   </a>
   
@@ -6877,9 +6773,9 @@
           <li class="md-nav__item">
   <a href="#device-link-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Device Link Mode
-      
+      </span>
     </span>
   </a>
   
@@ -6898,9 +6794,9 @@
         <li class="md-nav__item">
   <a href="#17-interface-switch-labels" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         17. Interface – Switch Labels
-      
+      </span>
     </span>
   </a>
   
@@ -6910,9 +6806,9 @@
           <li class="md-nav__item">
   <a href="#changing-customising-switch-labels" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Changing &amp; Customising Switch Labels
-      
+      </span>
     </span>
   </a>
   
@@ -6926,9 +6822,9 @@
         <li class="md-nav__item">
   <a href="#18-bank-navigation" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         18. Bank Navigation
-      
+      </span>
     </span>
   </a>
   
@@ -6938,9 +6834,9 @@
           <li class="md-nav__item">
   <a href="#changing-bank-navigation-triggers" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Changing Bank Navigation Triggers
-      
+      </span>
     </span>
   </a>
   
@@ -6949,9 +6845,9 @@
           <li class="md-nav__item">
   <a href="#setlists" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Setlists
-      
+      </span>
     </span>
   </a>
   
@@ -6960,9 +6856,9 @@
           <li class="md-nav__item">
   <a href="#activating-a-setlist-onboard" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Activating a Setlist Onboard
-      
+      </span>
     </span>
   </a>
   
@@ -6976,9 +6872,9 @@
         <li class="md-nav__item">
   <a href="#19-other-global-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         19. Other Global Settings
-      
+      </span>
     </span>
   </a>
   
@@ -6988,9 +6884,9 @@
           <li class="md-nav__item">
   <a href="#midi-channel" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI Channel
-      
+      </span>
     </span>
   </a>
   
@@ -6999,9 +6895,9 @@
           <li class="md-nav__item">
   <a href="#persistent-switch-states" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Persistent Switch States
-      
+      </span>
     </span>
   </a>
   
@@ -7010,9 +6906,9 @@
           <li class="md-nav__item">
   <a href="#transmit-switch-states" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Transmit Switch States
-      
+      </span>
     </span>
   </a>
   
@@ -7021,9 +6917,9 @@
           <li class="md-nav__item">
   <a href="#program-change-pc-bank-output" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Program Change (PC) Bank Output
-      
+      </span>
     </span>
   </a>
   
@@ -7032,9 +6928,9 @@
           <li class="md-nav__item">
   <a href="#switch-hold-time" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Switch Hold Time
-      
+      </span>
     </span>
   </a>
   
@@ -7048,9 +6944,9 @@
         <li class="md-nav__item">
   <a href="#20-resetting-or-updating" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         20. Resetting or Updating
-      
+      </span>
     </span>
   </a>
   
@@ -7060,9 +6956,9 @@
           <li class="md-nav__item">
   <a href="#factory-reset" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Factory Reset
-      
+      </span>
     </span>
   </a>
   
@@ -7071,9 +6967,9 @@
           <li class="md-nav__item">
   <a href="#global-settings-reset" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Global Settings Reset
-      
+      </span>
     </span>
   </a>
   
@@ -7082,9 +6978,9 @@
           <li class="md-nav__item">
   <a href="#updating-firmware" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Updating Firmware
-      
+      </span>
     </span>
   </a>
   
@@ -7098,9 +6994,9 @@
         <li class="md-nav__item">
   <a href="#21-midi-implementation" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         21. MIDI Implementation
-      
+      </span>
     </span>
   </a>
   
@@ -7109,9 +7005,9 @@
         <li class="md-nav__item">
   <a href="#midi-functions-controlled-by-cc" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI Functions Controlled by CC
-      
+      </span>
     </span>
   </a>
   
@@ -7121,9 +7017,9 @@
           <li class="md-nav__item">
   <a href="#led-control" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         LED Control
-      
+      </span>
     </span>
   </a>
   
@@ -7137,9 +7033,9 @@
         <li class="md-nav__item">
   <a href="#midi-clock-control" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         MIDI Clock Control
-      
+      </span>
     </span>
   </a>
   
@@ -7172,6 +7068,7 @@
     <li class="md-path__item">
       <a href="../.." class="md-path__link">
         
+  
   <span class="md-ellipsis">
     Home
   </span>
@@ -7187,9 +7084,13 @@
   
     
     
+    
+    
+    
       <li class="md-path__item">
         <a href="../" class="md-path__link">
           
+  
   <span class="md-ellipsis">
     Manuals
   </span>
@@ -7207,12 +7108,10 @@
               <article class="md-content__inner md-typeset">
                 
                   
-
-
   
     <a href="https://github.com/Pirate-MIDI/pirate-midi-docs/edit/main/docs/manuals/bridge6/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-pen" viewBox="0 0 24 24"><path d="M12.659 22H18a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v9.34"/><path d="M14 2v5a1 1 0 0 0 1 1h5M10.378 12.622a1 1 0 0 1 3 3.003L8.36 20.637a2 2 0 0 1-.854.506l-2.867.837a.5.5 0 0 1-.62-.62l.836-2.869a2 2 0 0 1 .506-.853z"/></svg>
     </a>
   
   
@@ -9358,38 +9257,8 @@ These controls follow the Clock A/B structure exactly as printed in the PDF.</p>
 
 
 
-  
-    
-  
-  
-    
-  
 
 
-  <aside class="md-source-file">
-    
-      
-  <span class="md-source-file__fact">
-    <span class="md-icon" title="Last update">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
-    </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="November 24, 2025 18:13:03 UTC"><span class="timeago" datetime="2025-11-24T18:13:03+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="November 24, 2025 18:13:03 UTC">2025-11-24</span>
-  </span>
-
-    
-    
-      
-  <span class="md-source-file__fact">
-    <span class="md-icon" title="Created">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
-    </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="August 11, 2025 11:22:57 UTC"><span class="timeago" datetime="2025-08-11T11:22:57+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="August 11, 2025 11:22:57 UTC">2025-08-11</span>
-  </span>
-
-    
-    
-    
-  </aside>
 
 
 
@@ -9415,7 +9284,7 @@ These controls follow the Clock A/B structure exactly as printed in the PDF.</p>
           <a href="../scribble/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Scribble">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -9440,7 +9309,7 @@ These controls follow the Clock A/B structure exactly as printed in the PDF.</p>
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </div>
           </a>
         
@@ -9453,8 +9322,8 @@ These controls follow the Clock A/B structure exactly as printed in the PDF.</p>
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
     </a>
   
 </div>
@@ -9470,7 +9339,7 @@ These controls follow the Clock A/B structure exactly as printed in the PDF.</p>
       
     
     <a href="https://discord.gg/x722K7ksA6" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
     </a>
   
     
@@ -9481,7 +9350,7 @@ These controls follow the Clock A/B structure exactly as printed in the PDF.</p>
       
     
     <a href="https://youtube.com/c/piratemidi" target="_blank" rel="noopener" title="youtube.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
     </a>
   
     
@@ -9492,7 +9361,7 @@ These controls follow the Clock A/B structure exactly as printed in the PDF.</p>
       
     
     <a href="https://facebook.com/groups/pirate.midi.users" target="_blank" rel="noopener" title="facebook.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"/></svg>
     </a>
   
     
@@ -9503,7 +9372,7 @@ These controls follow the Clock A/B structure exactly as printed in the PDF.</p>
       
     
     <a href="https://instagram.com/piratemidi" target="_blank" rel="noopener" title="instagram.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224.3 141a115 115 0 1 0-.6 230 115 115 0 1 0 .6-230m-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1-.6-149.2m93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1-53.6 0m129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M224.3 141a115 115 0 1 0-.6 230 115 115 0 1 0 .6-230m-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1-.6-149.2m93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1-53.6 0m129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
     </a>
   
 </div>
@@ -9523,14 +9392,10 @@ These controls follow the Clock A/B structure exactly as printed in the PDF.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.action.edit", "header.autohide", "navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.path", "navigation.footer", "content.code.copy", "content.tooltips", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["content.action.edit","header.autohide","navigation.tabs","navigation.instant","navigation.instant.progress","navigation.tracking","navigation.path","navigation.footer","content.code.copy","content.tooltips","search.suggest","search.highlight","search.share"],"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
-      
-        <script src="../../js/timeago.min.js"></script>
-      
-        <script src="../../js/timeago_mkdocs_material.js"></script>
+      <script src="../../assets/javascripts/bundle.69c251d7.min.js"></script>
       
     
   </body>
