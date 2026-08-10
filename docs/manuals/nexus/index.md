@@ -5,6 +5,7 @@
 ## QuickStart Guide
 
 **Dimensions:** 127mm x 68mm x 25mm *(5" x 2 11/16" x 1")*
+**Weight:** 370 grams *(13oz.)*
 
 **Power Requirement:** 100mA @ 9V DC *(2.1mm centre-negative barrell jack)*
 
