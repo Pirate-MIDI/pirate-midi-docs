@@ -9,7 +9,7 @@
 **Power Requirement:** 100mA @ 9V DC *(2.1mm centre-negative barrell jack)*
 
 !!! note
-Nexus will not work unless powered with at least 100mA 9V DC power. When working correctly, the appropriate input LED (A or B) will flash as MIDI messages are received. 
+    Nexus will not work unless powered with at least 100mA 9V DC power. When working correctly, the appropriate input LED (A or B) will flash as MIDI messages are received. 
 
 **Connectors:**
 - 2x 6.35mm (1/4") TRS MIDI Input *(A & B)*
@@ -70,7 +70,7 @@ If you need to use your Nexus with a DIN5 device, you will generally be using a 
 ![MIDI Wiring Guide](../../assets/midi_wiring_guide.jpeg)
 
 !!! note
-All adapters and cables sold by PIRATE MIDI are wired for Type A, normal MIDI connections, unless otherwise specified. All TRS cables are regular TRS cables with straight-through wiring (tip>tip etc.)
+    All adapters and cables sold by PIRATE MIDI are wired for Type A, normal MIDI connections, unless otherwise specified. All TRS cables are regular TRS cables with straight-through wiring (tip>tip etc.)
 
 ## MIDI Channels
 Please be aware that for a device to hear a MIDI message that it receives, not only must the TRS MIDI type be set correctly, but also the MIDI channel of the incoming message must match the MIDI channel that the device is set to. So, the target pedal or synth must be set to the same MIDI channel as the message that you're sending to it.
