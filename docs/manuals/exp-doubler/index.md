@@ -1,5 +1,7 @@
 # Exp-Doubler User Manual
 
+![Exp Doubler](../../assets/ProductThumbnails/Exp-Doubler%20Thumbnail%20976px.jpg)
+
 ## Unboxing
 
 Your Exp-Doubler includes:

@@ -1,5 +1,7 @@
 # Exp Mate User Manual
 
+![Exp Mate Top](../../assets/ExpMateImages/exp-mate_top_angle2.jpg)
+
 ## Hardware Overview
 
 - **Top:** 2x Marked Aluminium Knobs
@@ -11,6 +13,10 @@
 
 - **Dimensions:** 103mm × 36mm × 60mm
 - **Weight:** 315 grams *(11oz.)*
+
+![Exp Mate Rear](../../assets/ExpMateImages/exp-mate_rear.jpg)
+
+![Exp Mate Side](../../assets/ExpMateImages/exp-mate_side.jpg)
 
 
 ## Introduction

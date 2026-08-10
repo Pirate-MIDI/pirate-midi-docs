@@ -102,6 +102,7 @@ nav:
           - Update Firmware: manuals/polar/polar-pico/pico-firmware.md
           - MIDI Commands: manuals/polar/polar-pico/pico-midi-commands.md
           - Warranty: manuals/polar/polar-pico/pico-warranty.md
+      - Nexus: manuals/nexus/index.md
       - Exp Mate: manuals/exp-mate/index.md
       - CLiCK v2:
         - Overview: manuals/click-v2/index.md
