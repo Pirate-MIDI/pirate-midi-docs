@@ -1,4 +1,4 @@
-# POLAR PLUS
+# Polar Max
 **Wireless ToneX One MIDI Controller**
 
 ![Polar Max with ToneX One](../../../assets/PolarImages/polar-max-v2-t1.jpg)

@@ -1,3 +1,5 @@
+# More Features & Settings
+
 ## 11. Switch Groups
 Switch groups are used to activate, toggle, or deactivate switches by pressing other switches. These groups can be simple or very advanced. The default settings allow for simple exclusivity such as is needed to emulate a “snapshot” mode or where only one switch in the group should be able to be active at one time.
 

@@ -1,3 +1,5 @@
+# MIDI Implementation
+
 ## 17. MIDI IMPLEMENTATION
 The Aero can itself be controlled by MIDI from an external MIDI device via Device Link or USB MIDI. 
 

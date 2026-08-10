@@ -1,3 +1,5 @@
+# Update Firmware
+
 ## 7. Firmware Updates
 
 ### Polar & ToneX One Update Instructions

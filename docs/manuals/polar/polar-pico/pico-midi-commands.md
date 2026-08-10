@@ -1,3 +1,5 @@
+# MIDI Commands
+
 ## 7. MIDI Commands
 
 Polar devices are designed to connect to the ToneX, ToneX One, or the Valeton GP-5. Below you will find two different MIDI command tables. One for the IK Multimedia products, and one for the Valeton products.

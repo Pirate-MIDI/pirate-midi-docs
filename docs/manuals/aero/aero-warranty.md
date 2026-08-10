@@ -1,4 +1,4 @@
-# AERO MIDI CONTROLLER
+# Warranty
 **USER MANUAL (V2.1.8)**
 
 ![Aero](../../assets/AeroImages/aero-context.jpeg)

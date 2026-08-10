@@ -1,3 +1,5 @@
+# Quickstart
+
 ## 1. Quickstart
 
 ![Polar Mini with ToneX One Context](../../../assets/PolarImages/polar-mini-v2-context1.jpeg)

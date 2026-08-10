@@ -1,3 +1,5 @@
+# Connect & Configure
+
 ## 2. Web Configuration
 
 ## Connecting to Web Configuration

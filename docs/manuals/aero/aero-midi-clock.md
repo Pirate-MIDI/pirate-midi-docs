@@ -1,3 +1,5 @@
+# MIDI Clock
+
 ## 8. MIDI Clock
 
 ### MIDI Clock Onboard

@@ -1,3 +1,5 @@
+# Messages & Modes
+
 ## 7. Messages & Modes
 
 You can program all the functions of your Aero with the onboard menus or the web editor. We’ve made both methods as straightforward as possible so you can quickly get up and running. Here’s an overview of what you can do when programming your Aero. Step-by-step instructions for these methods will be covered in later sections.

@@ -1,3 +1,5 @@
+# Warranty
+
 ## 8. Warranty
 Manufacturing defects are covered by our warranty. Please contact us if your device is defective. Australian domestic customers are covered by Australian Consumer Law which requires repair or replacement for devices that do not fulfil their advertised purpose. International (Non-Australian) customers are covered by our own workmanship guarantee. We aim to create a satisfactory outcome for every single customer.
 

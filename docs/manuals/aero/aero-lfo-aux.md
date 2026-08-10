@@ -1,3 +1,5 @@
+# LFOs & Aux Switches
+
 ## 9. LFOs
 
 ### Setting LFOs
