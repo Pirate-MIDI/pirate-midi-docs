@@ -13,9 +13,9 @@
     Nexus will not work unless powered with at least 100mA 9V DC power. When working correctly, the appropriate input LED (A or B) will flash as MIDI messages are received. 
 
 **Connectors:**
-- 2x 6.35mm (1/4") TRS MIDI Input *(A & B)*
-- 2x 6.35mm (1/4") TRS MIDI Output *(A & B)*
-- 8x 3.5mm (1/8") TRS MIDI Output *(4x side A & 4x side B)*
+- 2x 6.35mm (1/4") TRS MIDI Input *(1 & 2)*
+- 2x 6.35mm (1/4") TRS MIDI Output *(1 & 2)*
+- 8x 3.5mm (1/8") TRS MIDI Output *(4x Side 1 & 4x Side 2)*
 
 **Switches:**
 - 1x Merge switch (in between 6.35mm (1/4") jacks)
@@ -53,7 +53,7 @@
 ## Merging
 The Nexus is a passive MIDI merger. It doesn't have any software checking each message. This means that if the MIDI inputs are both saturated, and the merge switch is set to merge, there is a possibility of lost or corupted MIDI messages to the outputs of the device. This is only likely when saturating the inputs with MIDI clock from two sources, or heavy epxression or LFO activity. This is unlikely, but should be noted as a limitation of any device that doesn't use a software merge to check each message is sent to the outputs correctly. In nearly all normal use cases, this will not be an issue. 
 
-Splitting the inputs means that the A input will be sent to all 5 A outputs, and the B input will be sent to all 5 B outputs. 
+Splitting the inputs means that the Side 1 input will be sent to all 5 Side 1 outputs, and the Side 2 input will be sent to all 5 Side 2 outputs. 
 
 ## Dipswitches and Setting TRS Type
 The dipswitches are recessed to avoid any accidental switching. To switch them you can use a small screwdriver, or the tip of a pen. Avoid using a sharp metal object like a knife, and do not force the switches. They are firm, but if they are stuck, please contact us at [support@piratemidi.com](mailto:support@piratemidi.com)
