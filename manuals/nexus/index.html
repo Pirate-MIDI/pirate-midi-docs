@@ -2502,9 +2502,9 @@
 <p>Nexus will not work unless powered with at least 100mA 9V DC power. When working correctly, the appropriate input LED (A or B) will flash as MIDI messages are received. </p>
 </div>
 <p><strong>Connectors:</strong>
-- 2x 6.35mm (1/4") TRS MIDI Input <em>(A &amp; B)</em>
-- 2x 6.35mm (1/4") TRS MIDI Output <em>(A &amp; B)</em>
-- 8x 3.5mm (1/8") TRS MIDI Output <em>(4x side A &amp; 4x side B)</em></p>
+- 2x 6.35mm (1/4") TRS MIDI Input <em>(1 &amp; 2)</em>
+- 2x 6.35mm (1/4") TRS MIDI Output <em>(1 &amp; 2)</em>
+- 8x 3.5mm (1/8") TRS MIDI Output <em>(4x Side 1 &amp; 4x Side 2)</em></p>
 <p><strong>Switches:</strong>
 - 1x Merge switch (in between 6.35mm (1/4") jacks)
 - 2x MIDI Input Type A/B switches (inline with TRS 6.35mm (1/4") input jacks)
@@ -2545,7 +2545,7 @@
 </ol>
 <h2 id="merging">Merging<a class="headerlink" href="#merging" title="Permanent link">&para;</a></h2>
 <p>The Nexus is a passive MIDI merger. It doesn't have any software checking each message. This means that if the MIDI inputs are both saturated, and the merge switch is set to merge, there is a possibility of lost or corupted MIDI messages to the outputs of the device. This is only likely when saturating the inputs with MIDI clock from two sources, or heavy epxression or LFO activity. This is unlikely, but should be noted as a limitation of any device that doesn't use a software merge to check each message is sent to the outputs correctly. In nearly all normal use cases, this will not be an issue. </p>
-<p>Splitting the inputs means that the A input will be sent to all 5 A outputs, and the B input will be sent to all 5 B outputs. </p>
+<p>Splitting the inputs means that the Side 1 input will be sent to all 5 Side 1 outputs, and the Side 2 input will be sent to all 5 Side 2 outputs. </p>
 <h2 id="dipswitches-and-setting-trs-type">Dipswitches and Setting TRS Type<a class="headerlink" href="#dipswitches-and-setting-trs-type" title="Permanent link">&para;</a></h2>
 <p>The dipswitches are recessed to avoid any accidental switching. To switch them you can use a small screwdriver, or the tip of a pen. Avoid using a sharp metal object like a knife, and do not force the switches. They are firm, but if they are stuck, please contact us at <a href="mailto:support@piratemidi.com">support@piratemidi.com</a></p>
 <p>The Inputs are only switchable between TRS Type A and Type B. This is because the Tip Active and Ring Active connections are only applicable to inputs on pedals, and therefore only applicable to outputs on the Nexus. </p>
