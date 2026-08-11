@@ -5,6 +5,7 @@
 ## QuickStart Guide
 
 **Dimensions:** 127mm x 68mm x 25mm *(5" x 2 11/16" x 1")*
+
 **Weight:** 370 grams *(13oz.)*
 
 **Power Requirement:** 100mA @ 9V DC *(2.1mm centre-negative barrell jack)*
@@ -13,16 +14,19 @@
     Nexus will not work unless powered with at least 100mA 9V DC power. When working correctly, the appropriate input LED (A or B) will flash as MIDI messages are received. 
 
 **Connectors:**
+
 - 2x 6.35mm (1/4") TRS MIDI Input *(1 & 2)*
 - 2x 6.35mm (1/4") TRS MIDI Output *(1 & 2)*
 - 8x 3.5mm (1/8") TRS MIDI Output *(4x Side 1 & 4x Side 2)*
 
 **Switches:**
+
 - 1x Merge switch (in between 6.35mm (1/4") jacks)
 - 2x MIDI Input Type A/B switches (inline with TRS 6.35mm (1/4") input jacks)
 - 10x MIDI Output 4-way dipswitches (inline with each output jack)
 
 **LEDs:**
+
 - 2x Input LEDs which flash when MIDI messages are detected coming into the Nexus
 
 ![Nexus Front](../../assets/NexusImages/nexus_front.jpg)
@@ -35,7 +39,7 @@
 
 2. Check the TRS MIDI type for the devices you're connecting and use the legend below (also printed on the device) to check the dipswitches are in the correct position
 
-    - **Type A:**       MIDI Org Standard (BOSS, Elektron, PIRATE MIDI)
+    - **Type A:**      MIDI Org Standard (BOSS, Elektron, PIRATE MIDI)
     - **Type B:**       Novation, Arturia, Polyend
     - **Tip Active:**   Alexander, Meris, Empress, Strymon, Bondi
     - **Ring Active:**  Chase Bliss Audio
@@ -80,6 +84,7 @@ Please be aware that for a device to hear a MIDI message that it receives, not o
 Without a matching MIDI channel, your pedal, synth, etc. will ignore the incoming MIDI message. 
 
 ## Warranty
+
 
 Manufacturing defects are covered by our warranty. Please contact us if your device is defective. Australian domestic customers are covered by Australian Consumer Law which requires repair or replacement for devices that do not fulfil their advertised purpose. International (Non-Australian) customers are covered by our own workmanship guarantee. We aim to create a satisfactory outcome for every single customer.
 
