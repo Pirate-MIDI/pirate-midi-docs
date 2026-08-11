@@ -61,7 +61,8 @@ The dipswitches are recessed to avoid any accidental switching. To switch them y
 The Inputs are only switchable between TRS Type A and Type B. This is because the Tip Active and Ring Active connections are only applicable to inputs on pedals, and therefore only applicable to outputs on the Nexus. 
 
 ## Activity LEDs
-When MIDI message activity is detected on the A and B input jack, and the device is powered, the input LEDs will flash on and off rapidly for each message that is detected. If a message is detected on input A, the A LED will flash. If B, then B will flash. 
+When MIDI message activity is detected on the Side 1 and Side 2 input jack, and the device is powered, the input LEDs will flash on and off rapidly for each message that is detected. If a message is detected on Side 1, the Side 1 LED will flash. If 
+Side 2, then Side 2 will flash. 
 
 As mentioned earlier, this is not a software feature, but an electrical feature. So this LED cannot indicate anythig about the message, and whether it's settings are correct for your device. 
 
