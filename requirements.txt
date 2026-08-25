@@ -1,3 +1,2 @@
 zensical>=0.0.53
 mkdocs-git-revision-date-localized-plugin>=1.4.0
-ghp-import>=2.1.0
