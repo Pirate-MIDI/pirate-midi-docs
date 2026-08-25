@@ -2,9 +2,6 @@
 site_name = "Pirate MIDI Documentation"
 site_description = "Official documentation for Pirate MIDI products and tools"
 site_url = "https://docs.piratemidi.com"
-repo_url = "https://github.com/Pirate-MIDI/pirate-midi-docs"
-repo_name = "Pirate MIDI Docs (GitHub)"
-edit_uri = "edit/main/docs/"
 
 extra_css = [
   "assets/branding.css",
@@ -87,7 +84,6 @@ language = "en"
 favicon = "assets/favicon.png"
 logo = "assets/logo-white.png"
 features = [
-  "content.action.edit",
   "header.autohide",
   "navigation.tabs",
   "navigation.instant",
