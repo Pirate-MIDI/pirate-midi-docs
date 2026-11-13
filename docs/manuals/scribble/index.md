@@ -29,7 +29,7 @@ It shows **text labels**, **preset numbers**, **MIDI clock data**, and **connect
 
 - Stacks of custom MIDI messages (up to 8 messages per stack) can be triggered by sending default or user-assigned MIDI CC's to the Scribble from an external MIDI device or app. 
 
-- All configuration happens in the [**Pirate MIDI Web Editor**](https://edit.piratemidi.com) — nothing is configured directly on the hardware.
+- All configuration happens in the [**Pirate MIDI Web Editor**](https://edit.piratemidi.com). Nothing is configured directly on the hardware.
 
 
 ### Key Features
@@ -103,15 +103,15 @@ On the main screen you can:
 
 ### 4. Upload to Device
 Click **Send to Device**. Select the Scribble from the pop-up and press `Connect`
-The Scribble updates instantly — no reboot needed.
+The Scribble updates instantly. No reboot needed.
 
 
 ## Using the Web Editor
 
 ### Import Screen Overview
-- **Import from Device** — connect your device by USB and import all its configuration
-- **Import from File** — use a Pirate MIDI .json config file to load a configuration (backups, alternate configs etc.)  
-- **Create from Template** — use pre-made configs including blank, factory default, and brand or device starting templates from Pirate MIDI 
+- **Import from Device**: connect your device by USB and import all its configuration
+- **Import from File**: use a Pirate MIDI .json config file to load a configuration (backups, alternate configs etc.)  
+- **Create from Template**: use pre-made configs including blank, factory default, and brand or device starting templates from Pirate MIDI 
 
 ![Web Editor Import Page](../../assets/ScribbleImages/editor-import-page.png)
 
@@ -122,7 +122,7 @@ Each preset on the device and the editor primarily contains **these elements**:
 
 | Element | Purpose |
 |--------|---------|
-| **Primary Text Label** | 12-Character Text Field |
+| **Primary Text Label** | 16-Character Text Field |
 | **Secondary Text Label** | 16-Character Text Field |
 | **Preset Number** | Shows Scribble's Current Preset |
 | **MIDI Clock** | Shows Incoming or Generated MIDI Clock in BPM, ms, or with Flasher |
@@ -135,7 +135,7 @@ You can see these elements all displayed on the editor screenshot below
 
 ![Scribble Editor Main Page Elements](../../assets/ScribbleImages/scribble-editor-main.png)
 
-On top of these obvious parameters, there are also MIDI messages, MIDI clock, and other settings that can change how you use your Scribble.
+On top of these obvious parameters, there are also MIDI messages, Smart Messages, MIDI clock, and other settings that can change how you use your Scribble.
 
 Below the main visualisation of the Scribble, you'll also see a number of buttons near the bottom of the screen. These buttons are for navigating, copying, and pasting full presets.
 
@@ -147,7 +147,7 @@ Sometimes presets need to be swapped around. To access the drag-and-drop preset 
 ![Scribble Editor Preset Reordering](../../assets/ScribbleImages/scribble-editor-preset-reorder.png)
 
 ### Sending Your Config To The Scribble
-**Send to Device** is the button to send the modified config to the Scribble. No changes are synced until you press this button and transfer the settings - even if you first imported from the device and left the device connected with USB. 
+**Send to Device** is the button to send the modified config to the Scribble. No changes are synced until you press this button and transfer the settings - even if you first imported from the device and left the device connected with USB.
 
 ### Saving or Backing Up Multiple Configs
 Backing up your configuration is an important part of working with technology. You may also use your Scribble in different contexts and need to switch whole configurations at a moment's notice. If this is the case, you can save your configurations to your computer using the **Export as File** button.
@@ -155,9 +155,9 @@ Backing up your configuration is an important part of working with technology. Y
 A `.JSON` file will be saved to your computer. These files can be edited without the web editor as well (if you have the inclination!).
 
 ## Preset Settings Page
-Here you will find a set of submenus which let you set colours, modes, and MIDI messages that will apply **only to the current preset**. To apply the changes to a specific preset, select that preset from the main screen before entering the **Preset Settings** page. 
+Here you will find a set of submenus which let you set colours, modes, and MIDI messages that will apply **only to the current preset**. To apply the changes to a specific preset, select that preset from the main screen before entering the **Preset Settings** page. Once the Preset Settings page is open you can change to the next preset with the `Save & Next` or `Save & Previous` buttons at the bottom of the screen. 
 
-!!! tip
+!!! tip "Workflow Tip"
     The Preset Settings page contains copy and paste buttons in the left side menu. These will copy the settings of the entire preset and you can paste them to other presets. 
 
 | Submenu | What's Inside |
@@ -169,11 +169,11 @@ Here you will find a set of submenus which let you set colours, modes, and MIDI 
 ![Scribble Preset Settings Page](../../assets/ScribbleImages/scribble-editor-preset-settings.png)
 
 #### Preset Switch Messages
-Each Switch (Left and Right) has two possible actions: `Press` and `Hold`. So with just two buttons you can send 4 different sets of MIDI messages from your Scribble. 
+Each Switch (Left and Right) has three possible actions: `On`, `Off` and `Hold`. So with just two buttons and nothing else, you can send up to six different sets of MIDI messages from your Scribble. How the message stacks are triggered is dependent on the switch mode.
 
 These messages are customised per preset. If you want a switch to send the same message regardless of the current preset, use **Global Switch Messages**
 
-#### Preset Message
+#### Preset Messages
 Preset Messages are sent when you enter the selected preset on the Scribble. For example, if CC 8, value 12 is in this messages stack on Preset 12, then every time the Scribble is changed from a different preset to Preset 12 (whether internall or externally), CC 8, value 12 will be sent automatically.
 
 #### Preset Custom Trigger Messages
@@ -192,11 +192,20 @@ You can add custom MIDI messages to any message stack on the Scribble. The types
 - Note On
 - Poly Pressure
 
+To help you copy physical knob positions from your device into MIDI settings, we've also included a click-and-drag knob so you can mimic a knob position and the MIDI value is automatically calculated for you. 
+
+![MIDI Message Value Knbo](../../assets/ScribbleImages/scribble-editor-value-knob.png)
+
+### Device Library Messages
+Messages that are factory defaults and work with no setup configuration have been added to our Device Library for over 500 MIDI-controllable devices. Press the dropdown button to the right of the "Add Message" button and you can search messages by Brand and Device Name with easy-to-read command names that auto-populate the MIDI data. 
+
+Device Library messages are sent to the Scribble with an `id` number so that when importing messages from devices, the web editor can automatically show you the Device Name and Command Name in the web editor UI. This is only supported in the PIRATE MIDI Web Editor and other officially supported Device Libraries from other brands.
+
 ### Smart Messages
 
 ![Scribble Smart Messages](../../assets/ScribbleImages/scribble-editor-smart-messages.png)
 
-#### Blocking Delay
+#### Block Delay
 Add this delay message anywhere in a message stack to add a custom delay from 10ms to 1270ms in 10ms increments. You can add them anywhere and they will add a pause between MIDI messages to allow for devices which has a slower processing time or which get overwhelmed by a lot of messages in quick succession. 
 
 #### Send Current Preset
@@ -208,29 +217,68 @@ This message lets you use a button to instantly change the preset's tempo or glo
 #### Change Tempo
 Set positive or negative numbers in this message to allow incrementing or decrementing the tempo by pre-defined step sizes. If you add `5` as the value on switch 2 and `-5` as the value on switch 1, you will have quick control of the tempo in 5bpm increments. 
 
+#### Preset Down/Up
+Does what it says, but you have more control than standard up/down automatic switching. For example, you could send two MIDI messages and *then* send the preset change, or add it to a switch hold.
+
+#### Go To Preset
+This is a great way to link specific workflows with a button press on a specific preset. Always want to go have the option to re-do the Bridge on a particular song? Well, this Smart Message can let you add a "go to that preset" message anywhere you can place a MIDI message on the Scribble - Global, Preset, Custom Trigger, or just a button press. 
+
 ## Global Settings Page
-Here you will find a set of submenus which let you configure MIDI channel, MIDI outputs, MIDI Thru routing, custom global messages, and more. MIDI Messages added to a *global* message stack will not be restricted to a single preset, but available at all times in all presets.
+Here you will find a set of submenus which let you configure MIDI channel, MIDI outputs, MIDI Thru routing, custom global messages, and lots more. MIDI Messages added to a *global* message stack will not be restricted to a single preset, but available and sent at all times in all presets.
 
 | Submenu | What's Inside |
 |--------|---------|
-| **Device Settings** | USB Display Name, Light/Dark Mode, Display Brightness, Colours, |
-| **MIDI Settings** | TRS MIDI Type, Clock Mode, Ext CC, MIDI Channel, Thru Routing, MIDI Value Display (Bar Graph) |
+| **Device Settings** | Settings that change the non-MIDI functions of the device |
+| **MIDI Settings** | TRS MIDI Type, Clock Mode, Ext CC, MIDI Channel, Thru Routing etc. |
 | **Switch Settings** | Switch Modes, Global Switch Messages |
-| **Global Messages** | Global Custom Trigger MIDI Messages |
-| **Wireless Settings** | Wireless Mode, BLE Mode |
+| **Global Messages** | Global Custom Trigger MIDI Messages, Boot Messages |
+| **Wireless Settings** | Wireless Mode, BLE Role |
 
 
 ### Device Settings
-This page lets you change some fundamental global settings of the device. 
+This page lets you change fundamental behaviour and display settings of the device. 
 
 ![Scribble Global Settings Page](../../assets/ScribbleImages/scribble-editor-global-settings.png)
 
-- **Device Name:** Used to show USB name on computers. Helps to distinguish between devices when you have multiple Scribbles.
-- **Main Colour:** Global background colour (used unless overridden per preset)
-- **Text Colour:** Global text colour (used unless overridden per preset)
-- **Light/Dark Mode:** Changes the status bar colour between **Black** or **White**. This is a global-only setting. 
-- **Display Brightness:** Adjust the screen's brightness to adapt to different environments.
+| Setting | Description |
+|--------|---------|
+| **Device Name** | Changes the name of the device inside the editor (Does not change USB name) |
+| **Main Colour** | Global background colour (used unless overridden per preset) |
+| **Text Colour** | Global text colour (used unless overridden per preset) |
+| **Boot Delay** | Time in ms to delay the boot of the Scribble to allow other device to boot up and be ready first. |
+| **Min/Max Preset** | Control which presets are automatically used and scrolled. Limit the active presets as-needed. |
+| **Default Preset** | Sets which preset the Scribble will boot into when powered on. |
+| **Light/Dark Mode** | Changes the status bar colour between **Black** or **White**. This is a global-only setting. |
+| **Display Brightness** | Adjust the screen's brightness to adapt to different environments. |
+| **Transmit Switch States** | Works with "Switch Default State" per preset to send MIDI stack. Used to force expected states of connected MIDI devices. |
+| **USB Device Name** | Sets how the Scribble USB device name appears in most apps. |
+| **Rotate Display** | Rotate Display 180 degrees to flip side ports for convenience. |
+| **Zero Index Presets** | Start onboard preset counting at 0 or 1. Doesn't change MIDI data, as all MIDI messages are 0-127 regardless. |
+| **BLE Advertised Name** | Set a custom name which the Scribble advertises on BLE MIDI connections. |
+| **BLE Device Name** | Set a custom name for the Scribble as BLE Device. |
+| **UI Mode** | Select between Standard, Scrolling, and Kemper Player modes. |
 
+![Global UI Mode Settings](../../assets/ScribbleImages/scribble-editor-ui-modes.png)
+
+![Boot Delay Sequence](../../assets/ScribbleImages/scribble-startup-animation.gif)
+
+#### Preset Limiting and Default Preset
+If you have a specific situation where you want to use, say, only three presets - 12-14, you can do that here. Just set `Min Preset` to `12` and `Max Preset` to `14` and set the `Default Preset` to any of the three. Then you will only be able to scroll through those presets. If you happen to send a Smart Message with a "Go To Preset" command, you will be able to access other presets. 
+
+#### Standard UI Mode
+This mode is the regular mode you see in all the pictures. Two different custom text sections that fill the space on the screen, and custom colours and light-dark mode for the top bar. 
+
+![Scribble default UI Mode](../../assets/ScribbleImages/scribble-default-screen.jpg)
+
+#### Scrolling UI Mode
+Similar to Standard mode, but the secondary text is hidden. Additionally, the preset name of the next preset is shown above the current preset name, and the previous preset name is shown below the current preset name.
+
+![Scribble in Preset Scroll UI Mode](../../assets/ScribbleImages/scribble-scrolling-ui.jpg)
+
+#### Kemper Profiler Player UI Mode
+Kemper Profiler Player can be connected directly to the USB port of the Scribble and the device will automatically synchronise its rig and preset names, as well as show a specialised UI with the effect block shown on the Scribble screen including their bypass states.
+
+This mode is in early testing so if you have any feedback please let us know by emailing us at support@piratemidi.com or making a post in the **Scribble Feature Requests** forum on our Discord server.
 
 ### MIDI Settings
 
@@ -280,7 +328,7 @@ These options allow the Scribble to dynmaically display changes to a MIDI CC val
 
 ![Scribble Bar Graph Options](../../assets/ScribbleImages/scribble-editor-midi-value-display.png)
 
-![Scribble Showing Bar Graph](../../assets/ScribbleImages/scribble-midi-value-display.jpg)
+![Scribble Showing Bar Graph](../../assets/ScribbleImages/scribble-bar-ui.jpg)
 
 **MIDI Thru Routing**: 
 When MIDI comes into the Scribble via any of the three inputs (TRS, USB, BLE), you can choose whether that MIDI is automatically duplicated to any of the other outputs, or whether it ends its journey inside the Scribble.
@@ -288,7 +336,7 @@ When MIDI comes into the Scribble via any of the three inputs (TRS, USB, BLE), y
 This doesn't affect any MIDI messages that Scribble itself generates and sends.
 
 **Clock Outputs**: 
-MIDI clock messages can be limited to only send to selected MIDI outputs instead of all three. 
+MIDI clock messages can be limited to only send to selected MIDI outputs instead of all of them. 
 
 **Device MIDI Channel**: 
 Set a MIDI channel for your Scribble. This is highly recommended, and will be necessary to use when you are using the external MIDI control CC messages to change presets, trigger custom MIDI messages, etc.
@@ -299,7 +347,7 @@ This feature allows you to select a MIDI channel for each of the MIDI outputs (T
 This is an easy way to keep your pedal in sync with Scribble. Say you've connected a Chase Bliss Audio pedal whose channel is set to 2 (CBA's default). Simply connect your Scribble to your pedal, turn on the TRS **PC Output** to channel 2, and when you use the onboard buttons to change presets on the Scribble, the Chase Bliss Audio pedal will follow along. 
 
 **CC Values**: 
-These fields contain the factory default MIDI CCs for externally controlling the Scribble. However, if you prefer, you can set custom CC numbers instead.
+These fields contain the factory default MIDI CCs for externally controlling the Scribble and its features. However, if you prefer, you can set custom CC numbers instead.
 
 ### Global Switch Settings
 
@@ -308,15 +356,15 @@ These fields contain the factory default MIDI CCs for externally controlling the
 **Switch Modes**: 
 These modes change how each of the buttons work. You can limit Scribble preset changes only to certain switch actions, or remove them entirely.
 
-- `Press Preset Down`
-- `Press Preset Up`
-- `Hold Preset Down`
-- `Hold Preset Up`
-- `MIDI Only` Send only your custom MIDI messages
-- `Tap Tempo` only changes tempo - no other messages will send
+| Mode | Description |
+|--------|---------|
+| **Preset Up** | Preset will change up on button short release |
+| **Preset Down** | Preset will change down on button short release |
+| **Momentary** | Message stacks only. Sends On/Off/Hold stacks on press, release, and hold. |
+| **Tap Tempo** | Only changes tempo - no other messages will send. Press action triggers change. |
 
 **Press/Hold Messages**: 
-Just like preset-level switch messages, you can add custom MIDI messages that are sent on a `Press` or a `Hold` action. These will activate on every single preset, and they will be sent **in addition** to the preset-level switch messages. 
+Just like preset-level switch messages, you can add custom MIDI messages and Smart Messages that are sent on a `On`/`Off` or a `Hold` action. These will activate on every single preset, and they will be sent **in addition** to the preset-level switch messages. 
 
 ### Global Messages
 
@@ -327,6 +375,9 @@ Just like preset-level custom trigger messages, these messages will only be sent
 
 The default CC for the Global Custom Trigger Messages is `17`.
 
+**Boot Messages**:
+These messages are sent immediately when the Scribble finishes booting up. This is usually after approximately 1.5 seconds, but you can extend that amount of time by using the `Boot Delay` setting in **Device Settings**
+
 ### Wireless Settings
 
 ![Scribble Wireless Settings](../../assets/ScribbleImages/scribble-editor-wireless-settings.png)
@@ -335,12 +386,14 @@ The default CC for the Global Custom Trigger Messages is `17`.
 Use this to turn off the BLE system entirely if you prefer. 
 
 **BLE Mode**: 
-`Server` mode is the default, and `Client` is currently experimental and may not work properly. A future firmware update will expand this function. 
+`Peripheral` mode is the default, and `Central` is used when you want to connect another device, like a foot controller, directly to the Scribble using Bluetooth BLE MIDI. 
 
-`Server` mode is the standard mode for devices, as opposed to computers, phones, etc. 
+`Peripheral` mode is the standard mode for devices, as opposed to computers, phones, etc. 
 
 !!! tip
-    If you're using a CME WIDI device, set it to `Central` mode to connect to a Scribble. `Peripheral` mode on CME's products is the same as `Server`. 
+    If you're using a computer, set Scribble to `Peripheral` mode. If you're using Scribble and a BLE MIDI controller, try setting Scribble to `Central`.
+
+#### BLE Settings
 
 ## App Settings Page
 Here you will find web-editor specific tools. Currently this includes MIDI Channel Aliases. 
@@ -392,11 +445,13 @@ After you connect the Scribble to your device with one of these apps, then the B
 
 
 **iOS**
+
 - [midimittr](https://apps.apple.com/us/app/midimittr/id925495245)
 - [Bluetooth MIDI Connect](https://apps.apple.com/us/app/bluetooth-midi-connect/id1108321791)
 - [Conji](https://apps.apple.com/us/app/conji-bluetooth-le-midi/id1515014813)
 
 **Android**
+
 - [MIDI BLE Connect](https://play.google.com/store/apps/details?id=com.mobileer.example.midibtlepairing&pcampaignid=web_share)
 - [Bluetooth MIDI Connect](https://play.google.com/store/apps/details?id=bluetooth.midi.connect&pcampaignid=web_share)
 
@@ -421,12 +476,15 @@ After you connect the Scribble to your device with one of these apps, then the B
 -   **UAFX**
     Use a USB MIDI Host box and connect your Scribble to your UAFX pedals through it. Using UA's new 2.0 firmware, you now have full MIDI control of your pedals!
 
+-   **M-VAVE Chocolate**
+    Use BLE MIDI connection to wirelessly connect a BLE controller like the M-VAVE to your Scribble and control Scribble with your feet wirelessly!
+
 </div>
 
 ---
 
 ## Factory Reset
-If you need to do a factory reset, press and hold switch 1 (left switch) on the Scribble as you plug power into the device. Continue holding for about 2 seconds until you see the reset process start. Now remove your finger from the switch. 
+If you need to do a factory reset, press and hold switch 1 (left switch) on the Scribble as you plug power into the device. Continue holding for about 2 seconds until you see the reset process start. Now remove your finger from the switch.
 
 ---
 

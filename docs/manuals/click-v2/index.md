@@ -62,7 +62,7 @@ It's important that firmware updates are installed when they are available. Old 
 ![CLiCK v2 Hardware Layout 2](../../assets/ClickImages/click-hardware-2.jpeg)
 
 5. **1/4" TRS Relay Jack**: Control Tip and Ring relay states independently via MIDI.
-6. **1/4" TRS Expression Jack**: Emulates a standard TRS expression pedal. Requires 9V DC.
+6. **1/4" TRS Expression Jack**: Emulates a standard 10k Ohm TRS expression pedal. Requires 9V DC.
 7. **RGB LEDs**: Selectable modes to indicate relay, expression, MIDI, or wireless status.
 8. **Acrylic Window**: For WiFi/BLE performance. Do not cover with metal.
 9. **Enclosure**: Sturdy anodised black aluminium.
@@ -110,7 +110,7 @@ The CLiCK has 2 RGB LEDs with multiple modes selectable in the web editor's Glob
 * **USB Host (Type-C)**: Single-device USB host port. Cannot read USB hubs. Supplies USB specification power (5V, up to 500mA). Requires input power supply to match connected device's requirement.
 * **9V DC**: Standard pedal power. minimum 150mA required. More if powering a USB device via USB host port.
 * **1/4" TRS Relay**: Two independent silent relays (Tip and Ring) controllable via MIDI CC or presets.
-* **1/4" TRS Expression**: Passive variable-resistance emulation for non-MIDI pedals.
+* **1/4" TRS Expression**: Passive 10k Ohm variable-resistance emulation for non-MIDI pedals.
 * **3.5mm TRS MIDI**: Type A opto-isolated input. Output is switchable (Type A, Type B, or Aux In).
 
 ---
@@ -164,7 +164,7 @@ Only one device can be connected to the USB Host port at a time, and it will be 
 ---
 
 ## 7. Expression Emulation
-The CLiCK emulates a standard passive expression pedal. 
+The CLiCK emulates a standard 10k Ohm passive expression pedal. 
 * **Requirement**: 9V DC must be connected.
 * **Preset Position**: Set a starting value (0-127) in the web editor's "Preset Settings."
 * **On-the-Fly**: Send **MIDI CC 11** to control the position smoothly during performance.
