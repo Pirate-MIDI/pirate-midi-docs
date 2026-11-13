@@ -484,7 +484,7 @@ After you connect the Scribble to your device with one of these apps, then the B
 ---
 
 ## Factory Reset
-If you need to do a factory reset, press and hold switch 1 (left switch) on the Scribble as you plug power into the device. Continue holding for about 2 seconds until you see the reset process start. Now remove your finger from the switch.
+If you need to do a factory reset, press and hold switch 1 (left switch) on the Scribble as you plug power into the device. Continue holding for about 6 seconds until you see the reset process start. Now remove your finger from the switch.
 
 ---
 
