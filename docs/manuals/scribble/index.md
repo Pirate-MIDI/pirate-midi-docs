@@ -83,7 +83,7 @@ Go to:
     Use Chrome or another Chromium browser. Non-Chromium browsers do not support webMIDI or webSerial and will not recognise your device.
 
 Select **Import from Device**, then choose the device with  
-`Scribble` in the name, and click **connect**
+`Scribble` in the name, and click **Connect**
 
 ![Scribble Web Editor Import Page](../../assets/ScribbleImages/editor-import-page.png)
 
@@ -102,7 +102,7 @@ On the main screen you can:
 ![Scribble Editor Main Page Elements](../../assets/ScribbleImages/scribble-editor-main.png)
 
 ### 4. Upload to Device
-Click **Send to Device**. Select the Scribble from the pop-up and press `Connect`
+Click **Send to Device**. Select the Scribble from the pop-up and press **Connect**
 The Scribble updates instantly. No reboot needed.
 
 
@@ -155,7 +155,7 @@ Backing up your configuration is an important part of working with technology. Y
 A `.JSON` file will be saved to your computer. These files can be edited without the web editor as well (if you have the inclination!).
 
 ## Preset Settings Page
-Here you will find a set of submenus which let you set colours, modes, and MIDI messages that will apply **only to the current preset**. To apply the changes to a specific preset, select that preset from the main screen before entering the **Preset Settings** page. Once the Preset Settings page is open you can change to the next preset with the `Save & Next` or `Save & Previous` buttons at the bottom of the screen. 
+Here you will find a set of submenus which let you set colours, modes, and MIDI messages that will apply **only to the current preset**. To apply the changes to a specific preset, select that preset from the main screen before entering the **Preset Settings** page. Once the Preset Settings page is open you can change to the next preset with the **Save & Next** or **Save & Previous** buttons at the bottom of the screen. 
 
 !!! tip "Workflow Tip"
     The Preset Settings page contains copy and paste buttons in the left side menu. These will copy the settings of the entire preset and you can paste them to other presets. 
@@ -168,15 +168,15 @@ Here you will find a set of submenus which let you set colours, modes, and MIDI 
 
 ![Scribble Preset Settings Page](../../assets/ScribbleImages/scribble-editor-preset-settings.png)
 
-#### Preset Switch Messages
+### Preset Switch Messages
 Each Switch (Left and Right) has three possible actions: `On`, `Off` and `Hold`. So with just two buttons and nothing else, you can send up to six different sets of MIDI messages from your Scribble. How the message stacks are triggered is dependent on the switch mode.
 
 These messages are customised per preset. If you want a switch to send the same message regardless of the current preset, use **Global Switch Messages**
 
-#### Preset Messages
-Preset Messages are sent when you enter the selected preset on the Scribble. For example, if CC 8, value 12 is in this messages stack on Preset 12, then every time the Scribble is changed from a different preset to Preset 12 (whether internall or externally), CC 8, value 12 will be sent automatically.
+### Preset Messages
+Preset Messages are sent when you enter the selected preset on the Scribble. For example, if CC 8, value 12 is in this messages stack on Preset 12, then every time the Scribble is changed from a different preset to Preset 12 (whether internally or externally), CC 8, value 12 will be sent automatically.
 
-#### Preset Custom Trigger Messages
+### Preset Custom Trigger Messages
 Preset Custom Trigger Messages are only activated when the default or user-assigned MIDI CC message is received by the Scribble. The default CC for Preset Custom Trigger Messages is `16`.
 
 ## Message Types
@@ -194,7 +194,7 @@ You can add custom MIDI messages to any message stack on the Scribble. The types
 
 To help you copy physical knob positions from your device into MIDI settings, we've also included a click-and-drag knob so you can mimic a knob position and the MIDI value is automatically calculated for you. 
 
-![MIDI Message Value Knbo](../../assets/ScribbleImages/scribble-editor-value-knob.png)
+![MIDI Message Value Knob](../../assets/ScribbleImages/scribble-editor-value-knob.png)
 
 ### Device Library Messages
 Messages that are factory defaults and work with no setup configuration have been added to our Device Library for over 500 MIDI-controllable devices. Press the dropdown button to the right of the "Add Message" button and you can search messages by Brand and Device Name with easy-to-read command names that auto-populate the MIDI data. 
@@ -206,10 +206,10 @@ Device Library messages are sent to the Scribble with an `id` number so that whe
 ![Scribble Smart Messages](../../assets/ScribbleImages/scribble-editor-smart-messages.png)
 
 #### Block Delay
-Add this delay message anywhere in a message stack to add a custom delay from 10ms to 1270ms in 10ms increments. You can add them anywhere and they will add a pause between MIDI messages to allow for devices which has a slower processing time or which get overwhelmed by a lot of messages in quick succession. 
+Add this delay message anywhere in a message stack to add a custom delay from 10ms to 1270ms in 10ms increments. You can add them anywhere and they will add a pause between MIDI messages to allow for devices which have a slower processing time or which get overwhelmed by a lot of messages in quick succession. 
 
 #### Send Current Preset
-Design specifically to enable simpler preset saving in Chase Bliss Audio pedals. Send this Smart Message and your Scribble will send the current preset number as a PC message which is useful for overwriting the current preset on Chase Bliss Pedals. 
+Designed specifically to enable simpler preset saving in Chase Bliss Audio pedals. Send this Smart Message and your Scribble will send the current preset number as a PC message which is useful for overwriting the current preset on Chase Bliss Pedals. 
 
 #### Set Tempo
 This message lets you use a button to instantly change the preset's tempo or global tempo (depending on which you're using) to a pre-defined tempo that you add in this Smart Message. Say the preset is 120bpm, but you want the option to set it to 140bpm - just add a Set Tempo Smart Message with 140bpm and you can switch to 140bpm instantly. 
@@ -221,7 +221,7 @@ Set positive or negative numbers in this message to allow incrementing or decrem
 Does what it says, but you have more control than standard up/down automatic switching. For example, you could send two MIDI messages and *then* send the preset change, or add it to a switch hold.
 
 #### Go To Preset
-This is a great way to link specific workflows with a button press on a specific preset. Always want to go have the option to re-do the Bridge on a particular song? Well, this Smart Message can let you add a "go to that preset" message anywhere you can place a MIDI message on the Scribble - Global, Preset, Custom Trigger, or just a button press. 
+This is a great way to link specific workflows with a button press on a specific preset. Always want to have the option to re-do the Bridge on a particular song? Well, this Smart Message can let you add a "go to that preset" message anywhere you can place a MIDI message on the Scribble - Global, Preset, Custom Trigger, or just a button press. 
 
 ## Global Settings Page
 Here you will find a set of submenus which let you configure MIDI channel, MIDI outputs, MIDI Thru routing, custom global messages, and lots more. MIDI Messages added to a *global* message stack will not be restricted to a single preset, but available and sent at all times in all presets.
@@ -245,7 +245,7 @@ This page lets you change fundamental behaviour and display settings of the devi
 | **Device Name** | Changes the name of the device inside the editor (Does not change USB name) |
 | **Main Colour** | Global background colour (used unless overridden per preset) |
 | **Text Colour** | Global text colour (used unless overridden per preset) |
-| **Boot Delay** | Time in ms to delay the boot of the Scribble to allow other device to boot up and be ready first. |
+| **Boot Delay** | Time in ms to delay the boot of the Scribble to allow other devices to boot up and be ready first. |
 | **Min/Max Preset** | Control which presets are automatically used and scrolled. Limit the active presets as-needed. |
 | **Default Preset** | Sets which preset the Scribble will boot into when powered on. |
 | **Light/Dark Mode** | Changes the status bar colour between **Black** or **White**. This is a global-only setting. |
@@ -285,13 +285,13 @@ This mode is in early testing so if you have any feedback please let us know by 
 ![Scribble Global Settings Page](../../assets/ScribbleImages/scribble-editor-global-midi-settings.png)
 
 **MIDI Out Port Mode:** 
-Change the 3.5mm TRS MIDI Out port between `Type A` & `Type B` TRS MIDI. This type of MIDI can be adapter to 1/4" TRS MIDI or DIN5 MIDI with a simple adapter cable. 
+Change the 3.5mm TRS MIDI Out port between `Type A` & `Type B` TRS MIDI. This type of MIDI can be adapted to 1/4" TRS MIDI or DIN5 MIDI with a simple adapter cable. 
 
 - Chase Bliss Audio pedals will use `Type B`
 - Alexander, Meris, Jackson Audio, Boss, and Empress will use `Type A`
 
 !!! warning "Older Chase Bliss Audio Pedals"
-    Some original Chase Bliss Audio pedals with MIDI require the Tip of the TRS cable to be completely disconnected, and the Scribble cannot do that. You will need to phyiscally modify any TRS cable you're using to disconnect the Tip if you want to use them. 
+    Some original Chase Bliss Audio pedals with MIDI require the Tip of the TRS cable to be completely disconnected, and the Scribble cannot do that. You will need to physically modify any TRS cable you're using to disconnect the Tip if you want to use them. 
     *(You will also need to set the MIDI out to Type B, of course.)*
 
 **Global BPM:** 
@@ -303,7 +303,7 @@ Set the tempo of the Scribble's own MIDI clock generator. Global BPM will apply 
 - **`External`**: The MIDI clock will not be generated by the Scribble. If Scribble detects MIDI clock coming into the device, the tempo will display on the Scribble's screen along with an **Orange** or **Green** font colour. 
     - **Orange** means a `MIDI Start` command has not been received. 
     - **Green** means a `MIDI Start` command has been received. 
-    - If a `MIDI Stop` commands is received, the text colour will revert to **Orange**
+    - If a `MIDI Stop` command is received, the text colour will revert to **Orange**
 - **`Global`**: The MIDI clock will be the same on every preset. Determined by the **Global BPM** setting above.
 - **`None`**: MIDI clock is entirely disabled.
 
@@ -316,9 +316,9 @@ This averages the tempo to the nearest 0.2, 0.5, 1, and 5bpm when using the tap 
 ![Scribble Tap Tempo Quantization](../../assets/ScribbleImages/scribble-editor-tap-tempo-quantization.png)
 
 #### MIDI Value Display (Bar Graph)
-These options allow the Scribble to dynmaically display changes to a MIDI CC value as it comes into the Scribble. This value can, of course, be passed through the Scribble and out to other devices using MIDI Thru routing. 
+These options allow the Scribble to dynamically display changes to a MIDI CC value as it comes into the Scribble. This value can, of course, be passed through the Scribble and out to other devices using MIDI Thru routing. 
 
-* **MIDI Value Display** - change the mode of the dynmaic display
+* **MIDI Value Display** - change the mode of the dynamic display
     - `None`
     - `Bar` *(horizontal bar graph)*
     - `Bar + Percent` *(graph and percentage value)*
@@ -398,7 +398,7 @@ Use this to turn off the BLE system entirely if you prefer.
 ## App Settings Page
 Here you will find web-editor specific tools. Currently this includes MIDI Channel Aliases. 
 
-Add the names of your devices to their respective MIDI channel section, and the name of that device will show across the entire web editor anywhere you need to choose a MIDI channel. Then, instead of a list of MIDI channel numbers, you'll see a list of your devices. This makes it a lot easier to quickly choose which device you're sending a MIDI messages to! 
+Add the names of your devices to their respective MIDI channel section, and the name of that device will show across the entire web editor anywhere you need to choose a MIDI channel. Then, instead of a list of MIDI channel numbers, you'll see a list of your devices. This makes it a lot easier to quickly choose which device you're sending a MIDI message to! 
 
 ![Scribble App Settings Page](../../assets/ScribbleImages/scribble-editor-app-settings.png)
 
@@ -427,7 +427,7 @@ Compatible with:
 - And standard TRS MIDI pedals
 
 !!! warning "Older Chase Bliss Audio Pedals"
-    Some original Chase Bliss Audio pedals with MIDI require the Tip of the TRS cable to be completely disconnected, and the Scribble cannot do that. You will need to phyiscally modify any TRS cable you're using to disconnect the Tip if you want to use them. 
+    Some original Chase Bliss Audio pedals with MIDI require the Tip of the TRS cable to be completely disconnected, and the Scribble cannot do that. You will need to physically modify any TRS cable you're using to disconnect the Tip if you want to use them. 
     *(You will also need to set the MIDI out to Type B, of course.)*
 
 ### BLE MIDI
@@ -440,7 +440,7 @@ After you connect the Scribble to your device with one of these apps, then the B
 #### App Suggestions
 
 !!! warning
-    Pirate MIDI takes no responsiblity for the performance or security of these apps. They are not endorsed or reviewed by us. 
+    Pirate MIDI takes no responsibility for the performance or security of these apps. They are not endorsed or reviewed by us. 
     Choose a suitable app based on your own requirements. 
 
 
@@ -468,7 +468,7 @@ After you connect the Scribble to your device with one of these apps, then the B
     Visualise relay states or amp channel status when the CLiCK v2 is underneath your pedalboard.
 
 -   **ML10X** 
-    Visualise your presets for your reorderable loop      switcher. Use custom colours and preset text to remind you the key features of each signal chain you've set up. 
+    Visualise your presets for your reorderable loop switcher. Use custom colours and preset text to remind you the key features of each signal chain you've set up. 
 
 -   **USB/DAW Setup**  
     Connect straight to a laptop to display section names as your Ableton Live set progresses.
@@ -484,6 +484,8 @@ After you connect the Scribble to your device with one of these apps, then the B
 ---
 
 ## Factory Reset
+A factory reset will erase your current configuration. Back up your config first using **Export as File** in the [**Web Editor**](https://edit.piratemidi.com).
+
 If you need to do a factory reset, press and hold switch 1 (left switch) on the Scribble as you plug power into the device. Continue holding for about 6 seconds until you see the reset process start. Now remove your finger from the switch.
 
 ---
