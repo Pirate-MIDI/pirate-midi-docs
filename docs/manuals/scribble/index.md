@@ -311,7 +311,7 @@ Set the tempo of the Scribble's own MIDI clock generator. Global BPM will apply 
 This lets you change the BPM readout on the Scribble between a BPM number, milliseconds number, or a flashing indicator only. 
 
 **Tap Tempo Quantization**:
-This averages the tempo to the nearest 0.2, 0.5, 1, and 5bpm when using the tap tempo Smart Message. 
+This averages the tempo to the nearest 0.2, 0.5, 1, and 5bpm when using the tap tempo Switch Mode. 
 
 ![Scribble Tap Tempo Quantization](../../assets/ScribbleImages/scribble-editor-tap-tempo-quantization.png)
 
